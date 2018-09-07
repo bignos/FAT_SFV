@@ -1,6 +1,6 @@
 # This module extract frame data from official html file
-# [STATE]   : POC
-# [AUTHOR]  : balandjian.jean@gmail.com
+# [STATE]   : POC ( Unfinished )
+# [AUTHOR]  : bignos@gmail.com
 
 import sys              # for exit()
 import os               # for path and basename
@@ -397,7 +397,7 @@ def _read_html_file( path ):
         Throw FileNotFoundError if the file in path is not found
         Throw PermissionError if you don't have permission to read the file
     """
-    with open( path, 'rt' ) as document:
+    with open( path, 'rt', encoding='utf-8' ) as document:
         result = document.read()
     return result
 
@@ -478,6 +478,7 @@ def _columns_analyse( character_html_directory_path ):
                                     if filepath.endswith('.html') ]
     data_list = list()
     for character_file in character_html_files:
+        print( character_file )
         character_data = _read_html_file( character_file )
         character_data_tree = lxml.html.fromstring( character_data )
 
