@@ -1,0 +1,100 @@
+--------------------------------------------------------------------------------
+		    Notes pour Frame Assistant Tool for SFV
+--------------------------------------------------------------------------------
+
+Objectifs du programme:
+	- Afficher la frame data de chaque personnage
+	- Charger la frame data à partir d'un document HTML
+	- Fournir des informations pratique à l'utilisateur:
+		-> Coups safe
+		-> Coups unsafe 
+		-> Coups safe-isable avec cancel
+		-> Frametraps
+		-> Links
+		-> Combos
+		-> Meaty
+		-> Temporisation des coups
+	- {Future} Charger la frame data à partir du site officiel
+
+
+--------------------------------------------------------------------------------
+
+Développement:
+	[ Objectif 1 ]: 
+		Charger la frame data d'un personnage et transformer le tout
+		en JSON
+	
+	[ Problèmes ]
+		#1	Les données ne sont pas homogènes.
+			On peut aussi bien avoir un chiffre,
+			une liste de chiffres, une chaine, une liste de chaine,
+			voir des chaines avec des caractères spéciaux( utf-8 )
+			qu'il faut transformer.
+
+			L'analyse est complexe car il y a beaucoup de fiche
+			de personnage et pour faire l'initialisation du projet
+			je suis partit d'une fiche spécifique
+
+	[ Solutions ]
+		#1	Faire un programme qui récolte les différentes possibilités
+			sur une colonne avec l'ensemble des fiches.
+			Ensuite on pourra faire un cleaner complet
+
+--------------------------------------------------------------------------------
+
+Structures:
+
+	move_data = {
+		'Type'     			: 'Normal Moves',
+		'Move Name'     		: 'Standing LP',
+		'Frame'    : {
+				'Startup'  	: 4,
+				'Active'   	: 2,
+				'Recovery' 	: 8
+			     },
+		'Recovery' : {
+				'On Hit'   	: 5,
+				'On Block' 	: 3,
+			     },
+		'V-Trigger Cancel Recovery' : {
+				'On Hit'   	: 4,
+				'On Block' 	: 2,
+				},
+		'Cancel Info'			: [ 'S', 'CA', 'V', 'VS' ],
+		'Damage'   			: 30,
+		'Stun'	   			: 70,
+		'Meter Gain(Whiff/Hit)' 	: [ 0, 20 ],
+		'Properties' 			: 'Hight',
+		'Projectile Nullification' 	: '',
+		'Airborne Hurtbox'		: '',
+		'Comments' 			: ''
+	}
+
+--------------------------------------------------------------------------------
+
+Analyse:
+
+Pour #1 analyse des colonnes des différentes fiche de personnage:
+
+frame_startup:
+	- ['4'] 			-> 4		Forme courante
+	- [] 				-> None		
+	- ['12 (', '10)']		-> [ 12, 10 ]
+	- ['1+7']			-> 8
+	- ['124  total frames']		-> 124
+	- ['1  frames after contact']	-> 1
+	- ['39-80']			-> [ ? ]
+
+--------------------------------------------------------------------------------
+
+Analyseur de pattern:
+	- ['4']				-> \d
+	- ['12']			-> \d+
+	- []				-> None
+	- ['12 (', '10)']		-> [ '\d+ \D', '\d+\D' ]
+	- ['1+7']			-> '\d\s\d'
+	- ['124  total frames']		-> '\d+ \D+ \D+'
+	- ['1  frames after contact']	-> '\d \D+ \D+ \D+'
+	- ['39-80']			-> '\d+\D\d+'
+
+--------------------------------------------------------------------------------
