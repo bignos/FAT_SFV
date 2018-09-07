@@ -493,6 +493,47 @@ def _columns_analyse( character_html_directory_path ):
 
     for element in data_list:
         print( '{}{}{}'.format( element[0],'\t'*6, element[1] ) )
+        print( 'Pattern: {}'.format( _get_pattern( element[0] ) ) )
+
+def _get_pattern( value ):
+    if isinstance(value, list ) and value != []:
+        if len( value ) == 1:
+            return _get_pattern( value[0] )
+        else:
+            return [ _get_pattern( val ) for val in value ]
+    elif isinstance( value, str ):
+        return _get_pattern_from_string( value )
+    else:
+        return None
+
+def _get_pattern_from_string( value ):
+    if value == '':
+        return None
+    
+    pattern = list()
+    for char in value:
+        if re.match(r'\d', char):
+            pattern.append( '\d' )
+        if re.match(r'\D', char):
+            pattern.append( '\D' )
+        if re.match(r' ', char):
+            pattern.append( ' ' )
+
+    pattern_string = ''.join( pattern )
+    return _clean_pattern( pattern_string )
+
+def _clean_pattern( pattern ):
+    pattern_list = pattern.split( ' ' )
+    clean_pattern_list = list()
+    for pat in pattern_list:
+        if      re.match( r'.*(\\d){2,}.*', pat ):
+            clean_pattern_list.append( re.sub( r'(.*)(\\d){2,}(.*)', '\\d+', pat ) )
+        elif    re.match( r'.*(\\D){2,}.*', pat ):
+            clean_pattern_list.append( re.sub( r'(.*)(\\D){2,}(.*)', '\1\\D+\3', pat ) )
+        else:
+            clean_pattern_list.append( pat )
+    
+    return ' '.join( clean_pattern_list )
 
 # -[ Main ]-
 if __name__ == '__main__':
