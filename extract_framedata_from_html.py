@@ -478,7 +478,6 @@ def _columns_analyse( character_html_directory_path ):
                                     if filepath.endswith('.html') ]
     data_list = list()
     for character_file in character_html_files:
-        print( character_file )
         character_data = _read_html_file( character_file )
         character_data_tree = lxml.html.fromstring( character_data )
 
@@ -492,9 +491,15 @@ def _columns_analyse( character_html_directory_path ):
                 frame_startup = tr.xpath( './td[2]/text()' )
                 data_list.append( [ frame_startup, os.path.basename( character_file ) ] )
 
+    unique_pattern = set()
     for element in data_list:
-        print( '{}{}{}'.format( element[0],'\t'*6, element[1] ) )
-        print( 'Pattern: {}'.format( _get_pattern( element[0] ) ) )
+        #print( '{} -> {}{}{}'.format( element[0], _get_pattern( element[0] ), '\t'*6, element[1] ) )
+        clean_pattern = _get_pattern( element[0] )
+        clean_pattern = ''.join( clean_pattern ) if isinstance( clean_pattern, list ) else clean_pattern
+        unique_pattern.add( clean_pattern )
+
+    for pattern in unique_pattern:
+        print( pattern )
 
 def _get_pattern( value ):
     if isinstance(value, list ) and value != []:
@@ -515,26 +520,22 @@ def _get_pattern_from_string( value ):
     for char in value:
         if re.match(r'\d', char):
             pattern.append( '\d' )
-        if re.match(r'\D', char):
-            pattern.append( '\D' )
-        if re.match(r' ', char):
-            pattern.append( ' ' )
-
+        elif re.match(r'\+',char):
+            pattern.append( r'\+' )
+        elif re.match(r' ', char):
+            pattern.append( r'\s' )
+        elif re.match(r'\D', char):
+            pattern.append( r'\D' )
+    
     pattern_string = ''.join( pattern )
     return _clean_pattern( pattern_string )
 
 def _clean_pattern( pattern ):
-    pattern_list = pattern.split( ' ' )
-    clean_pattern_list = list()
-    for pat in pattern_list:
-        if      re.match( r'.*(\\d){2,}.*', pat ):
-            clean_pattern_list.append( re.sub( r'(.*)(\\d){2,}(.*)', '\\d+', pat ) )
-        elif    re.match( r'.*(\\D){2,}.*', pat ):
-            clean_pattern_list.append( re.sub( r'(.*)(\\D){2,}(.*)', '\1\\D+\3', pat ) )
-        else:
-            clean_pattern_list.append( pat )
+    result = re.sub( r'(\\d){2,}', '\\d+', pattern )
+    result = re.sub( r'(\\s){2,}', '\\s+', result )
+    result = re.sub( r'(\\D){2,}', '\\D+', result )
     
-    return ' '.join( clean_pattern_list )
+    return result
 
 # -[ Main ]-
 if __name__ == '__main__':
