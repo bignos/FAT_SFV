@@ -2,6 +2,8 @@
 # [STATE]   : POC ( Unfinished )
 # [AUTHOR]  : bignos@gmail.com
 
+# coding=utf-8
+
 import sys              # for exit()
 import os               # for path and basename
 import lxml.html        # for parse XML
@@ -467,75 +469,13 @@ def _sanityse( value ):
 
     return value
 
+def _get_all_character_files( character_html_directory_path ):
+    return [    character_html_directory_path + filepath for filepath in os.listdir( character_html_directory_path )
+                if filepath.endswith('.html') ]
+
 def _load_all_character_from_html( character_html_directory_path ):
-    character_html_files    =   [   character_html_directory_path + filepath for filepath in os.listdir( character_html_directory_path )
-                                    if filepath.endswith('.html') ]
-
+    character_html_files    =   _get_all_character_files( character_html_directory_path )
     return [ Framedata.loadFromHTML( filename ) for filename in character_html_files ]
-
-def _columns_analyse( character_html_directory_path ):
-    character_html_files    =   [   character_html_directory_path + filepath for filepath in os.listdir( character_html_directory_path )
-                                    if filepath.endswith('.html') ]
-    data_list = list()
-    for character_file in character_html_files:
-        character_data = _read_html_file( character_file )
-        character_data_tree = lxml.html.fromstring( character_data )
-
-        for tr in character_data_tree.xpath( '//table[@class="frameTbl"][@vtrigger="1"]/tr' ):
-            if tr.xpath( './td' ) != []:
-                frame_startup = tr.xpath( './td[2]/text()' )
-                data_list.append( [ frame_startup, os.path.basename( character_file ) ] )
-
-        for tr in character_data_tree.xpath( '//table[@class="frameTbl"][@vtrigger="2"]/tr' ):
-            if tr.xpath( './td' ) != []:
-                frame_startup = tr.xpath( './td[2]/text()' )
-                data_list.append( [ frame_startup, os.path.basename( character_file ) ] )
-
-    unique_pattern = set()
-    for element in data_list:
-        #print( '{} -> {}{}{}'.format( element[0], _get_pattern( element[0] ), '\t'*6, element[1] ) )
-        clean_pattern = _get_pattern( element[0] )
-        clean_pattern = ''.join( clean_pattern ) if isinstance( clean_pattern, list ) else clean_pattern
-        unique_pattern.add( clean_pattern )
-
-    for pattern in unique_pattern:
-        print( pattern )
-
-def _get_pattern( value ):
-    if isinstance(value, list ) and value != []:
-        if len( value ) == 1:
-            return _get_pattern( value[0] )
-        else:
-            return [ _get_pattern( val ) for val in value ]
-    elif isinstance( value, str ):
-        return _get_pattern_from_string( value )
-    else:
-        return None
-
-def _get_pattern_from_string( value ):
-    if value == '':
-        return None
-    
-    pattern = list()
-    for char in value:
-        if re.match(r'\d', char):
-            pattern.append( '\d' )
-        elif re.match(r'\+',char):
-            pattern.append( r'\+' )
-        elif re.match(r' ', char):
-            pattern.append( r'\s' )
-        elif re.match(r'\D', char):
-            pattern.append( r'\D' )
-    
-    pattern_string = ''.join( pattern )
-    return _clean_pattern( pattern_string )
-
-def _clean_pattern( pattern ):
-    result = re.sub( r'(\\d){2,}', '\\d+', pattern )
-    result = re.sub( r'(\\s){2,}', '\\s+', result )
-    result = re.sub( r'(\\D){2,}', '\\D+', result )
-    
-    return result
 
 # -[ Main ]-
 if __name__ == '__main__':
@@ -543,5 +483,5 @@ if __name__ == '__main__':
     # framedata.saveToJSON( character_json_file_path )
     # framedata = Framedata.loadFromJSON( character_json_file_path )
     # print( framedata )
-    # _load_all_character_from_html( character_html_directory_path )
-    _columns_analyse( character_html_directory_path )
+    _load_all_character_from_html( character_html_directory_path )
+
