@@ -4,8 +4,11 @@
 
 call plug#begin()
 
-Plug 'tmhedberg/SimpylFold'		" folding
 Plug 'python-mode/python-mode'		" Python IDE mode for Vim
+					" Use 'git clone --recursive https://github.com/python-mode/python-mode'
+					" for the first installation
+
+Plug 'tmhedberg/SimpylFold'		" folding
 Plug 'ncm2/ncm2'			" Completion
 Plug 'roxma/nvim-yarp'			" remote plugin framework
 
@@ -23,14 +26,24 @@ Plug 'scrooloose/nerdtree'		" File viewer
 Plug 'ctrlpvim/ctrlp.vim'		" Filename searcher
 Plug 'mileszs/ack.vim'			" Files content searcher
 
-Plug 'Raimondi/delimitMate'		" Auto completion for delimiter 
+Plug 'Raimondi/delimitMate'		" Auto completion for delimiter
+
+" Plug 'lepture/vim-jinja'		" Jinja syntax support ( HTML templating )
+Plug 'vim-airline/vim-airline'		" Enhanced status bar
+Plug 'godlygeek/tabular'		" Easy tabular indentation
 
 call plug#end()
 
 " -[ Plugins specific configuration ]-
 
+" { Python-mode }
+let g:pymode_folding 			= 0
+let g:pymode_options_max_line_length 	= 119	" Because 80 is too small
+let g:pymode_options_colorcolumn 	= 1	" No display of line size limit
+
+
 " { SimpylFold }
-let g:SimpylFold_docstring_preview=1
+let g:SimpylFold_docstring_preview	= 1
 
 " { ncm2 }
 " enable ncm2 for all buffers
@@ -81,10 +94,10 @@ set foldlevel=99
 au BufNewFile,BufRead *.py 
 			\ set tabstop=4 	| 
 			\ set softtabstop=4 	| 
-			\ set shiftwidth=4 	| 
-			\ set textwidth=79 	| 
+			\ set shiftwidth=4 	|  
 			\ set expandtab 	| 
-			\ set autoindent 	| 
+			\ set autoindent 	|
+			\ set nonumber		|
 			\ set fileformat=unix
 
 au BufNewFile,BufRead *.js, *.html, *.css 
@@ -104,5 +117,10 @@ nnoremap <space> za
 " Enable NERDTree with alt+e
 map <M-e> :NERDTreeToggle<CR>
 
+" Enable PymodeLint
+map <F7> :PymodeLint<CR>
 
+" Enable PymodeLintAuto ( Auto-Fix )
+map <F8> :PymodeLintAuto<CR>
 
+" -[ Final ]-
