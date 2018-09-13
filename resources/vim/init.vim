@@ -117,6 +117,8 @@ au BufNewFile,BufRead *.js, *.html, *.css
 			\ set shiftwidth=2
 
 " -[ Key biding ]-
+nmap <C-up> gT
+nmap <C-down> gt
 
 " Use <TAB> to select the popup menu:
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"

@@ -115,4 +115,6 @@ def _clean_pattern(pattern, char_type_list):
 
 # -[ Main ]-
 if __name__ == '__main__':
-    _columns_analyse(character_html_directory_path, './td[2]/text()')
+    # _columns_analyse(character_html_directory_path, './td[2]/text()')
+    # _columns_analyse(character_html_directory_path, './td[3]/text()')
+    _columns_analyse(character_html_directory_path, './td[4]/text()')

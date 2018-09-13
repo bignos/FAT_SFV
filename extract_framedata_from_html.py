@@ -483,16 +483,71 @@ def _extract_move_from_tree(move_tree, move_type):
 def _get_frame_startup(move_tree):
     """ Private function extract the frame startup data and return clean value
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
-        Return:     {int} number of the startup frame for this move
+        Return:     {int|None} number of the startup frame for this move
     """
     raw_value = move_tree.xpath('./td[2]/text()')
 
     if raw_value == []:
         return None
-    # TODO: Make the case with + operator
+
+    raw_value = ''.join(raw_value) # For have only one type of element to process -> str
+
+    if re.match(r'^\d+\+\d+', raw_value):
+        return int(eval(re.sub(r'^(\d+\+\d+).*', '\1', raw_value)))
 
     if re.match(r'^\d+', raw_value):
         return int(re.sub(r'^(\d+)', '\1', raw_value))
+
+
+def _get_frame_active(move_tree):
+    """ Private function extract the frame active data and return clean value
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {int|str|None} number of active frame for this move
+    """
+    raw_value = move_tree.xpath('./td[3]/text()')
+
+    if raw_value == []:
+        return None
+
+    raw_value = ''.join(raw_value)                                   # For have only one type of element to process -> str
+
+    if re.match(r'\-\/\d+ ', raw_value):                             # ['-/3']
+        return int(re.sub(r'.*(\d+)', '\1', raw_value))              # -> 3
+
+    if re.match(r'\d+×\d+', raw_value):                              # ['13×3']
+        return int(eval(re.sub(r'(\d+)×(\d+)', '\1*\2', raw_value))) # -> 39
+
+    if re.match(r'^\d+', raw_value):
+        return int(re.sub(r'^(\d+)', '\1', raw_value))
+
+    if re.match(r'^\w+', raw_value):                                 # ['Until landing']
+        return raw_value                                             # ->'Until landing'
+
+
+def _get_frame_recovery(move_tree):
+    """ Private function extract the frame active data and return clean value
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {int|str|None} number of recovery frame for this move
+    """
+    raw_value = move_tree.xpath('./td[4]/text()')
+
+    if raw_value == []:
+        return None
+
+    raw_value = ''.join(raw_value)                                   # For have only one type of element to process -> str
+
+    # TODO Make it
+    if re.match(r'\-\/\d+ ', raw_value):                             # ['-/3']
+        return int(re.sub(r'.*(\d+)', '\1', raw_value))              # -> 3
+
+    if re.match(r'\d+×\d+', raw_value):                              # ['13×3']
+        return int(eval(re.sub(r'(\d+)×(\d+)', '\1*\2', raw_value))) # -> 39
+
+    if re.match(r'^\d+', raw_value):
+        return int(re.sub(r'^(\d+)', '\1', raw_value))
+
+    if re.match(r'^\w+', raw_value):                                 # ['Until landing']
+        return raw_value                                             # ->'Until landing'
 
 
 def _sanityse(value):
