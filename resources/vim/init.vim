@@ -4,23 +4,29 @@
 
 call plug#begin()
 
-Plug 'python-mode/python-mode'		" Python IDE mode for Vim
+" Plug 'python-mode/python-mode'		" Python IDE mode for Vim
 					" Use 'git clone --recursive https://github.com/python-mode/python-mode'
 					" for the first installation
 
 Plug 'tmhedberg/SimpylFold'		" folding
-Plug 'ncm2/ncm2'			" Completion
-Plug 'roxma/nvim-yarp'			" remote plugin framework
 
-Plug 'ncm2/ncm2-bufword'		" Word completion
+Plug 'ncm2/ncm2'			" Completion
+Plug 'roxma/nvim-yarp'		" remote plugin framework
+
+" Plug 'ncm2/ncm2-bufword'		" Word completion
 " Plug 'ncm2/ncm2-tmux'			" Tmux completion
 Plug 'ncm2/ncm2-path'			" System path completion
-" Plug 'ncm2/ncm2-jedi'			" Python completion
+Plug 'ncm2/ncm2-jedi'			" Python completion
+
+Plug 'davidhalter/jedi-vim'		" Python code navigation
+Plug 'jeetsukumaran/vim-pythonsense'	" Python class and function navigation
+
 " Plug 'SirVer/ultisnips'		" Snippets engine
 " Plug 'honza/vim-snippets'		" Snippets
 " Plug 'vim-syntastic/syntastic'		" Visual synthax checker
 " Plug 'neomake/neomake'			" Visual synthax checker
 " Plug 'nvie/vim-flake8'			" Synthax checker for Python
+" Plug 'tell-k/vim-autopep8'		" Autofix Style for Python
 
 Plug 'scrooloose/nerdtree'		" File viewer
 Plug 'ctrlpvim/ctrlp.vim'		" Filename searcher
@@ -37,9 +43,9 @@ call plug#end()
 " -[ Plugins specific configuration ]-
 
 " { Python-mode }
-let g:pymode_folding 			= 0
-let g:pymode_options_max_line_length 	= 119	" Because 80 is too small
-let g:pymode_options_colorcolumn 	= 1	" No display of line size limit
+" let g:pymode_folding 			= 0
+" let g:pymode_options_max_line_length 	= 119	" Because 80 is too small
+" let g:pymode_options_colorcolumn 	= 1	" No display of line size limit
 
 
 " { SimpylFold }
@@ -51,6 +57,11 @@ autocmd BufEnter * call ncm2#enable_for_buffer()
 
 " IMPORTANTE: :help Ncm2PopupOpen for more information
 set completeopt=noinsert,menuone,noselect
+
+let g:ncm2#auto_popup			= 0
+
+" { jedi-vim }
+let g:jedi#completions_enabled 		= 0
 
 " { neomake }
 " When writing a buffer (no delay).
@@ -111,16 +122,22 @@ au BufNewFile,BufRead *.js, *.html, *.css
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
+" Activate ncm2 completion
+imap <C-Space> <Plug>(ncm2_manual_trigger)
+
 " Enable folding with the spacebar
 nnoremap <space> za
 
 " Enable NERDTree with alt+e
 map <M-e> :NERDTreeToggle<CR>
 
+" Enable Autopep
+" autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
+
 " Enable PymodeLint
-map <F7> :PymodeLint<CR>
+" map <F7> :PymodeLint<CR>
 
 " Enable PymodeLintAuto ( Auto-Fix )
-map <F8> :PymodeLintAuto<CR>
+" map <F8> :PymodeLintAuto<CR>
 
 " -[ Final ]-

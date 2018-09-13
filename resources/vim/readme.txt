@@ -38,6 +38,29 @@
 
 ** More precise help whith ':help pymode'
 
+- [ NCM2 ]
+	<C-Space>		Code completion
+
+- [ Jedi-vim ]
+	\g			Goto assignements
+	\d			Goto definition
+	\r			Renaming
+	\n			Usages of a name
+	K			Show documentation
+	:Pyimport <module>	Open the module
+
+- [ Vim-pythonsense]		
+	[[    			Jump to previous class or function (normal, visual, operator modes)
+	]]    			Jump to next class or function  (normal, visual, operator modes)
+	[M    			Jump to previous class or method (normal, visual, operator modes)
+	]M    			Jump to next class or method (normal, visual, operator modes)
+
+	aC    			Select a class. Ex: vaC, daC, yaC, caC (normal, operator modes)
+	iC    			Select inner class. Ex: viC, diC, yiC, ciC (normal, operator modes)
+	aM    			Select a function or method. Ex: vaM, daM, yaM, caM (normal, operator modes)
+	iM    			Select inner function or method. Ex: viM, diM, yiM, ciM (normal, operator modes)
+
+
 - [ SimpylFold ]
 	Space			Fold/unfold
 
@@ -51,5 +74,30 @@
 	:Ack! {pattern}		Do pattern search in all project file
 - [ Tabular ]
 	:Tabularize {pattern}	Do pattern tabulation ( see example in https://github.com/godlygeek/tabular/blob/master/doc/Tabular.txt )
+
+--------------------------------------------------------------------------------
+
+Notes:
+	Python-mode est trop gourmand il faudrait trouver un essemble de module
+	pour le remplacer.
+
+	Python-mode:
+
+	+ Code navigation
+	+ Code documentation
+	+ Code refactoring
+
+	- Check code intrusif
+	- Ligne de limitation ridicule
+	- Completion du code tres moyenne
+
+	Alternative:
+		[Code completion]: ncm2
+
+			
+		
+	
+
+
 
 --------------------------------------------------------------------------------
