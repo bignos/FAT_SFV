@@ -60,8 +60,8 @@ def _columns_analyse(character_html_directory_path, xpath_pattern):
             real_values = unique_pattern[clean_pattern][0]
 
         real_values.append((element[0], element[1]))
-
-        unique_pattern[clean_pattern] = [real_values, counter]
+        if clean_pattern:
+            unique_pattern[clean_pattern] = [real_values, counter]
 
     for pattern in sorted(unique_pattern.keys()):
         frequency = unique_pattern[pattern][1]
@@ -89,7 +89,8 @@ def _get_pattern(value):
 def _get_pattern_from_string(value):
     if value == '':
         return None
-    regex_char_type_list = [r'\d', r'\w', r'\+', r'\-', r'\s', r'\(', r'\)', r'\W']
+    regex_char_type_list = [r'\d', r'\w', r'\+', r'\-', '±', '×', '○',
+                            r'\*', r'\/', r',', r'\|', r'\s', r'\(', r'\)', r'\W']
     char_type_to_clean = [r'\d', r'\w', r'\s']
     pattern = list()
     for char in value:

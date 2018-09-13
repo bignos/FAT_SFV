@@ -480,6 +480,21 @@ def _extract_move_from_tree(move_tree, move_type):
                 damage, stun, meter_gain, properties, proj_null, airb_hurtbx, comments)
 
 
+def _get_frame_startup(move_tree):
+    """ Private function extract the frame startup data and return clean value
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {int} number of the startup frame for this move
+    """
+    raw_value = move_tree.xpath('./td[2]/text()')
+
+    if raw_value == []:
+        return None
+    # TODO: Make the case with + operator
+
+    if re.match(r'^\d+', raw_value):
+        return int(re.sub(r'^(\d+)', '\1', raw_value))
+
+
 def _sanityse(value):
     """ Private function clean value.
         value:  {*} value to clean
