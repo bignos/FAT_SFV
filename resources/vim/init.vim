@@ -93,11 +93,11 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 " Go to previous TAB
 nmap <C-up> gT
-imap <C-up> <Esc>gTi
+imap <C-up> <Esc>gT
 
 " Go to next TAB
 nmap <C-down> gt
-imap <C-down> <Esc>gti
+imap <C-down> <Esc>gt
 
 " Use <TAB> to select the popup menu:
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
