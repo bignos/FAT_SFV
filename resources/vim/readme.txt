@@ -4,42 +4,11 @@
 
 { New shortcuts }
 
-- [ Python-mode ]
-	
-	{ Code navigation }
-	[[    			Jump to previous class or function (normal, visual, operator modes)
-	]]    			Jump to next class or function  (normal, visual, operator modes)
-	[M    			Jump to previous class or method (normal, visual, operator modes)
-	]M    			Jump to next class or method (normal, visual, operator modes)
-	aC    			Select a class. Ex: vaC, daC, yaC, caC (normal, operator modes)
-	iC    			Select inner class. Ex: viC, diC, yiC, ciC (normal, operator modes)
-	aM    			Select a function or method. Ex: vaM, daM, yaM, caM (normal, operator modes)
-	iM    			Select inner function or method. Ex: viM, diM, yiM, ciM (normal, operator modes)
-
-	{ Code helper }
-	K			Show documentation for current word (selection)
-	\r			Run python code
-	F7			Check code in current buffer
-	F8			Auto-fix code in current buffer
-	<C-c>d			Show documentation for object under cursor
-	<C-Space>		Python code autocompletion
-	<C-C>g			Go to definition
-
-	{ Refactoring }
-	<C-c>rr			Do renaming
-	<C-c>r1r		Rename current module
-	<C-c>ro			Oraganize import
-	<C-c>r1p		Convert module to package
-	<C-c>rm			Extract method from selected lines
-	<C-c>rl			Extract variable from selected lines
-	<C-c>ru			find the places in which a function can be used and changes the code to call it instead
-	<C-c>rv			Move method/field
-	<C-c>rs			Change function signature
-
-** More precise help whith ':help pymode'
-
 - [ NCM2 ]
 	<C-Space>		Code completion
+
+- [ vim-flake8 ]
+	<F7>			Check Python style(PEP8) and synthax
 
 - [ Jedi-vim ]
 	\g			Goto assignements
@@ -76,7 +45,6 @@
 	:Tabularize {pattern}	Do pattern tabulation ( see example in https://github.com/godlygeek/tabular/blob/master/doc/Tabular.txt )
 
 --------------------------------------------------------------------------------
-
 Notes:
 	Python-mode est trop gourmand il faudrait trouver un essemble de module
 	pour le remplacer.
@@ -92,12 +60,8 @@ Notes:
 	- Completion du code tres moyenne
 
 	Alternative:
-		[Code completion]: ncm2
-
-			
-		
-	
-
-
-
+		[Code completion] : ncm2
+		[Code navigation] : jedi-vim
+		[Code selector]   : vim-pythonsense
+		[Style checker]   : vim-flake8
 --------------------------------------------------------------------------------
