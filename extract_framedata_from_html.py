@@ -490,7 +490,7 @@ def _get_frame_startup(move_tree):
     if raw_value == []:
         return None
 
-    raw_value = ''.join(raw_value) # For have only one type of element to process -> str
+    raw_value = ''.join(raw_value)  # For have only one type of element to process -> str
 
     if re.match(r'^\d+\+\d+', raw_value):
         return int(eval(re.sub(r'^(\d+\+\d+).*', '\1', raw_value)))
@@ -509,45 +509,157 @@ def _get_frame_active(move_tree):
     if raw_value == []:
         return None
 
-    raw_value = ''.join(raw_value)                                   # For have only one type of element to process -> str
+    raw_value = ''.join(raw_value)                                    # For have only one type of element to process -> str # noqa: E501
 
-    if re.match(r'\-\/\d+ ', raw_value):                             # ['-/3']
-        return int(re.sub(r'.*(\d+)', '\1', raw_value))              # -> 3
+    if re.match(r'\-\/\d+ ', raw_value):                              # ['-/3']
+        return int(re.sub(r'.*(\d+)', '\1', raw_value))               # -> 3
 
-    if re.match(r'\d+×\d+', raw_value):                              # ['13×3']
-        return int(eval(re.sub(r'(\d+)×(\d+)', '\1*\2', raw_value))) # -> 39
+    if re.match(r'\d+×\d+', raw_value):                               # ['13×3']
+        return int(eval(re.sub(r'(\d+)×(\d+)', '\1*\2', raw_value)))  # -> 39
 
     if re.match(r'^\d+', raw_value):
         return int(re.sub(r'^(\d+)', '\1', raw_value))
 
-    if re.match(r'^\w+', raw_value):                                 # ['Until landing']
-        return raw_value                                             # ->'Until landing'
+    if re.match(r'^\w+', raw_value):                                  # ['Until landing']
+        return raw_value                                              # ->'Until landing'
 
 
 def _get_frame_recovery(move_tree):
     """ Private function extract the frame active data and return clean value
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
-        Return:     {int|str|None} number of recovery frame for this move
+        Return:     {int|None} number of recovery frame for this move
     """
     raw_value = move_tree.xpath('./td[4]/text()')
 
     if raw_value == []:
         return None
 
-    raw_value = ''.join(raw_value)                                   # For have only one type of element to process -> str
+    raw_value = ''.join(raw_value)                                    # For have only one type of element to process -> str # noqa: E501
 
-    # TODO Make it
-    if re.match(r'\-\/\d+ ', raw_value):                             # ['-/3']
-        return int(re.sub(r'.*(\d+)', '\1', raw_value))              # -> 3
-
-    if re.match(r'\d+×\d+', raw_value):                              # ['13×3']
-        return int(eval(re.sub(r'(\d+)×(\d+)', '\1*\2', raw_value))) # -> 39
+    if re.match(r'^\d+\+\d+', raw_value):                             # ['21+30 frame(s) after landing']
+        return int(eval(re.sub(r'^(\d+\+\d+).*', '\1', raw_value)))   # -> 51
 
     if re.match(r'^\d+', raw_value):
         return int(re.sub(r'^(\d+)', '\1', raw_value))
 
-    if re.match(r'^\w+', raw_value):                                 # ['Until landing']
-        return raw_value                                             # ->'Until landing'
+
+def _get_recovery_on_hit(move_tree):
+    """ Private function extract the number of recovery frame on hit
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {int|str|None} number of recovery frame on hit
+    """
+    raw_value = move_tree.xpath('./td[5]/text()')
+
+    if raw_value == []:
+        return None
+
+    raw_value = ''.join(raw_value)                                # For have only one type of element to process -> str # noqa: E501
+
+    if re.match(r'^\(\w+\)', raw_value):                          # ['(crumple)']
+        return int(eval(re.sub(r'^\((\w+)\)', '\1', raw_value)))  # -> crumple
+
+    if re.match(r'^D', raw_value):                                # ['D']
+        return 'D'                                                # -> D
+
+    if re.match(r'^\-$', raw_value):                              # ['-']
+        return 0                                                  # -> 0
+
+    if re.match(r'^\-\d+', raw_value):                            # ['-1']
+        return int(re.sub(r'^(\-\d+)', '\1', raw_value))          # -> -1
+
+    if re.match(r'^±0', raw_value):                               # ['±0']
+        return 0                                                  # -> 0
+
+    if re.match(r'^\d+', raw_value):
+        return int(re.sub(r'^(\d+)', '\1', raw_value))
+
+
+def _get_recovery_on_block(move_tree):
+    """ Private function extract the number of recovery frame on block
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {int|str|None} number of recovery frame on block
+    """
+    raw_value = move_tree.xpath('./td[6]/text()')
+
+    if raw_value == []:
+        return None
+
+    raw_value = ''.join(raw_value)                                # For have only one type of element to process -> str # noqa: E501
+
+    if re.match(r'^\(\w+\)', raw_value):                          # ['(crumple)']
+        return int(eval(re.sub(r'^\((\w+)\)', '\1', raw_value)))  # -> crumple
+
+    if re.match(r'^GB', raw_value):                               # ['GB']
+        return 'GB'                                               # -> GB
+
+    if re.match(r'^\-$', raw_value):                              # ['-']
+        return 0                                                  # -> 0
+
+    if re.match(r'^\-\d+', raw_value):                            # ['-1']
+        return int(re.sub(r'^(\-\d+)', '\1', raw_value))          # -> -1
+
+    if re.match(r'^±0', raw_value):                               # ['±0']
+        return 0                                                  # -> 0
+
+    if re.match(r'^\d+', raw_value):
+        return int(re.sub(r'^(\d+)', '\1', raw_value))
+
+
+def _get_recovery_xvt_on_hit(move_tree):
+    """ Private function extract the number of recovery frame on V-trigger cancel on hit
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {int|str|None} number of recovery frame on V-trigger cancel on hit
+    """
+    raw_value = move_tree.xpath('./td[7]/text()')
+
+    if raw_value == []:
+        return None
+
+    raw_value = ''.join(raw_value)                                # For have only one type of element to process -> str # noqa: E501
+
+    if re.match(r'^D', raw_value):                                # ['D']
+        return 'D'                                                # -> D
+
+    if re.match(r'^\-\d+', raw_value):                            # ['-1']
+        return int(re.sub(r'^(\-\d+)', '\1', raw_value))          # -> -1
+
+    if re.match(r'^\d+', raw_value):
+        return int(re.sub(r'^(\d+)', '\1', raw_value))
+
+
+def _get_recovery_xvt_on_block(move_tree):
+    """ Private function extract the number of recovery frame on V-trigger cancel on block
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {int|str|None} number of recovery frame on V-trigger cancel on block
+    """
+    raw_value = move_tree.xpath('./td[8]/text()')
+
+    if raw_value == []:
+        return None
+
+    raw_value = ''.join(raw_value)                                # For have only one type of element to process -> str # noqa: E501
+
+    if re.match(r'^\-\D*', raw_value):                            # ['-|-|-']
+        return 0                                                  # -> 0
+
+    if re.match(r'^\-\d+', raw_value):                            # ['-1']
+        return int(re.sub(r'^(\-\d+)', '\1', raw_value))          # -> -1
+
+    if re.match(r'^\d+', raw_value):
+        return int(re.sub(r'^(\d+)', '\1', raw_value))
+
+
+def _get_cancel_info(move_tree):
+    """ Private function extract the cancel data and return value
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {list} cancel properties of the move
+    """
+    raw_value = move_tree.xpath('./td[9]/span/text()')
+
+    if raw_value == []:
+        return None
+    else:
+        return raw_value
 
 
 def _sanityse(value):

@@ -115,6 +115,11 @@ def _clean_pattern(pattern, char_type_list):
 
 # -[ Main ]-
 if __name__ == '__main__':
-    # _columns_analyse(character_html_directory_path, './td[2]/text()')
-    # _columns_analyse(character_html_directory_path, './td[3]/text()')
-    _columns_analyse(character_html_directory_path, './td[4]/text()')
+    # _columns_analyse(character_html_directory_path, './td[2]/text()')     # frame startup
+    # _columns_analyse(character_html_directory_path, './td[3]/text()')     # frame active
+    # _columns_analyse(character_html_directory_path, './td[4]/text()')     # frame recovery
+    # _columns_analyse(character_html_directory_path, './td[5]/text()')     # recovery on hit
+    # _columns_analyse(character_html_directory_path, './td[6]/text()')     # recovery on block
+    # _columns_analyse(character_html_directory_path, './td[7]/text()')     # recovery on V-trigger cancel on hit
+    # _columns_analyse(character_html_directory_path, './td[8]/text()')     # recovery on V-trigger cancel on block
+    _columns_analyse(character_html_directory_path, './td[9]/span/text()')     # cancel info
