@@ -90,8 +90,14 @@ au BufNewFile,BufRead *.js, *.html, *.css
 			\ set shiftwidth=2
 
 " -[ Key biding ]-
+
+" Go to previous TAB
 nmap <C-up> gT
+imap <C-up> <Esc>gTi
+
+" Go to next TAB
 nmap <C-down> gt
+imap <C-down> <Esc>gti
 
 " Use <TAB> to select the popup menu:
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -105,5 +111,8 @@ nnoremap <space> za
 
 " Enable NERDTree with alt+e
 map <M-e> :NERDTreeToggle<CR>
+
+" Exit of terminal insert mode
+tnoremap <Esc> <C-\><C-n>
 
 " -[ Final ]-
