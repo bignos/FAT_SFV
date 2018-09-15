@@ -44,7 +44,7 @@ let g:ncm2#auto_popup			= 0
 
 " { jedi-vim }
 let g:jedi#completions_enabled 		= 0
-let g:jedi#show_call_signatures 	= 2
+let g:jedi#show_call_signatures 	= 0
 
 " { vim-flake8 }
 let g:flake8_show_in_gutter		= 1

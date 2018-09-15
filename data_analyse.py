@@ -51,7 +51,9 @@ def _columns_analyse(character_html_directory_path, xpath_pattern):
     unique_pattern = dict()
     for element in data_list:
         clean_pattern = _get_pattern(element[0])
-        clean_pattern = ''.join(clean_pattern) if isinstance(clean_pattern, list) else clean_pattern
+        if isinstance(clean_pattern, list):
+            clean_pattern = ''.join([pat for pat in clean_pattern if pat])
+        # clean_pattern = ''.join(clean_pattern) if isinstance(clean_pattern, list) else clean_pattern
         if clean_pattern not in unique_pattern.keys():
             counter = 1
             real_values = list()
@@ -122,4 +124,11 @@ if __name__ == '__main__':
     # _columns_analyse(character_html_directory_path, './td[6]/text()')     # recovery on block
     # _columns_analyse(character_html_directory_path, './td[7]/text()')     # recovery on V-trigger cancel on hit
     # _columns_analyse(character_html_directory_path, './td[8]/text()')     # recovery on V-trigger cancel on block
-    _columns_analyse(character_html_directory_path, './td[9]/span/text()')     # cancel info
+    # _columns_analyse(character_html_directory_path, './td[9]/span/text()')     # cancel info
+    # _columns_analyse(character_html_directory_path, './td[10]/span[@class="damageAll"]/text()')     # damage
+    # _columns_analyse(character_html_directory_path, './td[11]/span[@class="stunAll"]/text()')     # stun
+    # _columns_analyse(character_html_directory_path, './td[12]/text()')     # meter gain
+    # _columns_analyse(character_html_directory_path, './td[13]/text()')     # properties
+    # _columns_analyse(character_html_directory_path, './td[14]/text()')     # projectile nullification
+    # _columns_analyse(character_html_directory_path, './td[15]/text()')     # airborn hurtbox 
+    _columns_analyse(character_html_directory_path, './td[@class="remarks"]/text()')     # comments 

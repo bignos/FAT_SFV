@@ -457,27 +457,33 @@ def _extract_move_from_tree(move_tree, move_type):
         move_type: {str} Move type (You have to pass this parameter because is not in move_tree)
         Return: {Move} Move object with all data found in move_tree
     """
-    name = move_tree.xpath('./td[@class="name"]/p[@class="name"]/text()')[0]
+    name        = _get_name(move_tree)
 
-    frame = Frame(_sanityse(move_tree.xpath('./td[2]/text()')),
-                  _sanityse(move_tree.xpath('./td[3]/text()')),
-                  _sanityse(move_tree.xpath('./td[4]/text()')))
-    recovery = Recovery(_sanityse(move_tree.xpath('./td[5]/text()')),
-                        _sanityse(move_tree.xpath('./td[6]/text()')))
-    vtxrecovery = Recovery(_sanityse(move_tree.xpath('./td[7]/text()')),
-                           _sanityse(move_tree.xpath('./td[8]/text()')))
-    cancel_info = _sanityse(move_tree.xpath('./td[9]/span/text()'))
-    damage = _sanityse(move_tree.xpath('./td[10]/span[@class="damageAll"]/text()'))
-    stun = _sanityse(move_tree.xpath('./td[11]/span[@class="stunAll"]/text()'))
-    meter_gain = list(''.join(_sanityse(move_tree.xpath('./td[12]/text()'))).replace('\n', '').strip().split('/'))
-    properties = _sanityse(move_tree.xpath('./td[13]/text()'))
-    proj_null = _sanityse(move_tree.xpath('./td[14]/text()'))
-    airb_hurtbx = _sanityse(move_tree.xpath('./td[15]/text()'))
-    comments = _sanityse([move.strip() for move in move_tree.xpath(
-        './td[@class="remarks"]/text()') if move.strip() != ''])
+    frame       = Frame(_get_frame_startup(move_tree),
+                        _get_frame_active(move_tree),
+                        _get_frame_recovery(move_tree))
+    recovery    = Recovery(_get_recovery_on_hit(move_tree),
+                           _get_recovery_on_block(move_tree))
+    vtxrecovery = Recovery(_get_recovery_xvt_on_hit(move_tree),
+                           _get_recovery_xvt_on_block(move_tree))
+    cancel_info = _get_cancel_info(move_tree)
+    damage      = _get_damage(move_tree)
+    stun        = _get_stun(move_tree)
+    meter_gain  = _get_meter_gain(move_tree)
+    properties  = _get_properties(move_tree)
+    proj_null   = _get_projectile_nullification(move_tree)
+    airb_hurtbx = _get_airborn_hurtbox(move_tree)
+    comments    = _get_comments(move_tree)
 
     return Move(move_type, name, frame, recovery, vtxrecovery, cancel_info,
                 damage, stun, meter_gain, properties, proj_null, airb_hurtbx, comments)
+
+def _get_name(move_tree):
+    """ Private function extract the name of the move and return clean it
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {str} Name of the move
+    """
+    return move_tree.xpath('./td[@class="name"]/p[@class="name"]/text()')[0]
 
 
 def _get_frame_startup(move_tree):
@@ -652,7 +658,7 @@ def _get_recovery_xvt_on_block(move_tree):
 def _get_cancel_info(move_tree):
     """ Private function extract the cancel data and return value
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
-        Return:     {list} cancel properties of the move
+        Return:     {list|None} cancel properties of the move
     """
     raw_value = move_tree.xpath('./td[9]/span/text()')
 
@@ -661,6 +667,103 @@ def _get_cancel_info(move_tree):
     else:
         return raw_value
 
+
+def _get_damage(move_tree):
+    """ Private function extract the damage of the move and return clean value
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {int|None} damage of the move
+    """
+    raw_value = move_tree.xpath('./td[10]/span[@class="damageAll"]/text()')
+
+    if raw_value == []:
+        return None
+
+    raw_value = ''.join(raw_value)                                              # For have only one type of element to process -> str # noqa: E501
+
+    if re.match(r'^\d+\+\d+', raw_value):                                       # ['70+90']
+        return int(eval(re.sub(r'^(\d+\+\d+).*', '\1', raw_value)))             # -> 160
+
+    if re.match(r'^\d+\s+\+\s+\d+', raw_value):                                 # ['40 + 40']
+        return int(eval(re.sub(r'^(\d+)\s+\+\s+(\d+).*', '\1+\2', raw_value)))  # -> 80
+
+    if re.match(r'^\d+', raw_value):
+        return int(re.sub(r'^(\d+)', '\1', raw_value))
+
+
+def _get_stun(move_tree):
+    """ Private function extract the stun of the move and return clean value
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {int|None} stun of the move
+    """
+    raw_value = move_tree.xpath('./td[11]/span[@class="stunAll"]/text()')
+
+    if raw_value == []:
+        return None
+
+    raw_value = ''.join(raw_value)                                              # For have only one type of element to process -> str # noqa: E501
+
+    if re.match(r'^\d+\+\d+', raw_value):                                       # ['70+90']
+        return int(eval(re.sub(r'^(\d+\+\d+).*', '\1', raw_value)))             # -> 160
+
+    if re.match(r'^\d+\s+\+\s+\d+', raw_value):                                 # ['40 + 40']
+        return int(eval(re.sub(r'^(\d+)\s+\+\s+(\d+).*', '\1+\2', raw_value)))  # -> 80
+
+    if re.match(r'^\d+', raw_value):
+        return int(re.sub(r'^(\d+)', '\1', raw_value))
+
+
+def _get_meter_gain(move_tree):
+    """ Private function extract the meter gain of the move and return clean value
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {list[2]} meter gain of the move
+    """
+    raw_value = move_tree.xpath('./td[12]/text()')
+
+    raw_value = ''.join(raw_value)                                                       # For have only one type of element to process -> str  # noqa: E501
+
+    if '+' in raw_value:  # replace adition by the result !!!change raw_value!!!
+        add = re.sub(r'(\d+\+\d+)', '\1', raw_value).split('+')
+        egal = str(int(add[0]) + int(add[1]))
+        raw_value = re.Sub(r'(\d+\+\d+)', egal, raw_value)
+
+    if re.match(r'^\s+\d+\s+\/\s+\d+\s+', raw_value):                                    # ['\n\n                0 / 20            '] # noqa: E501
+        temp_list = re.sub(r'.*(\-*\d+)\s+\/\s+(\d+).*$', '\1,\2', raw_value).split(',')
+        return [int(temp_list[0]), int(temp_list[1])]                                    # -> [10,20]
+
+
+def _get_properties(move_tree):
+    """ Private function extract the properties of the move and return it
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {str|None} properties of the move
+    """
+    return move_tree.xpath('./td[13]/text()')[0]
+    
+    
+def _get_projectile_nullification(move_tree):
+    """ Private function extract the projectile nullification properties of the move and return True or False
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {bool} projectile nullification properties of the move
+    """
+    raw_value = move_tree.xpath('./td[14]/text()')[0]
+    return True if raw_value else False
+
+def _get_airborn_hurtbox(move_tree):
+    """ Private function extract the airborn hurtbox properties of the move and return it
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {str|None} airborn hurtbox properties of the move
+    """
+    return move_tree.xpath('./td[15]/text()')[0]
+
+
+def _get_comments(move_tree):
+    """ Private function extract the comments about the move and return it
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        Return:     {list|None} comments about the move
+    """
+    raw_value = [move.strip() for move in move_tree.xpath(
+        './td[@class="remarks"]/text()') if move.strip() != '']
+    return raw_value if raw_value != [] else None
+     
 
 def _sanityse(value):
     """ Private function clean value.
