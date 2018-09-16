@@ -1,0 +1,4464 @@
+{
+    "character_name": "Abigail",
+    "moves_vt1": [
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 3,
+                "recovery": 10,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 7,
+                "on_hit": 8
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 3,
+                "recovery": 18,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 5,
+                "on_hit": 7
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 19,
+                "on_hit": 21
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (crumple)"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 4,
+                "recovery": 25,
+                "startup": 20
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 0
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 22,
+                "on_hit": 25
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 3,
+                "recovery": 12,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 10,
+                "on_hit": 11
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": 3,
+                "recovery": 18,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 0,
+                "on_hit": 2
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 14,
+                "on_hit": 16
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": 29,
+                "startup": 18
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 18,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 3,
+                "recovery": 12,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 2
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 7,
+                "on_hit": 8
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 4,
+                "recovery": 18,
+                "startup": 13
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 12,
+                "on_hit": 17
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)",
+                "Forces stand"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": 35,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -18,
+                "on_hit": -13
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 15,
+                "on_hit": 20
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 2,
+                "recovery": 12,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 5
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 8,
+                "on_hit": 11
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 2,
+                "recovery": 21,
+                "startup": 12
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 13,
+                "on_hit": 16
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V*"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)",
+                "Only possible during 1st attack"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 6,
+                "recovery": 32,
+                "startup": 16
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HK",
+            "projectile_nullification": false,
+            "properties": "High/Low",
+            "recovery": {
+                "on_block": -14,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 16,
+                "on_hit": 25
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 14
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Causes blowback knockdown on mid-air hit"
+            ],
+            "damage": 110,
+            "frame": {
+                "active": 6,
+                "recovery": null,
+                "startup": 12
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Causes knockdown on airborne hit"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 14
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Diagonal Jumping HK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Triggers Crush Counter  (crumple)",
+                "Armor from 5F to 14F (1 hit)"
+            ],
+            "damage": 115,
+            "frame": {
+                "active": 4,
+                "recovery": 25,
+                "startup": 20
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 0
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Uses 600F V-Gauge Timer",
+                "Release the button between 24F - 39F to perform",
+                "Armor from 5F to active frame 3F (1 hit)"
+            ],
+            "damage": 115,
+            "frame": {
+                "active": 4,
+                "recovery": 25,
+                "startup": 30
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HP (LV2)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Uses 600F V-Gauge Timer",
+                "Armor from 5F to 39F (1 hit)",
+                "Armor from 40F to 44F (100 hits)",
+                "During guard break +18F"
+            ],
+            "damage": 115,
+            "frame": {
+                "active": 4,
+                "recovery": 25,
+                "startup": 45
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HP (LV3)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": "GB",
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "VS"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (crumple)",
+                "Armor from 5F to 6F (1 hit)"
+            ],
+            "damage": 103,
+            "frame": {
+                "active": 5,
+                "recovery": 35,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -18,
+                "on_hit": -13
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "VS"
+            ],
+            "comments": [
+                "Uses 600F V-Gauge Timer",
+                "Release the button between 16F - 34F to perform",
+                "Armor from 5F to active frame 3F (1 hit)"
+            ],
+            "damage": 103,
+            "frame": {
+                "active": 5,
+                "recovery": 35,
+                "startup": 21
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HP (LV2)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -18,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "VS"
+            ],
+            "comments": [
+                "Uses 600F V-Gauge Timer",
+                "Armor from 5F to 34F (1 hit)",
+                "Armor from 35F to 39F (100 hits)",
+                "During guard break +1F"
+            ],
+            "damage": 103,
+            "frame": {
+                "active": 5,
+                "recovery": 35,
+                "startup": 40
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HP (LV3)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": "GB",
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Active frame 1F only will not hit grounded opponents",
+                "Causes knockdown on airborne hit",
+                "On the ground hit possible only for active frame 3F"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 3,
+                "recovery": 23,
+                "startup": 21
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Abi Hammer",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": 18,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Abi Lift",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 4
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 17,
+                "on_hit": 20
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Can nullify projectiles (gain 30 CA gauge upon absorption)",
+                "Causes blowback knockdown on mid-air hit"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Abi Blaster",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": -3
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 19,
+                "on_hit": 22
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 11,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Vroom Vroom",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 5,
+                "on_hit": 6
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 3,
+                "recovery": 9,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Bang Bang",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 4,
+                "on_hit": 5
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 2,
+                "recovery": 28,
+                "startup": 17
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Abi Twist",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 14,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "VS"
+            ],
+            "comments": [
+                "Will not hit crouching opponents",
+                "Armor from frame 5F (1 hit)"
+            ],
+            "damage": 103,
+            "frame": {
+                "active": 5,
+                "recovery": 18,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Abi Lift",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 4
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "VS"
+            ],
+            "comments": [
+                "Uses 600F V-Gauge Timer",
+                "Will not hit crouching opponents",
+                "Move will be performed if the button is released between 17F - 30F",
+                "Armor from 5F to the active frame (1 hit)"
+            ],
+            "damage": 103,
+            "frame": {
+                "active": 5,
+                "recovery": 18,
+                "startup": 22
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Abi Lift",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "VS"
+            ],
+            "comments": [
+                "Uses 600F V-Gauge Timer",
+                "Will not hit crouching opponents",
+                "Armor from 5F to 30F (1 hit)",
+                "Armor from 31F to 34F (100 hits)",
+                "During guard break +13F"
+            ],
+            "damage": 103,
+            "frame": {
+                "active": 5,
+                "recovery": 18,
+                "startup": 35
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Abi Lift",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": "GB",
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "VS"
+            ],
+            "comments": [
+                "Can nullify projectiles (2 hits, gain 30 CA gauge upon absorption)",
+                "Causes blowback knockdown on mid-air hit"
+            ],
+            "damage": 103,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Abi Blaster",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": -3
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "VS"
+            ],
+            "comments": [
+                "Uses 600F V-Gauge Timer",
+                "Can reflect projectiles (up to EX)",
+                "Causes blowback knockdown on mid-air hit",
+                "Move will be performed if the button is released between 14F - 29F",
+                "Armor from 5F to the active frame (1 hit)"
+            ],
+            "damage": 103,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 17
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Abi Blaster",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": -3
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "VS"
+            ],
+            "comments": [
+                "Uses 600F V-Gauge Timer",
+                "Can reflect projectiles (all projectiles, CA included)",
+                "Blowback knockdown on hit",
+                "Armor from 5F to 29F (1 hit)",
+                "Armor from 30F to 31F (100 hits)",
+                "During guard break +9F"
+            ],
+            "damage": 103,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 32
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Abi Blaster",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": "GB",
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "VS"
+            ],
+            "comments": [
+                "Knock back amount changes depending on ground or air hit"
+            ],
+            "damage": 103,
+            "frame": {
+                "active": 2,
+                "recovery": 28,
+                "startup": 17
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Abi Twist",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 140,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                80
+            ],
+            "name": "Red Leaf",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 170,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 130,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                80
+            ],
+            "name": "Hit & Run",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 170,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can counter standing and mid-air only attacks"
+            ],
+            "damage": null,
+            "frame": {
+                "active": 10,
+                "recovery": 36,
+                "startup": 3
+            },
+            "meter_gain": null,
+            "name": "Hungabee High",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can counter crouching attacks only"
+            ],
+            "damage": null,
+            "frame": {
+                "active": 10,
+                "recovery": 36,
+                "startup": 3
+            },
+            "meter_gain": null,
+            "name": "Hungabee Low",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA"
+            ],
+            "comments": [
+                "1F - 11F  attack invincibility"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 8,
+                "recovery": 20,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "Hungabee (upon successful parry)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 22
+            },
+            "stun": 70,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "V-Gauge Timer + 3000F",
+                "1F  full invincibility",
+                "Increases damage for normal and unique moves",
+                "HP, D+HP, F+HP, B+HP can be button held"
+            ],
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 5,
+                "startup": 1
+            },
+            "meter_gain": null,
+            "name": "Max Power",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 29F  attack & projectile invincibility",
+                "Recover 200 stun upon activation"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 2,
+                "recovery": 26,
+                "startup": 17
+            },
+            "meter_gain": null,
+            "name": "Ontario Drop",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible on the first and last hit"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 2,
+                "recovery": 31,
+                "startup": 14
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "L Abigail Punch",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -16,
+                "on_hit": "D"
+            },
+            "stun": 120,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Can only be performed from L Abigail Punch",
+                "Only possible for the final part"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": null
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "L Abigail Punch Rapid Button Press",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible on the first and last hit"
+            ],
+            "damage": 110,
+            "frame": {
+                "active": 2,
+                "recovery": 31,
+                "startup": 20
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "M Abigail Punch",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -19,
+                "on_hit": "D"
+            },
+            "stun": 120,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Can only be performed from M Abigail Punch",
+                "Only possible for the final part"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": null
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "M Abigail Punch Rapid Button Press",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible on the first and last hit"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 2,
+                "recovery": 31,
+                "startup": 16
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "H Abigail Punch",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -16,
+                "on_hit": "D"
+            },
+            "stun": 120,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Can only be performed from H Abigail Punch",
+                "Only possible for the final part"
+            ],
+            "damage": 140,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": null
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "H Abigail Punch Rapid Button Press",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Armor from 3F to 15F (1 hit)"
+            ],
+            "damage": 140,
+            "frame": {
+                "active": 2,
+                "recovery": 38,
+                "startup": 14
+            },
+            "meter_gain": null,
+            "name": "EX Abigail Punch",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -23,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can only be performed from EX Abigail Punch on hit"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "EX Abigail Punch Rapid Button Press",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 7,
+                "recovery": 22,
+                "startup": 23
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "L Giant Flip",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 0,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - 28F",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 22,
+                "startup": 33
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "M Giant Flip",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - 33F",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 100,
+            "frame": {
+                "active": 6,
+                "recovery": 23,
+                "startup": 36
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "H Giant Flip",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - 30F",
+            "cancel_info": null,
+            "comments": [
+                "1F - 37F  projectile invincibility",
+                "Can hit a knocked down opponent"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 8,
+                "recovery": 24,
+                "startup": 9
+            },
+            "meter_gain": null,
+            "name": "EX Giant Flip",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can hit a knocked down opponent"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 6,
+                "recovery": 26,
+                "startup": 30
+            },
+            "meter_gain": null,
+            "name": "EX Giant Flip Rapid Button Press",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 180,
+            "frame": {
+                "active": 2,
+                "recovery": 60,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "L Abigail Smash",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 250,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 200,
+            "frame": {
+                "active": 2,
+                "recovery": 60,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "M Abigail Smash",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 250,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 220,
+            "frame": {
+                "active": 2,
+                "recovery": 60,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "H Abigail Smash",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 250,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": 2,
+                "recovery": 60,
+                "startup": 6
+            },
+            "meter_gain": null,
+            "name": "EX Abigail Smash",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": 124
+            },
+            "meter_gain": null,
+            "name": "Nitro Charge",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Armor from 5F while active (1 hit)",
+                "After 100F, Dynamite Punch will be performed"
+            ],
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": 100
+            },
+            "meter_gain": null,
+            "name": "Nitro Blitz",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 100,
+            "frame": {
+                "active": 3,
+                "recovery": 29,
+                "startup": 15
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Dynamite Punch",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "7F - 27F",
+            "cancel_info": null,
+            "comments": [
+                "8F - 23F  projectile invincibility",
+                "Gains armor from 12F - 22F (1 hit)",
+                "Causes blowback knockdown on an airborne opponent if the flip portion hits",
+                "First hit causes hard knockdown (becomes blowback knockdown if the upper portion of the hitbox connects)",
+                "The 2nd hit can connect against grounded opponents",
+                "Active frame 2F of the 2nd hit only hits downed opponents"
+            ],
+            "damage": 150,
+            "frame": {
+                "active": 7,
+                "recovery": 32,
+                "startup": 23
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Avalanche Press",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -12,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 9F  throw invincibility"
+            ],
+            "damage": 200,
+            "frame": {
+                "active": 2,
+                "recovery": 60,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                80
+            ],
+            "name": "Bay Area Sunrise",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 250,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can counter standing and mid-air only attacks"
+            ],
+            "damage": null,
+            "frame": {
+                "active": 10,
+                "recovery": 36,
+                "startup": 3
+            },
+            "meter_gain": null,
+            "name": "Hungabee High",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can counter crouching attacks only"
+            ],
+            "damage": null,
+            "frame": {
+                "active": 10,
+                "recovery": 36,
+                "startup": 3
+            },
+            "meter_gain": null,
+            "name": "Hungabee Low",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA"
+            ],
+            "comments": [
+                "1F - 11F  attack invincibility"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 8,
+                "recovery": 20,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "Hungabee (upon successful parry)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 22
+            },
+            "stun": 70,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": 37
+            },
+            "meter_gain": null,
+            "name": "Drop Back",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Armor from 3F while active (2 hits)",
+                "After 100F, EX Dynamite Punch will be performed"
+            ],
+            "damage": 20,
+            "frame": {
+                "active": 8,
+                "recovery": null,
+                "startup": 39
+            },
+            "meter_gain": null,
+            "name": "EX Nitro Charge",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 40,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Armor from 1F to 14F (1 hit)"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 3,
+                "recovery": 29,
+                "startup": 15
+            },
+            "meter_gain": null,
+            "name": "EX Dynamite Punch",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "4F - 25F  projectile invincibility",
+                "Armor from 5F to 20F (1 hit)",
+                "Causes blowback knockdown on an airborne opponent if the flip portion hits"
+            ],
+            "damage": 170,
+            "frame": {
+                "active": 7,
+                "recovery": 34,
+                "startup": 21
+            },
+            "meter_gain": null,
+            "name": "EX Avalanche Press",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -11,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 9F  throw invincibility"
+            ],
+            "damage": 240,
+            "frame": {
+                "active": 2,
+                "recovery": 60,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "EX Bay Area Sunrise",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 300,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Ignores armor, counter breaks"
+            ],
+            "damage": null,
+            "frame": {
+                "active": 10,
+                "recovery": 36,
+                "startup": 2
+            },
+            "meter_gain": null,
+            "name": "EX Hungabee",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S"
+            ],
+            "comments": [
+                "1F - 5F  full invincibility",
+                "Motion changes for upper/lower hit"
+            ],
+            "damage": 40,
+            "frame": {
+                "active": 8,
+                "recovery": 20,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "EX Hungabee (upon successful parry)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 27
+            },
+            "stun": 70,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Armor while active (3 hits)",
+                "After 100F, EX Dynamite Punch will be performed"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 8,
+                "recovery": null,
+                "startup": 28
+            },
+            "meter_gain": null,
+            "name": "EX Nitro Charge",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 40,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 7F  full invincibility",
+                "When canceling from Abigail Punch, startup 1+0F"
+            ],
+            "damage": 350,
+            "frame": {
+                "active": 4,
+                "recovery": 118,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "Abigail Special",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -95,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "Critical Art",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        }
+    ],
+    "moves_vt2": [
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 3,
+                "recovery": 10,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 7,
+                "on_hit": 8
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 3,
+                "recovery": 18,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 5,
+                "on_hit": 7
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 19,
+                "on_hit": 21
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (crumple)"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 4,
+                "recovery": 25,
+                "startup": 20
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 0
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 22,
+                "on_hit": 25
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 3,
+                "recovery": 12,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 10,
+                "on_hit": 11
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": 3,
+                "recovery": 18,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 0,
+                "on_hit": 2
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 14,
+                "on_hit": 16
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": 29,
+                "startup": 18
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 18,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 3,
+                "recovery": 12,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 2
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 7,
+                "on_hit": 8
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 4,
+                "recovery": 18,
+                "startup": 13
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 12,
+                "on_hit": 17
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)",
+                "Forces stand"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": 35,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -18,
+                "on_hit": -13
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 15,
+                "on_hit": 20
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 2,
+                "recovery": 12,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 5
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 8,
+                "on_hit": 11
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 2,
+                "recovery": 21,
+                "startup": 12
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 13,
+                "on_hit": 16
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V*"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)",
+                "Only possible during 1st attack"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 6,
+                "recovery": 32,
+                "startup": 16
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HK",
+            "projectile_nullification": false,
+            "properties": "High/Low",
+            "recovery": {
+                "on_block": -14,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 16,
+                "on_hit": 25
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 14
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Causes blowback knockdown on mid-air hit"
+            ],
+            "damage": 110,
+            "frame": {
+                "active": 6,
+                "recovery": null,
+                "startup": 12
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Causes knockdown on airborne hit"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 14
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Active frame 1F only will not hit grounded opponents",
+                "Causes knockdown on airborne hit",
+                "On the ground hit possible only for active frame 3F"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 3,
+                "recovery": 23,
+                "startup": 21
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Abi Hammer",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": 18,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Abi Lift",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 4
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 17,
+                "on_hit": 20
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Can nullify projectiles (gain 30 CA gauge upon absorption)",
+                "Causes blowback knockdown on mid-air hit"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Abi Blaster",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": -3
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 19,
+                "on_hit": 22
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 11,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Vroom Vroom",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 5,
+                "on_hit": 6
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 3,
+                "recovery": 9,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Bang Bang",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 4,
+                "on_hit": 5
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 2,
+                "recovery": 28,
+                "startup": 17
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Abi Twist",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 14,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 140,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                80
+            ],
+            "name": "Red Leaf",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 170,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 130,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                80
+            ],
+            "name": "Hit & Run",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 170,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can counter standing and mid-air only attacks"
+            ],
+            "damage": null,
+            "frame": {
+                "active": 10,
+                "recovery": 36,
+                "startup": 3
+            },
+            "meter_gain": null,
+            "name": "Hungabee Hight",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can counter crouching attacks only"
+            ],
+            "damage": null,
+            "frame": {
+                "active": 10,
+                "recovery": 36,
+                "startup": 3
+            },
+            "meter_gain": null,
+            "name": "Hungabee Low",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA"
+            ],
+            "comments": [
+                "1F - 11F  attack invincibility"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 8,
+                "recovery": 20,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "Hungabee (upon successful parry)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 22
+            },
+            "stun": 70,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "V-Gauge Timer + 4500F",
+                "1F  full invincibility",
+                "Gains the special move Metro Crash while active"
+            ],
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 5,
+                "startup": 1
+            },
+            "meter_gain": null,
+            "name": "Hybrid Charge",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 29F  attack & projectile invincibility",
+                "Recover 200 stun upon activation"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 2,
+                "recovery": 26,
+                "startup": 17
+            },
+            "meter_gain": null,
+            "name": "Ontario Drop",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "Only possible on the first and last hit",
+                "Only possible for the final part"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 2,
+                "recovery": 31,
+                "startup": 14
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "L Abigail Punch",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -16,
+                "on_hit": "D"
+            },
+            "stun": 120,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 10,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "Can only be performed from L Abigail Punch",
+                "Only possible for the final part"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": null
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "L Abigail Punch Rapid Button Press",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "Only possible on the first and last hit",
+                "Only possible for the final part"
+            ],
+            "damage": 110,
+            "frame": {
+                "active": 2,
+                "recovery": 31,
+                "startup": 20
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "M Abigail Punch",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -19,
+                "on_hit": "D"
+            },
+            "stun": 120,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 7,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "Can only be performed from M Abigail Punch",
+                "Only possible for the final part"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": null
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "M Abigail Punch Rapid Button Press",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "Only possible on the first and last hit",
+                "Only possible for the final part"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 2,
+                "recovery": 31,
+                "startup": 16
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "H Abigail Punch",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -16,
+                "on_hit": "D"
+            },
+            "stun": 120,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 10,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "Can only be performed from H Abigail Punch",
+                "Only possible for the final part"
+            ],
+            "damage": 140,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": null
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "H Abigail Punch Rapid Button Press",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V*"
+            ],
+            "comments": [
+                "Armor from 3F to 15F (1 hit)",
+                "Only possible for the final part"
+            ],
+            "damage": 140,
+            "frame": {
+                "active": 2,
+                "recovery": 38,
+                "startup": 14
+            },
+            "meter_gain": null,
+            "name": "EXAbigail Punch",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -23,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 10,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V*"
+            ],
+            "comments": [
+                "Only possible for the final part",
+                "Can only be performed from EX Abigail Punch on hit"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "EXAbigail Punch Rapid Button Press",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 7,
+                "recovery": 22,
+                "startup": 23
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "L Giant Flip",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 0,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - 28F",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 22,
+                "startup": 33
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "M Giant Flip",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - 33F",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 100,
+            "frame": {
+                "active": 6,
+                "recovery": 23,
+                "startup": 36
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "H Giant Flip",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - 30F",
+            "cancel_info": null,
+            "comments": [
+                "1F - 37F  projectile invincibility",
+                "Can hit a knocked down opponent"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 8,
+                "recovery": 24,
+                "startup": 9
+            },
+            "meter_gain": null,
+            "name": "EXGiant Flip",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can hit a knocked down opponent"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 6,
+                "recovery": 26,
+                "startup": 30
+            },
+            "meter_gain": null,
+            "name": "EXGiant Flip Rapid Button Press",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 180,
+            "frame": {
+                "active": 2,
+                "recovery": 60,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "L Abigail Smash",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 250,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 200,
+            "frame": {
+                "active": 2,
+                "recovery": 60,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "M Abigail Smash",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 250,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 220,
+            "frame": {
+                "active": 2,
+                "recovery": 60,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "H Abigail Smash",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 250,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": 2,
+                "recovery": 60,
+                "startup": 6
+            },
+            "meter_gain": null,
+            "name": "EXAbigail Smash",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": 124
+            },
+            "meter_gain": null,
+            "name": "Nitro Charge",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Armor from 5F while active (1 hit)",
+                "After 100F, Dynamite Punch will be performed"
+            ],
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": 100
+            },
+            "meter_gain": null,
+            "name": "Nitro Blitz",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 100,
+            "frame": {
+                "active": 3,
+                "recovery": 29,
+                "startup": 15
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Dynamite Punch",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 16,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": "7F - 27F",
+            "cancel_info": null,
+            "comments": [
+                "8F - 23F  projectile invincibility",
+                "Gains armor from 12F - 22F (1 hit)",
+                "Causes blowback knockdown on an airborne opponent if the flip portion hits",
+                "First hit causes hard knockdown (becomes blowback knockdown if the upper portion of the hitbox connects)",
+                "The 2nd hit can connect against grounded opponents",
+                "Active frame 2F of the 2nd hit only hits downed opponents"
+            ],
+            "damage": 150,
+            "frame": {
+                "active": 7,
+                "recovery": 32,
+                "startup": 23
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Avalanche Press",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -12,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 9F  throw invincibility"
+            ],
+            "damage": 200,
+            "frame": {
+                "active": 2,
+                "recovery": 60,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                80
+            ],
+            "name": "Bay Area Sunrise",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 250,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can counter standing and mid-air only attacks"
+            ],
+            "damage": null,
+            "frame": {
+                "active": 10,
+                "recovery": 36,
+                "startup": 3
+            },
+            "meter_gain": null,
+            "name": "Hungabee High",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can counter crouching attacks only"
+            ],
+            "damage": null,
+            "frame": {
+                "active": 10,
+                "recovery": 36,
+                "startup": 3
+            },
+            "meter_gain": null,
+            "name": "Hungabee Low",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA"
+            ],
+            "comments": [
+                "1F - 11F  attack invincibility"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 8,
+                "recovery": 20,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "Hungabee (upon successful parry)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 22
+            },
+            "stun": 70,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": null,
+                "startup": 37
+            },
+            "meter_gain": null,
+            "name": "Drop Back",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Armor from 3F while active (2 hits)",
+                "After 100F, EX Dynamite Punch will be performed"
+            ],
+            "damage": 20,
+            "frame": {
+                "active": 8,
+                "recovery": null,
+                "startup": 39
+            },
+            "meter_gain": null,
+            "name": "EX Nitro Charge",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 40,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Armor from 1F to 14F (1 hit)"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 3,
+                "recovery": 29,
+                "startup": 15
+            },
+            "meter_gain": null,
+            "name": "EX Dynamite Punch",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 16,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "4F - 25F  projectile invincibility",
+                "Armor from 5F to 20F (1 hit)",
+                "Causes blowback knockdown on an airborne opponent if the flip portion hits"
+            ],
+            "damage": 170,
+            "frame": {
+                "active": 7,
+                "recovery": 34,
+                "startup": 21
+            },
+            "meter_gain": null,
+            "name": "EX Avalanche Press",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -11,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 9F  throw invincibility"
+            ],
+            "damage": 240,
+            "frame": {
+                "active": 2,
+                "recovery": 60,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "EX Bay Area Sunrise",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 300,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Ignores armor, counter breaks"
+            ],
+            "damage": null,
+            "frame": {
+                "active": 10,
+                "recovery": 36,
+                "startup": 2
+            },
+            "meter_gain": null,
+            "name": "EX Hungabee ",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S"
+            ],
+            "comments": [
+                "1F - 5F  full invincibility",
+                "Motion changes for upper/lower hit"
+            ],
+            "damage": 40,
+            "frame": {
+                "active": 8,
+                "recovery": 20,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "EX Hungabee (upon successful parry)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 27
+            },
+            "stun": 70,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Uses 1500F V-Gauge Timer",
+                "Release the button by 28F to perform",
+                "Gains armor from 2F through the duration of the hold (99 hits)",
+                "Note: For fastest release, from 2F - 10F",
+                "Can be canceled from special moves that are V-Trigger cancellable"
+            ],
+            "damage": 150,
+            "frame": {
+                "active": 10,
+                "recovery": 18,
+                "startup": 24
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Metro Crash",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Uses 1500F V-Gauge Timer",
+                "Release the button between 29F - 52F to perform",
+                "Gains armor from 2F through the duration of the hold (99 hits)",
+                "Note: For fastest release, from 2F - 29F",
+                "Can be canceled from special moves that are V-Trigger cancellable"
+            ],
+            "damage": 200,
+            "frame": {
+                "active": 13,
+                "recovery": 17,
+                "startup": 43
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Metro Crash (LV2)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 5,
+                "on_hit": "D"
+            },
+            "stun": 250,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Uses 1500F V-Gauge Timer",
+                "Gains armor from 2F - 54F (99 hits)",
+                "Gains armor from 55F - 82F (2 hits)",
+                "Can be canceled from special moves that are V-Trigger cancellable",
+                "During guard break +20F"
+            ],
+            "damage": 250,
+            "frame": {
+                "active": 16,
+                "recovery": 31,
+                "startup": 67
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "Metro Crash (LV3)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": "GB",
+                "on_hit": "D"
+            },
+            "stun": 300,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 7F  full invincibility",
+                "When canceling from Abigail Punch, startup 1+0F"
+            ],
+            "damage": 350,
+            "frame": {
+                "active": 4,
+                "recovery": 118,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "Abigail Special",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -95,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "Critical Art",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        }
+    ]
+}

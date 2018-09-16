@@ -1,0 +1,3302 @@
+{
+    "character_name": "Blanka",
+    "moves_vt1": [
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 8,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 5
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 4,
+                "on_hit": 7
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 2,
+                "recovery": 15,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 0,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 10,
+                "on_hit": 13
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Triggers Crush Counter (+15F)"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 2,
+                "recovery": 24,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 0
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 6,
+                "on_hit": 12
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 4,
+                "recovery": 8,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 6,
+                "on_hit": 7
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 4,
+                "recovery": 13,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 13,
+                "on_hit": 17
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (D)",
+                "Forces stand"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 5,
+                "recovery": 22,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -5,
+                "on_hit": 3
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 14,
+                "on_hit": 22
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 3,
+                "recovery": 7,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 4,
+                "on_hit": 6
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 4,
+                "recovery": 18,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 12,
+                "on_hit": 15
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (D)",
+                "Forces stand"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 3,
+                "recovery": 20,
+                "startup": 13
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 1
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 11,
+                "on_hit": 15
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S*",
+                "V"
+            ],
+            "comments": [
+                "Only Electric Thunder can be special move canceled"
+            ],
+            "damage": 20,
+            "frame": {
+                "active": 3,
+                "recovery": 8,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 6
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 2,
+                "recovery": 16,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -1,
+                "on_hit": 5
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 5,
+                "on_hit": 11
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (D)"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 3,
+                "recovery": 27,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -12,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 11,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 3,
+                "recovery": null,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Diagonal Jumping HP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Vertical Jumping HP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 21
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Rock Crusher",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 2
+            },
+            "stun": 100,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": 10,
+                "recovery": 27,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Amazon River Run",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -16,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 6,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 5,
+                "recovery": 36,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Raging Bash (2)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -19,
+                "on_hit": "D"
+            },
+            "stun": 70,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 15,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": "1F - ",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 26
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Raging Bash (3)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "10F - 19F",
+            "cancel_info": null,
+            "comments": null,
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 30,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Supprise Forward",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "12F - 26F",
+            "cancel_info": null,
+            "comments": null,
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 34,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Supprise Back",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 130,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "Wild Fang",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 130,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "Jungle Wheel",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 200,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Continue to hold the directional button down to increase the move length by a max of 30F"
+            ],
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 56,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Coward Crouch",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 4,
+                "recovery": 24,
+                "startup": 13
+            },
+            "meter_gain": null,
+            "name": "Wild Lift",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": 13,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": "7F - 45F",
+            "cancel_info": null,
+            "comments": [
+                "50 V-Gauge meter gain on hit for a regular jump attack from Raid Jump."
+            ],
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 49,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Raid Jump",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "V-Gauge Timer + 4000F",
+                "1F  full invincibility",
+                "While active, the applicable special moves become stronger",
+                "Gains the special move Ground Shave Rolling while active"
+            ],
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 6,
+                "startup": 1
+            },
+            "meter_gain": null,
+            "name": "Jungle Dynamo",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - 31F",
+            "cancel_info": null,
+            "comments": [
+                "1F - 30F  attack & projectile invincibility",
+                "Recover 200 stun upon activation"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 23,
+                "startup": 16
+            },
+            "meter_gain": null,
+            "name": "Quick Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - 36F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible during startup hit"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 22,
+                "recovery": 12,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "L Rolling Attack",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -21,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - 46F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible during startup hit"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 30,
+                "recovery": 15,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "M Rolling Attack",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -21,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - 41F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible during startup hit"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 29,
+                "recovery": 27,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "H Rolling Attack",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -21,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - 40F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Uses 1500F V-Gauge Timer",
+                "1F - 41F  projectile invincibility",
+                "Only possible during startup hit"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 32,
+                "recovery": 10,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Rolling Attack",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -36,
+                "on_hit": "D"
+            },
+            "stun": 180,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - 44F",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 100,
+            "frame": {
+                "active": 31,
+                "recovery": 10,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "EX Rolling Attack",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -21,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - 53F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible during startup hit"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 21,
+                "recovery": 42,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "L Vertical Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -36,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "5F - 54F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible during startup hit"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 16,
+                "recovery": 52,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "M Vertical Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -36,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "5F - 50F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible during startup hit"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 16,
+                "recovery": 59,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "H Vertical Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -34,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "5F - 46F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Uses 1500F V-Gauge Timer",
+                "1F - 16F  full invincibility",
+                "Subject to counter hit during move duration",
+                "Only possible during 1st attack"
+            ],
+            "damage": 140,
+            "frame": {
+                "active": 16,
+                "recovery": 69,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Vertical Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -36,
+                "on_hit": "D"
+            },
+            "stun": 180,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "5F - 53F",
+            "cancel_info": null,
+            "comments": [
+                "1F - 16F  full invincibility",
+                "Subject to counter hit during move duration"
+            ],
+            "damage": 150,
+            "frame": {
+                "active": 16,
+                "recovery": 69,
+                "startup": 5
+            },
+            "meter_gain": null,
+            "name": "EX Vertical Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -30,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "21F - ",
+            "cancel_info": null,
+            "comments": [
+                "21F - Until landing  projectile invincibility"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": "Until landing",
+                "recovery": 11,
+                "startup": 27
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "L Back Step Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "23F - ",
+            "cancel_info": null,
+            "comments": [
+                "22F - Until landing  projectile invincibility"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": "Until landing",
+                "recovery": 11,
+                "startup": 29
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "M Back Step Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "25F - ",
+            "cancel_info": null,
+            "comments": [
+                "25F - Until landing  projectile invincibility"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": "Until landing",
+                "recovery": 11,
+                "startup": 31
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "H Back Step Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "17F - ",
+            "cancel_info": null,
+            "comments": [
+                "Uses 1500F V-Gauge Timer",
+                "Can cross-up",
+                "3F - 17F  attack invincibility",
+                "1F\uff5e\u7740\u5730\u307e\u3067  projectile invincibility"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": "Until landing",
+                "recovery": 11,
+                "startup": 21
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "Back Step Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "22F - ",
+            "cancel_info": null,
+            "comments": [
+                "3F - 21F  attack invincibility",
+                "1F\uff5e\u7740\u5730\u307e\u3067  projectile invincibility"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": "Until landing",
+                "recovery": 5,
+                "startup": 27
+            },
+            "meter_gain": null,
+            "name": "EX Back Step Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": 10,
+                "recovery": 17,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Electric Thunder",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Uses 1500F V-Gauge Timer"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 12,
+                "recovery": 12,
+                "startup": 13
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Electric Thunder",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": "D"
+            },
+            "stun": 230,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 120,
+            "frame": {
+                "active": 10,
+                "recovery": 14,
+                "startup": 10
+            },
+            "meter_gain": null,
+            "name": "EX Electric Thunder",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 6,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 16,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": "16F - 37F",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 170,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 40
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "L Wild Hunt",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "21F - 41F",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 180,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 43
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "M Wild Hunt",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "21F - 43F",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 190,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 46
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "H Wild Hunt",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "14F - 33F",
+            "cancel_info": null,
+            "comments": [
+                "3F - 36F  projectile invincibility"
+            ],
+            "damage": 190,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 36
+            },
+            "meter_gain": null,
+            "name": "EX Wild Hunt",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "5F - 29F",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Uses 1500F V-Gauge Timer",
+                "5F - 56F  projectile invincibility"
+            ],
+            "damage": 150,
+            "frame": {
+                "active": 31,
+                "recovery": 25,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Ground Shave Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": "D"
+            },
+            "stun": 250,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "5F - 29F",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "5F - 134F  projectile invincibility",
+                "Move will be performed after charging for 90F or more."
+            ],
+            "damage": 260,
+            "frame": {
+                "active": 97,
+                "recovery": 10,
+                "startup": 20
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "Ground Shave Rolling (Charge Attack)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": "GB",
+                "on_hit": "D"
+            },
+            "stun": 360,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 10F  full invincibility"
+            ],
+            "damage": 340,
+            "frame": {
+                "active": 3,
+                "recovery": null,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "Dynamic Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "Critical Art",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 10F  full invincibility"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 5,
+                "recovery": 60,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "Dynamic Rolling (1st Hit Blocked or Miss)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -37,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "Critical Art",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        }
+    ],
+    "moves_vt2": [
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 8,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 5
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 4,
+                "on_hit": 7
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 2,
+                "recovery": 15,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 0,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 10,
+                "on_hit": 13
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Triggers Crush Counter (+15F)"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 2,
+                "recovery": 24,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 0
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 6,
+                "on_hit": 12
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 4,
+                "recovery": 8,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 6,
+                "on_hit": 7
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 4,
+                "recovery": 13,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 13,
+                "on_hit": 17
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (D)",
+                "Forces stand"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 5,
+                "recovery": 22,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -5,
+                "on_hit": 3
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 14,
+                "on_hit": 22
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 3,
+                "recovery": 7,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 4,
+                "on_hit": 6
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 4,
+                "recovery": 18,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 12,
+                "on_hit": 15
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (D)",
+                "Forces stand"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 3,
+                "recovery": 20,
+                "startup": 13
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 1
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 11,
+                "on_hit": 15
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S*",
+                "V"
+            ],
+            "comments": [
+                "Only Electric Thunder can be special move canceled"
+            ],
+            "damage": 20,
+            "frame": {
+                "active": 3,
+                "recovery": 8,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 6
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 2,
+                "recovery": 16,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -1,
+                "on_hit": 5
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 5,
+                "on_hit": 11
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (D)"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 3,
+                "recovery": 27,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -12,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 11,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 3,
+                "recovery": null,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Diagonal Jumping HP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Vertical Jumping HP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 21
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Rock Crusher",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 2
+            },
+            "stun": 100,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": 10,
+                "recovery": 27,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Amazon River Run",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -16,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 6,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 5,
+                "recovery": 36,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Raging Bash (2)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -19,
+                "on_hit": "D"
+            },
+            "stun": 70,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 15,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": "1F - ",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 26
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Raging Bash (3)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "10F - 19F",
+            "cancel_info": null,
+            "comments": null,
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 30,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Supprise Forward",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "12F - 26F",
+            "cancel_info": null,
+            "comments": null,
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 34,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Supprise Back",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 130,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "Wild Fang",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 130,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "Jungle Wheel",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 200,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Continue to hold the directional button down to increase the move length by a max of 30F"
+            ],
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 56,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Coward Crouch",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 4,
+                "recovery": 24,
+                "startup": 13
+            },
+            "meter_gain": null,
+            "name": "Wild Lift",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": 13,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": "7F - 45F",
+            "cancel_info": null,
+            "comments": [
+                "50 V-Gauge meter gain on hit for a regular jump attack from Raid Jump."
+            ],
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 49,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Raid Jump",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "V-Gauge Timer + 3000F",
+                "1F  full invincibility",
+                "While active, can perform Rolling Cannon from Rolling-type special moves"
+            ],
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 8,
+                "startup": 1
+            },
+            "meter_gain": null,
+            "name": "Lightning Beast",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - 31F",
+            "cancel_info": null,
+            "comments": [
+                "1F - 30F  attack & projectile invincibility",
+                "Recover 200 stun upon activation"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 23,
+                "startup": 16
+            },
+            "meter_gain": null,
+            "name": "Quick Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - 36F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible during startup hit"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 22,
+                "recovery": 12,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "L Rolling Attack",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -21,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - 46F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible during startup hit"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 30,
+                "recovery": 15,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "M Rolling Attack",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -21,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - 41F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible during startup hit"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 29,
+                "recovery": 27,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "H Rolling Attack",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -21,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - 44F",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 100,
+            "frame": {
+                "active": 31,
+                "recovery": 10,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "EX Rolling Attack",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -21,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - 53F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible during startup hit"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 21,
+                "recovery": 42,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "L Vertical Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -36,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "5F - 54F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible during startup hit"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 16,
+                "recovery": 52,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "M Vertical Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -36,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "5F - 50F",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Only possible during startup hit"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 16,
+                "recovery": 59,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "H Vertical Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -34,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "5F - 53F",
+            "cancel_info": null,
+            "comments": [
+                "1F - 16F  full invincibility",
+                "Subject to counter hit during move duration"
+            ],
+            "damage": 150,
+            "frame": {
+                "active": 16,
+                "recovery": 69,
+                "startup": 5
+            },
+            "meter_gain": null,
+            "name": "EX Vertical Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -30,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "21F - ",
+            "cancel_info": null,
+            "comments": [
+                "21F - Until landing  projectile invincibility"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": "Until landing",
+                "recovery": 11,
+                "startup": 27
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "L Back Step Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "23F - ",
+            "cancel_info": null,
+            "comments": [
+                "22F - Until landing  projectile invincibility"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": "Until landing",
+                "recovery": 11,
+                "startup": 29
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "M Back Step Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "25F - ",
+            "cancel_info": null,
+            "comments": [
+                "25F - Until landing  projectile invincibility"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": "Until landing",
+                "recovery": 11,
+                "startup": 31
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "H Back Step Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "22F - ",
+            "cancel_info": null,
+            "comments": [
+                "3F - 21F  attack invincibility",
+                "1F\uff5e\u7740\u5730\u307e\u3067  projectile invincibility"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": "Until landing",
+                "recovery": 5,
+                "startup": 27
+            },
+            "meter_gain": null,
+            "name": "EX Back Step Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": 10,
+                "recovery": 17,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Electric Thunder",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 120,
+            "frame": {
+                "active": 10,
+                "recovery": 14,
+                "startup": 10
+            },
+            "meter_gain": null,
+            "name": "EX Electric Thunder",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 6,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 16,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": "16F - 37F",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 170,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 40
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "L Wild Hunt",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "21F - 41F",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 180,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 43
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "M Wild Hunt",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "21F - 43F",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 190,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 46
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "H Wild Hunt",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "14F - 33F",
+            "cancel_info": null,
+            "comments": [
+                "3F - 36F  projectile invincibility"
+            ],
+            "damage": 190,
+            "frame": {
+                "active": 2,
+                "recovery": 30,
+                "startup": 36
+            },
+            "meter_gain": null,
+            "name": "EX Wild Hunt",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can be performed a maximum of 3 times from Rolling-type special moves",
+                "Uses V-Timer when performed from a combo",
+                "The first hit uses 1,000F, the second hit uses 150F, and the third hit uses 150F"
+            ],
+            "damage": 50,
+            "frame": {
+                "active": 20,
+                "recovery": 9,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Rolling Cannon",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 80,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 10F  full invincibility"
+            ],
+            "damage": 340,
+            "frame": {
+                "active": 3,
+                "recovery": null,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "Dynamic Rolling",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "Critical Art",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 10F  full invincibility"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 5,
+                "recovery": 60,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "Dynamic Rolling ((1st Hit Blocked or Miss)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -37,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "Critical Art",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        }
+    ]
+}

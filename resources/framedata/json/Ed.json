@@ -1,0 +1,2304 @@
+{
+    "character_name": "Ed",
+    "moves_vt1": [
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 8,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 5
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 16,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 9
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)",
+                "Value is the fastest startup"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 3,
+                "recovery": 21,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 2
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 3,
+                "recovery": 8,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 2
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 3,
+                "recovery": 15,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 4
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "10F - 23F",
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (+20F)"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 4,
+                "recovery": 22,
+                "startup": 15
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 2
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 8,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 5
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 12,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 5
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)",
+                "Forces stand",
+                "From active frame 2F"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 21,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -5,
+                "on_hit": 1
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 20,
+            "frame": {
+                "active": 2,
+                "recovery": 8,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": 0,
+                "on_hit": 2
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 2,
+                "recovery": 17,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 1
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 9,
+                "recovery": 20,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -10,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Causes knockdown on mid-air hit"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 6,
+                "recovery": null,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 130,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "Psycho Blow",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 140,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "Cheat & Smash",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Will not hit airborne opponents",
+                "Value is the fastest startup",
+                "If the Snatcher hits, Ed automatically closes the distance with a body blow"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 40,
+                "startup": 21
+            },
+            "meter_gain": null,
+            "name": "Psycho Snatcher - Ground",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Will not hit airborne opponents",
+                "If the Snatcher hits, Ed launches the opponent while bringing them closer, if it's blocked, he brings them closer on the ground"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 6,
+                "recovery": 40,
+                "startup": 35
+            },
+            "meter_gain": null,
+            "name": "Psycho Snatcher - Ground (Hold Button)",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Will not hit grounded opponents",
+                "Value is the fastest startup",
+                "If the Snatcher hits, Ed automatically flies up to the opponent with a punch strike"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 4,
+                "recovery": 47,
+                "startup": 9
+            },
+            "meter_gain": null,
+            "name": "Psycho Snatcher - Air",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Will not hit grounded opponents",
+                "If the Snatcher hits, Ed slams the opponent into the ground and they'll bounce up"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 40,
+                "startup": 26
+            },
+            "meter_gain": null,
+            "name": "Psycho Snatcher - Air (Hold Button)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F  full invincibility",
+                "Press the forward direction to change the projectile's speed"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": null,
+                "recovery": 25,
+                "startup": 16
+            },
+            "meter_gain": null,
+            "name": "Psycho Cannon",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 25F  attack invincibility",
+                "Recover 200 stun upon activation"
+            ],
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 31,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Kill Step",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "No changes based on button strength"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 22,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                28
+            ],
+            "name": "Psycho Flicker",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 3
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Treated as a projectile"
+            ],
+            "damage": 50,
+            "frame": {
+                "active": 8,
+                "recovery": 16,
+                "startup": 11
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "Psycho Spark",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 1
+            },
+            "stun": 80,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Button strength changes projectile speed"
+            ],
+            "damage": 50,
+            "frame": {
+                "active": null,
+                "recovery": 39,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "Psycho Shoot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 100,
+            "frame": {
+                "active": null,
+                "recovery": 36,
+                "startup": 13
+            },
+            "meter_gain": null,
+            "name": "EX Psycho Shoot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 8,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Moves behind the opponent on hit and block",
+                "Crumple time is longer the closer the attack hits"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 12,
+                "recovery": 27,
+                "startup": 30
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Psycho Knuckle",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 100,
+            "frame": {
+                "active": 5,
+                "recovery": 33,
+                "startup": 16
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Psycho Upper",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -16,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 18F  full invincibility",
+                "Subject to counter hit during move duration"
+            ],
+            "damage": 140,
+            "frame": {
+                "active": 11,
+                "recovery": 32,
+                "startup": 16
+            },
+            "meter_gain": null,
+            "name": "EX Psycho Upper",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -20,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "13F - 51F",
+            "cancel_info": null,
+            "comments": [
+                "3F - 9F  projectile invincibility",
+                "10F - 13F  full invincibility",
+                "Subject to counter hit during move duration"
+            ],
+            "damage": 50,
+            "frame": {
+                "active": 18,
+                "recovery": 26,
+                "startup": 12
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Psycho Rising",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -38,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can only be done on hit"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": "Until landing",
+                "recovery": 26,
+                "startup": 14
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Psycho Splash",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can only be done on hit",
+                "Projectile invincible while active"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": "Until landing",
+                "recovery": 13,
+                "startup": 14
+            },
+            "meter_gain": null,
+            "name": "EX Psycho Splash",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 22F  full invincibility",
+                "The active frames are for whiff"
+            ],
+            "damage": 340,
+            "frame": {
+                "active": 14,
+                "recovery": 49,
+                "startup": 13
+            },
+            "meter_gain": null,
+            "name": "Psycho Barrage ",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -21,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "Critical Art",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        }
+    ],
+    "moves_vt2": [
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 8,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 5
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 5
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 16,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 9
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 9,
+                "on_hit": 15
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)",
+                "Value is the fastest startup"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 3,
+                "recovery": 21,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 2
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 9,
+                "on_hit": 13
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 3,
+                "recovery": 8,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 2
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 2,
+                "on_hit": 3
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 3,
+                "recovery": 15,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 4
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 10,
+                "on_hit": 12
+            }
+        },
+        {
+            "airborne_hurtbox": "10F - 23F",
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (+20F)"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 4,
+                "recovery": 22,
+                "startup": 15
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 2
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 9
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 8,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 5
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 2,
+                "on_hit": 4
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 12,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 5
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 7,
+                "on_hit": 10
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)",
+                "Forces stand",
+                "From active frame 2F"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 21,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -5,
+                "on_hit": 1
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 12,
+                "on_hit": 18
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 20,
+            "frame": {
+                "active": 2,
+                "recovery": 8,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": 0,
+                "on_hit": 2
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 0,
+                "on_hit": 2
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 2,
+                "recovery": 17,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 1
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 4,
+                "on_hit": 8
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 9,
+                "recovery": 20,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -10,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 9,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Causes knockdown on mid-air hit"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 6,
+                "recovery": null,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 130,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "Psycho Blow",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 140,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "Cheat & Smash",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Will not hit airborne opponents",
+                "Value is the fastest startup",
+                "If the Snatcher hits, Ed automatically closes the distance with a body blow"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 40,
+                "startup": 21
+            },
+            "meter_gain": null,
+            "name": "Psycho Snatcher",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Will not hit airborne opponents",
+                "If the Snatcher hits, Ed launches the opponent while bringing them closer, if it's blocked, he brings them closer on the ground"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": 6,
+                "recovery": 40,
+                "startup": 35
+            },
+            "meter_gain": null,
+            "name": "Psycho Snatcher",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Will not hit grounded opponents",
+                "Value is the fastest startup",
+                "If the Snatcher hits, Ed automatically flies up to the opponent with a punch strike"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 4,
+                "recovery": 47,
+                "startup": 9
+            },
+            "meter_gain": null,
+            "name": "Psycho Snatcher",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Will not hit grounded opponents",
+                "If the Snatcher hits, Ed slams the opponent into the ground and they'll bounce up"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 40,
+                "startup": 26
+            },
+            "meter_gain": null,
+            "name": "Psycho Snatcher",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "V-Gauge Timer + 4000F",
+                "1F  full invincibility",
+                "Gains the special moves Ultra Snatcher - Ground and Ultra Snatcher - Air while active"
+            ],
+            "damage": 0,
+            "frame": {
+                "active": null,
+                "recovery": 5,
+                "startup": 1
+            },
+            "meter_gain": null,
+            "name": "Enhanced Snatcher",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 25F  attack invincibility",
+                "Recover 200 stun upon activation"
+            ],
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 31,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Kill Step",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "No changes based on button strength"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 22,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                28
+            ],
+            "name": "Psycho Flicker",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 3
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Treated as a projectile"
+            ],
+            "damage": 50,
+            "frame": {
+                "active": 8,
+                "recovery": 16,
+                "startup": 11
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "Psycho Spark",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 1
+            },
+            "stun": 80,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Button strength changes projectile speed"
+            ],
+            "damage": 50,
+            "frame": {
+                "active": null,
+                "recovery": 39,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "Psycho Shoot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 100,
+            "frame": {
+                "active": null,
+                "recovery": 36,
+                "startup": 13
+            },
+            "meter_gain": null,
+            "name": "EX Psycho Shoot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 8,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Moves behind the opponent on hit and block",
+                "Crumple time is longer the closer the attack hits"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 12,
+                "recovery": 27,
+                "startup": 30
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Psycho Knuckle",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 100,
+            "frame": {
+                "active": 5,
+                "recovery": 33,
+                "startup": 16
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Psycho Upper",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -16,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 18F  full invincibility",
+                "Subject to counter hit during move duration"
+            ],
+            "damage": 140,
+            "frame": {
+                "active": 11,
+                "recovery": 32,
+                "startup": 16
+            },
+            "meter_gain": null,
+            "name": "EX Psycho Upper",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -20,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "13F - 51F",
+            "cancel_info": null,
+            "comments": [
+                "3F - 9F  projectile invincibility",
+                "10F - 13F  full invincibility",
+                "Subject to counter hit during move duration"
+            ],
+            "damage": 50,
+            "frame": {
+                "active": 18,
+                "recovery": 26,
+                "startup": 12
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Psycho Rising",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -38,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can only be done on hit"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": "Until landing",
+                "recovery": 26,
+                "startup": 14
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Psycho Splash",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can only be done on hit",
+                "Projectile invincible while active"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": "Until landing",
+                "recovery": 13,
+                "startup": 14
+            },
+            "meter_gain": null,
+            "name": "EX Psycho Splash",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Uses 1300F V-Gauge Timer",
+                "Will not hit airborne opponents",
+                "If the Snatcher hits, Ed will automatically close the distance and attack",
+                "Can be canceled into from special moves, except for Psycho Rising and regular Psycho Splash"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 8,
+                "recovery": 37,
+                "startup": 26
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Ultra Snatcher - Ground",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 7
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Uses 1300F V-Gauge Timer",
+                "Will not hit grounded opponents",
+                "If the Snatcher hits, Ed automatically brings the opponent closer and attacks",
+                "Can be canceled into from special moves, except for Psycho Rising and regular Psycho Splash"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 7,
+                "recovery": 32,
+                "startup": 21
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Ultra Snatcher - Air",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 22F  full invincibility",
+                "The active frames are for whiff"
+            ],
+            "damage": 340,
+            "frame": {
+                "active": 14,
+                "recovery": 49,
+                "startup": 13
+            },
+            "meter_gain": null,
+            "name": "Psycho Barrage",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -21,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "Critical Art",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        }
+    ]
+}

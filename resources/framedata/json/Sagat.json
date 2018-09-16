@@ -1,0 +1,3050 @@
+{
+    "character_name": "Sagat",
+    "moves_vt1": [
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Will not hit crouchers at maximum range"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 3,
+                "recovery": 10,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 4,
+                "on_hit": 5
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 4,
+                "on_hit": 5
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 2,
+                "recovery": 15,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 7
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 9,
+                "on_hit": 13
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 3,
+                "recovery": 20,
+                "startup": 13
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 4
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 10,
+                "on_hit": 16
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 3,
+                "recovery": 10,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 2
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 2,
+                "on_hit": 3
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 3,
+                "recovery": 16,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 2
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 6,
+                "on_hit": 10
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Second hit triggers Crush Counter (D)",
+                "First hit only forces stand",
+                "Second hit will not hit crouching opponents",
+                "First hit causes blowback knockdown",
+                "On whiff"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": 17,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -1,
+                "on_hit": 8
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 12
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 11,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 3
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 5
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "On whiff"
+            ],
+            "damage": 65,
+            "frame": {
+                "active": 3,
+                "recovery": 15,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 10,
+                "on_hit": 12
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (D)"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 3,
+                "recovery": 18,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -1,
+                "on_hit": 2
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 9,
+                "on_hit": 12
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 3,
+                "recovery": 9,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 3
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 4
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 16,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 7
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (D)"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 2,
+                "recovery": 27,
+                "startup": 12
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -14,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 4,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Causes blowback knockdown on airborne hit"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MP",
+            "projectile_nullification": false,
+            "properties": "Mid/High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 80,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 40,
+            "frame": {
+                "active": 6,
+                "recovery": null,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 6,
+                "recovery": null,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 12
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Causes knockdown on airborne hit"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 2,
+                "recovery": 21,
+                "startup": 24
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Tiger Heavy Elbow",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 1
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S*",
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (+26F)",
+                "Will not hit crouching opponents",
+                "Causes blowback knockdown on airborne hit",
+                "Move startup can be canceled",
+                "On whiff"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 3,
+                "recovery": 22,
+                "startup": 16
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Step High Kick",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 5
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 13,
+                "on_hit": 15
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S*"
+            ],
+            "comments": [
+                "Move startup can be canceled"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 2,
+                "recovery": 23,
+                "startup": 19
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Step Low Kick",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 130,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "Tiger Hang",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 130,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "Tiger Swing",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 200,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Next Tiger Uppercut performed will be strengthened"
+            ],
+            "damage": 0,
+            "frame": {
+                "active": null,
+                "recovery": 55,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Angry Charge",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "V-Gauge Timer + 2400F",
+                "Gains the special move Tiger Cannon while active"
+            ],
+            "damage": 0,
+            "frame": {
+                "active": null,
+                "recovery": 4,
+                "startup": 1
+            },
+            "meter_gain": null,
+            "name": "Tiger Charge",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 32F  attack & projectile invincibility",
+                "Recover 200 stun upon activation"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 2,
+                "recovery": 24,
+                "startup": 17
+            },
+            "meter_gain": null,
+            "name": "Tiger Revenge",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": null,
+                "recovery": 40,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "L Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 2
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 25,
+                "on_hit": 24
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": null,
+                "recovery": 40,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "M Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 2
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 25,
+                "on_hit": 24
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": null,
+                "recovery": 40,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "H Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 2
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 25,
+                "on_hit": 24
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": null,
+                "recovery": 38,
+                "startup": 11
+            },
+            "meter_gain": null,
+            "name": "EX Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 6,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 29,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": null,
+                "recovery": 44,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "L Grand Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 19,
+                "on_hit": 23
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": null,
+                "recovery": 44,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "M Grand Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 19,
+                "on_hit": 23
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": null,
+                "recovery": 44,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "H Grand Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 19,
+                "on_hit": 23
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": null,
+                "recovery": 42,
+                "startup": 11
+            },
+            "meter_gain": null,
+            "name": "EX Grand Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 25,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - ",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "1F - 12F  invincible to mid-air attacks",
+                "Subject to counter hit during move duration",
+                "From active frame 3F"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": 9,
+                "recovery": 48,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "L Tiger Uppercut",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -39,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "3F - 7F  attack & projectile invincibility",
+                "Subject to counter hit during move duration",
+                "From active frame 3F"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": 9,
+                "recovery": 48,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "M Tiger Uppercut",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -39,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "10F - ",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "1F - 9F  throw invincibility",
+                "Subject to counter hit during move duration",
+                "From active frame 3F"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": 9,
+                "recovery": 48,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "H Tiger Uppercut",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -39,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - ",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "1F - 12F  invincible to mid-air attacks",
+                "Subject to counter hit during move duration",
+                "From active frame 3F"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": 9,
+                "recovery": 43,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "L Tiger Uppercut (VS\u7248)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -34,
+                "on_hit": "D"
+            },
+            "stun": 180,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "3F - 7F  attack & projectile invincibility",
+                "Subject to counter hit during move duration",
+                "From active frame 3F"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": 9,
+                "recovery": 43,
+                "startup": 6
+            },
+            "meter_gain": null,
+            "name": "M Tiger Uppercut (VS\u7248)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -34,
+                "on_hit": "D"
+            },
+            "stun": 180,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "10F - ",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "1F - 9F  throw invincibility",
+                "Subject to counter hit during move duration",
+                "From active frame 3F"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": 9,
+                "recovery": 43,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "H Tiger Uppercut (VS\u7248)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -34,
+                "on_hit": "D"
+            },
+            "stun": 180,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "7F - ",
+            "cancel_info": null,
+            "comments": [
+                "1F - 10F  full invincibility",
+                "Subject to counter hit during move duration"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": 9,
+                "recovery": 52,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "EX Tiger Uppercut",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -36,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "7F - ",
+            "cancel_info": null,
+            "comments": [
+                "1F - 10F  full invincibility",
+                "Subject to counter hit during move duration"
+            ],
+            "damage": 180,
+            "frame": {
+                "active": 9,
+                "recovery": 52,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "EX Tiger Uppercut (VS\u7248)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -36,
+                "on_hit": "D"
+            },
+            "stun": 230,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "11F - ",
+            "cancel_info": null,
+            "comments": [
+                "On whiff"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 7,
+                "recovery": 21,
+                "startup": 12
+            },
+            "meter_gain": [
+                5,
+                30
+            ],
+            "name": "L Tiger Knee Crush",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "13F - ",
+            "cancel_info": null,
+            "comments": [
+                "On whiff"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 9,
+                "recovery": 18,
+                "startup": 14
+            },
+            "meter_gain": [
+                5,
+                30
+            ],
+            "name": "M Tiger Knee Crush",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "19F - ",
+            "cancel_info": null,
+            "comments": [
+                "On whiff"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 11,
+                "recovery": 17,
+                "startup": 20
+            },
+            "meter_gain": [
+                5,
+                30
+            ],
+            "name": "H Tiger Knee Crush",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -7,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "13F - ",
+            "cancel_info": null,
+            "comments": [
+                "Second hit is automatic after the first hit"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": 9,
+                "recovery": 18,
+                "startup": 14
+            },
+            "meter_gain": null,
+            "name": "EX Tiger Knee Crush",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Uses 1200F V-Gauge Timer",
+                "Can be canceled into from V-Trigger cancelable normal and unique moves"
+            ],
+            "damage": 120,
+            "frame": {
+                "active": null,
+                "recovery": 51,
+                "startup": 19
+            },
+            "meter_gain": [
+                5,
+                50
+            ],
+            "name": "Tiger Cannon",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 13F  full invincibility"
+            ],
+            "damage": 340,
+            "frame": {
+                "active": 6,
+                "recovery": 61,
+                "startup": 7
+            },
+            "meter_gain": null,
+            "name": "Tiger Rampage",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -42,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "Critical Art",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        }
+    ],
+    "moves_vt2": [
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Will not hit crouchers at maximum range"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 3,
+                "recovery": 10,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 4,
+                "on_hit": 5
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 4,
+                "on_hit": 5
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 2,
+                "recovery": 15,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 7
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 9,
+                "on_hit": 13
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 3,
+                "recovery": 20,
+                "startup": 13
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 4
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 10,
+                "on_hit": 16
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 3,
+                "recovery": 10,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 2
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 2,
+                "on_hit": 3
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 3,
+                "recovery": 16,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 2
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 6,
+                "on_hit": 10
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Second hit triggers Crush Counter (D)",
+                "First hit only forces stand",
+                "Second hit will not hit crouching opponents",
+                "First hit causes blowback knockdown",
+                "On whiff"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": 17,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -1,
+                "on_hit": 8
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 12
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 11,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 3
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 5
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "On whiff"
+            ],
+            "damage": 65,
+            "frame": {
+                "active": 3,
+                "recovery": 15,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 10,
+                "on_hit": 12
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (D)"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 3,
+                "recovery": 18,
+                "startup": 11
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -1,
+                "on_hit": 2
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 9,
+                "on_hit": 12
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 3,
+                "recovery": 9,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 3
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 4
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 16,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 0,
+                "on_hit": 7
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (D)"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 2,
+                "recovery": 27,
+                "startup": 12
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -14,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 4,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Causes blowback knockdown on airborne hit"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MP",
+            "projectile_nullification": false,
+            "properties": "Mid/High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 80,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 40,
+            "frame": {
+                "active": 6,
+                "recovery": null,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 6,
+                "recovery": null,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 12
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Causes knockdown on airborne hit"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 2,
+                "recovery": 21,
+                "startup": 24
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Tiger Heavy Elbow",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 1
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S*",
+                "V"
+            ],
+            "comments": [
+                "Triggers Crush Counter (+26F)",
+                "Will not hit crouching opponents",
+                "Causes blowback knockdown on airborne hit",
+                "Move startup can be canceled",
+                "On whiff"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 3,
+                "recovery": 22,
+                "startup": 16
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Step High Kick",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": 5
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 13,
+                "on_hit": 15
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S*"
+            ],
+            "comments": [
+                "Move startup can be canceled"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 2,
+                "recovery": 23,
+                "startup": 19
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Step Low Kick",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 130,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "Tiger Hang",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 130,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "Tiger Swing",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 200,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Next Tiger Uppercut performed will be strengthened"
+            ],
+            "damage": 0,
+            "frame": {
+                "active": null,
+                "recovery": 55,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Angry Charge",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "V-Gauge Timer + 2400F",
+                "Gains the special moves Tiger Spike and Tiger Rush while active"
+            ],
+            "damage": 0,
+            "frame": {
+                "active": null,
+                "recovery": 4,
+                "startup": 1
+            },
+            "meter_gain": null,
+            "name": "Tiger Assault",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 32F  attack & projectile invincibility",
+                "Recover 200 stun upon activation"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 2,
+                "recovery": 24,
+                "startup": 17
+            },
+            "meter_gain": null,
+            "name": "Tiger Revenge",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": null,
+                "recovery": 40,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "L Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 2
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 25,
+                "on_hit": 24
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": null,
+                "recovery": 40,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "M Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 2
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 25,
+                "on_hit": 24
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": null,
+                "recovery": 40,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "H Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 2
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 25,
+                "on_hit": 24
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": null,
+                "recovery": 38,
+                "startup": 11
+            },
+            "meter_gain": null,
+            "name": "EX Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 6,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 29,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": null,
+                "recovery": 44,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "L Grand Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 19,
+                "on_hit": 23
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": null,
+                "recovery": 44,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "M Grand Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 19,
+                "on_hit": 23
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": null,
+                "recovery": 44,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "H Grand Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 19,
+                "on_hit": 23
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": null,
+                "recovery": 42,
+                "startup": 11
+            },
+            "meter_gain": null,
+            "name": "EX Grand Tiger Shot",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 25,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - ",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "1F - 12F  invincible to mid-air attacks",
+                "Subject to counter hit during move duration",
+                "From active frame 3F"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": 9,
+                "recovery": 48,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "L Tiger Uppercut",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -39,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "3F - 7F  attack & projectile invincibility",
+                "Subject to counter hit during move duration",
+                "From active frame 3F"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": 9,
+                "recovery": 48,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "M Tiger Uppercut",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -39,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "10F - ",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "1F - 9F  throw invincibility",
+                "Subject to counter hit during move duration",
+                "From active frame 3F"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": 9,
+                "recovery": 48,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "H Tiger Uppercut",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -39,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - ",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "1F - 12F  invincible to mid-air attacks",
+                "Subject to counter hit during move duration",
+                "From active frame 3F"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": 9,
+                "recovery": 43,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "L Tiger Uppercut (VS\u7248)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -34,
+                "on_hit": "D"
+            },
+            "stun": 180,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "3F - 7F  attack & projectile invincibility",
+                "Subject to counter hit during move duration",
+                "From active frame 3F"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": 9,
+                "recovery": 43,
+                "startup": 6
+            },
+            "meter_gain": null,
+            "name": "M Tiger Uppercut (VS\u7248)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -34,
+                "on_hit": "D"
+            },
+            "stun": 180,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "10F - ",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "1F - 9F  throw invincibility",
+                "Subject to counter hit during move duration",
+                "From active frame 3F"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": 9,
+                "recovery": 43,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "H Tiger Uppercut (VS\u7248)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -34,
+                "on_hit": "D"
+            },
+            "stun": 180,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "7F - ",
+            "cancel_info": null,
+            "comments": [
+                "1F - 10F  full invincibility",
+                "Subject to counter hit during move duration"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": 9,
+                "recovery": 52,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "EX Tiger Uppercut",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -36,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "7F - ",
+            "cancel_info": null,
+            "comments": [
+                "1F - 10F  full invincibility",
+                "Subject to counter hit during move duration"
+            ],
+            "damage": 180,
+            "frame": {
+                "active": 9,
+                "recovery": 52,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "EX Tiger Uppercut (VS\u7248)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -36,
+                "on_hit": "D"
+            },
+            "stun": 230,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "11F - ",
+            "cancel_info": null,
+            "comments": [
+                "On whiff"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 7,
+                "recovery": 21,
+                "startup": 12
+            },
+            "meter_gain": [
+                5,
+                30
+            ],
+            "name": "L Tiger Knee Crush",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "13F - ",
+            "cancel_info": null,
+            "comments": [
+                "On whiff"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 9,
+                "recovery": 18,
+                "startup": 14
+            },
+            "meter_gain": [
+                5,
+                30
+            ],
+            "name": "M Tiger Knee Crush",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "19F - ",
+            "cancel_info": null,
+            "comments": [
+                "On whiff"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 11,
+                "recovery": 17,
+                "startup": 20
+            },
+            "meter_gain": [
+                5,
+                30
+            ],
+            "name": "H Tiger Knee Crush",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -7,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "13F - ",
+            "cancel_info": null,
+            "comments": [
+                "Second hit is automatic after the first hit"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": 9,
+                "recovery": 18,
+                "startup": 14
+            },
+            "meter_gain": null,
+            "name": "EX Tiger Knee Crush",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Uses 800F V-Gauge Timer",
+                "Armor from 3F to 9F",
+                "Can be canceled into from V-Trigger cancelable normal and unique moves"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 2,
+                "recovery": 29,
+                "startup": 14
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Tiger Spike (Lv1)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Uses 800F V-Gauge Timer",
+                "Startup is the value for the fastest hold release timing",
+                "Gains armor from 3F until the hold is released"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 2,
+                "recovery": 20,
+                "startup": 24
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Tiger Spike (Lv2)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Uses 800F V-Gauge Timer",
+                "Armor from 3F to 49F",
+                "During guard break+25F"
+            ],
+            "damage": 140,
+            "frame": {
+                "active": 2,
+                "recovery": 19,
+                "startup": 50
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Tiger Spike (Lv3)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": "GB",
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "Uses 800F V-Gauge Timer",
+                "Second hit is automatic after the first hit",
+                "Can be canceled into from V-Trigger cancelable normal and unique moves"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 5,
+                "recovery": 19,
+                "startup": 13
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Tiger Rush",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 13F  full invincibility"
+            ],
+            "damage": 340,
+            "frame": {
+                "active": 6,
+                "recovery": 61,
+                "startup": 7
+            },
+            "meter_gain": null,
+            "name": "Tiger Rampage",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -42,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "Critical Art",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        }
+    ]
+}

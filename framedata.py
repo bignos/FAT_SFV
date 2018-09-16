@@ -12,14 +12,10 @@ import json             # for JSON dump and load
 
 # -[ Data ]-
 character_html_directory_path = './resources/framedata/html/'
-# character_html_file_path = './resources/framedata/html/G.html'
-# character_html_file_path = './resources/framedata/html/Ryu.html'
+character_json_directory_path = './resources/framedata/json/'
 
-# character_json_file_path = './resources/framedata/json/G.json'
 
 # -[ Class ]-
-
-
 class Framedata():
     """ Framedata structure
         - character_name    {str}           Name of the character for this framedata
@@ -80,15 +76,11 @@ move list VT2:
             Frame(
                 move_json['frame']['startup'],
                 move_json['frame']['active'],
-                move_json['frame']['recovery'],
-                clean=False),
+                move_json['frame']['recovery']),
             Recovery(move_json['recovery']['on_hit'],
-                     move_json['recovery']['on_block'],
-                     clean=False),
-            Recovery(
-                move_json['vt_cancel_recovery']['on_hit'],
-                move_json['vt_cancel_recovery']['on_block'],
-                clean=False),
+                     move_json['recovery']['on_block']),
+            Recovery(move_json['vt_cancel_recovery']['on_hit'],
+                     move_json['vt_cancel_recovery']['on_block']),
             move_json['cancel_info'],
             move_json['damage'],
             move_json['stun'],
@@ -96,8 +88,7 @@ move list VT2:
             move_json['properties'],
             move_json['projectile_nullification'],
             move_json['airborne_hurtbox'],
-            move_json['comments'],
-            clean=False)
+            move_json['comments'])
 
     def loadFromHTML(path):
         """ Static method to load a Framedata object from an HTML file
@@ -139,12 +130,11 @@ class Move():
         - cancel_info:              {list(str)}     Cancel properties of the move [ S, S*, CA, V, VS ]
         - damage:                   {int}           Damage of the move
         - stun:                     {int}           Stun of the move
-        - meter_gain                {list(int)}    Meter gain of the move ( On_whiff, On_hit )
+        - meter_gain                {list(int)}     Meter gain of the move ( On_whiff, On_hit )
         - properties                {str}           Hit property of the move [ Throw, Low, Mid, Hight ]
-        - projectile_nullification  {str}           Move can nullify projectile
+        - projectile_nullification  {bool}          Move can nullify projectile
         - airborne_hurtbox          {str}           ???
         - comments                  {str}           Comments for the move
-        - clean                     {bool}          clean the data ( Yes / No )
     """
 
     def __init__(self,
@@ -160,8 +150,7 @@ class Move():
                  properties,
                  projectile_nullification,
                  airborne_hurtbox,
-                 comments,
-                 clean=True):
+                 comments):
         self.type = move_type
         self.name = name
         self.frame = frame
@@ -175,9 +164,6 @@ class Move():
         self.projectile_nullification = projectile_nullification
         self.airborne_hurtbox = airborne_hurtbox
         self.comments = comments
-
-        if clean:
-            self._clean_attributes()
 
     def __repr__(self):
         """ Return: {str}   String representation of Move instance """
@@ -218,149 +204,29 @@ class Move():
                                  self.airborne_hurtbox,
                                  self.comments)
 
-    def _is_an_int(value):
-        """ Return:  {bool}  True if value is an int else False """
-        try:
-            int(value)
-            return True
-        except ValueError:
-            return False
-
-    def _clean_attributes(self):
-        """ Private method make to clean some attributes of the Move instance
-            Clean:
-                self.damage
-                self.stun
-                self.meter_gain
-        """
-        # self.damage
-        if isinstance(self.damage, list):
-            self.damage = [int(dam.replace(')', '')) for dam in self.damage if Move._is_an_int(dam.replace(')', ''))]
-        else:
-            try:
-                self.damage = int(self.damage) if self.damage else None
-            except ValueError:
-                self.damage = eval(self.damage)
-
-        # self.meter_gain
-        if isinstance(self.meter_gain, list) and len(self.meter_gain) == 2:
-            if Move._is_an_int(self.meter_gain[0].strip()):
-                whiff_gain = int(self.meter_gain[0].strip())
-            else:
-                whiff_gain = int(re.sub(r'(\D+)(\d+)', r'\2', self.meter_gain[0]))
-            if Move._is_an_int(self.meter_gain[1]):
-                hit_gain = int(self.meter_gain[1])
-            else:
-                hit_gain = int(re.sub(r'(\D+)(\d+)', r'\2', self.meter_gain[1]))
-            self.meter_gain = (whiff_gain, hit_gain)
-        else:
-            self.meter_gain = None
-
-        # self.stun
-        if isinstance(self.stun, list):
-            self.stun = [int(stu.replace(')', '')) for stu in self.stun if Move._is_an_int(stu.replace(')', ''))]
-        else:
-            try:
-                self.stun = int(self.stun) if self.stun else None
-            except ValueError:
-                self.stun = eval(self.stun)
-
 
 class Frame():
     """ Frame Structure
         - startup:  {int}   Number of startup frames
         - active:   {int}   Number of active frames
         - recovery: {int}   Number of recovery frames
-        - clean:    {bool}  Clean the data ( Yes / No )
     """
 
-    def __init__(self, startup, active, recovery, clean=True):
-        if clean:
-            self._clean_attributes(startup, active, recovery)
-        else:
-            self.startup = startup
-            self.active = active
-            self.recovery = recovery
-
-    def _clean_attributes(self, startup, active, recovery):
-        """ Private method make to clean all attributes of the Frame instance """
-        # startup
-        self.startup = [self._clean_value(value) for value in startup] if isinstance(
-            startup, list) else self._clean_value(startup)
-
-        # active
-        self.active = [self._clean_value(value) for value in active] if isinstance(
-            active, list) else self._clean_value(active)
-
-        # recovery
-        self.recovery = [self._clean_value(value) for value in recovery] if isinstance(
-            recovery, list) else self._clean_value(recovery)
-
-    def _clean_value(self, value):
-        result = None
-        try:
-            result = int(value)
-        except (ValueError, TypeError):
-            if isinstance(value, str):
-                if '\u00d7' in value:
-                    result = eval(value.replace('\u00d7', '*'))
-                elif re.match(r'\d\+\d', value):
-                    result = eval(re.sub(r'\D*(\d+\+\d+)\D*', r'\1', value))
-                else:
-                    pattern = r'\D*(\d+)\D*'
-                    if re.match(pattern, value):
-                        result = int(re.sub(pattern, r'\1', value))
-                    else:
-                        result = value
-
-        return result
+    def __init__(self, startup, active, recovery):
+        self.startup = startup
+        self.active = active
+        self.recovery = recovery
 
 
 class Recovery():
     """ Recovery Structure
         - on_hit    {str}   Number of frame on hit
         - on_block  {str}   Number of frame on block
-        - clean:    {bool}  Clean the data ( Yes / No )
     """
 
-    def __init__(self, on_hit, on_block, clean=True):
-        if clean:
-            self._clean_attributes(on_hit, on_block)
-        else:
-            self.on_hit = on_hit
-            self.on_block = on_block
-
-    def _clean_attributes(self, on_hit, on_block):
-        """ Private method make to clean all attributes of the Recovery instance """
-        # on_hit
-        self.on_hit = [self._clean_value(value) for value in on_hit] if isinstance(
-            on_hit, list) else self._clean_value(on_hit)
-
-        # on_block
-        self.on_block = [self._clean_value(value) for value in on_block] if isinstance(
-            on_block, list) else self._clean_value(on_block)
-
-    def _clean_value(self, value):
-        result = None
-        try:
-            result = int(value)
-        except (ValueError, TypeError):
-            if isinstance(value, str):
-                if re.match(r'\D*', value):
-                    result = value
-                elif '/' in value:
-                    result = [int(value) for value in self.on_block.split('/')]
-                elif '\u00d7' in value:
-                    result = eval(value.replace('\u00d7', '*'))
-                elif re.match(r'\d\+\d', value):
-                    result = eval(re.sub(r'\D*(\d+\+\d+)\D*', r'\1', value))
-                else:
-                    pattern = r'\D*(\d+)\D*'
-                    if re.match(pattern, value):
-                        result = int(re.sub(pattern, r'\1', value))
-                    else:
-                        result = value
-        return result
+    def __init__(self, on_hit, on_block):
+        self.on_hit = on_hit
+        self.on_block = on_block
 
 
 class MoveEncoder(json.JSONEncoder):
@@ -371,19 +237,13 @@ class MoveEncoder(json.JSONEncoder):
             result = dict()
             result['type'] = obj.type
             result['name'] = obj.name
-            result['frame'] = {
-                                'startup':      obj.frame.startup,
-                                'active':       obj.frame.active,
-                                'recovery':     obj.frame.recovery
-                            }
-            result['recovery'] = {
-                                    'on_hit':       obj.recovery.on_hit,
-                                    'on_block':     obj.recovery.on_block
-                                }
-            result['vt_cancel_recovery'] = {
-                                                'on_hit':   obj.vt_cancel_recovery.on_hit,
-                                                'on_block':   obj.vt_cancel_recovery.on_block
-                                        }
+            result['frame'] = {'startup':   obj.frame.startup,
+                               'active':    obj.frame.active,
+                               'recovery':  obj.frame.recovery}
+            result['recovery'] = {'on_hit':     obj.recovery.on_hit,
+                                  'on_block':   obj.recovery.on_block}
+            result['vt_cancel_recovery'] = {'on_hit':   obj.vt_cancel_recovery.on_hit,
+                                            'on_block': obj.vt_cancel_recovery.on_block}
             result['cancel_info'] = obj.cancel_info
             result['damage'] = obj.damage
             result['stun'] = obj.stun
@@ -458,7 +318,6 @@ def _extract_move_from_tree(move_tree, move_type):
         Return: {Move} Move object with all data found in move_tree
     """
     name        = _get_name(move_tree)
-
     frame       = Frame(_get_frame_startup(move_tree),
                         _get_frame_active(move_tree),
                         _get_frame_recovery(move_tree))
@@ -478,12 +337,26 @@ def _extract_move_from_tree(move_tree, move_type):
     return Move(move_type, name, frame, recovery, vtxrecovery, cancel_info,
                 damage, stun, meter_gain, properties, proj_null, airb_hurtbx, comments)
 
+
+def _get_general_data_init(move_tree, xpath):
+    """ Private function to initialize most of captured data.
+        move_tree:  {lxml.html.HtmlElement} html element where you have all move information
+        xpath:      {str} xpath for the capture
+        Return:     {str|None} the string data captured or None if no data found
+    """
+    result = move_tree.xpath(xpath)
+    if result != []:
+        return ''.join(result)  # For have only one type of element to process -> str
+    else:
+        return None
+
+
 def _get_name(move_tree):
     """ Private function extract the name of the move and return clean it
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
         Return:     {str} Name of the move
     """
-    return move_tree.xpath('./td[@class="name"]/p[@class="name"]/text()')[0]
+    return _get_general_data_init(move_tree, './td[@class="name"]/p[@class="name"]/text()')
 
 
 def _get_frame_startup(move_tree):
@@ -491,18 +364,17 @@ def _get_frame_startup(move_tree):
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
         Return:     {int|None} number of the startup frame for this move
     """
-    raw_value = move_tree.xpath('./td[2]/text()')
+    raw_value = _get_general_data_init(move_tree, './td[2]/text()')
+    if raw_value:
+        match = re.match(r'\d+\+\d+', raw_value)    # '3+5'
+        if match:
+            return eval(match.group())              # -> 8
 
-    if raw_value == []:
+        match = re.match(r'\d+', raw_value)         # '5'
+        if match:
+            return int(match.group())               # -> 5
+    else:
         return None
-
-    raw_value = ''.join(raw_value)  # For have only one type of element to process -> str
-
-    if re.match(r'^\d+\+\d+', raw_value):
-        return int(eval(re.sub(r'^(\d+\+\d+).*', '\1', raw_value)))
-
-    if re.match(r'^\d+', raw_value):
-        return int(re.sub(r'^(\d+)', '\1', raw_value))
 
 
 def _get_frame_active(move_tree):
@@ -510,24 +382,19 @@ def _get_frame_active(move_tree):
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
         Return:     {int|str|None} number of active frame for this move
     """
-    raw_value = move_tree.xpath('./td[3]/text()')
+    raw_value = _get_general_data_init(move_tree, './td[3]/text()')
+    if raw_value:
+        if re.match(r'\d+×\d+', raw_value):                                # '13×3'
+            return eval(re.sub(r'(\d+)×(\d+)', r'\1*\2', raw_value))       # -> 39
 
-    if raw_value == []:
+        match = re.search(r'\d+', raw_value)                               # '2' or '-/3'
+        if match:
+            return int(match.group())                                      # -> 2 or 3
+
+        if re.match(r'\w+', raw_value):                                    # 'Until landing'
+            return raw_value                                               # ->'Until landing'
+    else:
         return None
-
-    raw_value = ''.join(raw_value)                                    # For have only one type of element to process -> str # noqa: E501
-
-    if re.match(r'\-\/\d+ ', raw_value):                              # ['-/3']
-        return int(re.sub(r'.*(\d+)', '\1', raw_value))               # -> 3
-
-    if re.match(r'\d+×\d+', raw_value):                               # ['13×3']
-        return int(eval(re.sub(r'(\d+)×(\d+)', '\1*\2', raw_value)))  # -> 39
-
-    if re.match(r'^\d+', raw_value):
-        return int(re.sub(r'^(\d+)', '\1', raw_value))
-
-    if re.match(r'^\w+', raw_value):                                  # ['Until landing']
-        return raw_value                                              # ->'Until landing'
 
 
 def _get_frame_recovery(move_tree):
@@ -535,18 +402,17 @@ def _get_frame_recovery(move_tree):
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
         Return:     {int|None} number of recovery frame for this move
     """
-    raw_value = move_tree.xpath('./td[4]/text()')
+    raw_value = _get_general_data_init(move_tree, './td[4]/text()')
+    if raw_value:
+        match = re.search(r'\d+\+\d+', raw_value)   # ['21+30 frame(s) after landing']
+        if match:
+            return eval(match.group())              # -> 51
 
-    if raw_value == []:
+        match = re.search(r'\d+', raw_value)        # '12'
+        if match:
+            return int(match.group())               # -> 12
+    else:
         return None
-
-    raw_value = ''.join(raw_value)                                    # For have only one type of element to process -> str # noqa: E501
-
-    if re.match(r'^\d+\+\d+', raw_value):                             # ['21+30 frame(s) after landing']
-        return int(eval(re.sub(r'^(\d+\+\d+).*', '\1', raw_value)))   # -> 51
-
-    if re.match(r'^\d+', raw_value):
-        return int(re.sub(r'^(\d+)', '\1', raw_value))
 
 
 def _get_recovery_on_hit(move_tree):
@@ -554,30 +420,26 @@ def _get_recovery_on_hit(move_tree):
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
         Return:     {int|str|None} number of recovery frame on hit
     """
-    raw_value = move_tree.xpath('./td[5]/text()')
+    raw_value = _get_general_data_init(move_tree, './td[5]/text()')
+    if raw_value:
+        match = re.match(r'\(\w+\)', raw_value)     # '(crumple)'
+        if match:
+            return match.group()                    # -> crumple
 
-    if raw_value == []:
+        if re.match(r'D', raw_value):               # 'D'
+            return 'D'                              # -> D
+
+        if re.match(r'\-$', raw_value):             # '-'
+            return 0                                # -> 0
+
+        if re.match(r'^±0', raw_value):             # '±0'
+            return 0                                # -> 0
+
+        match = re.match(r'\-*\d+', raw_value)      # '-3' or '7'
+        if match:
+            return int(match.group())               # -> -3 or 7
+    else:
         return None
-
-    raw_value = ''.join(raw_value)                                # For have only one type of element to process -> str # noqa: E501
-
-    if re.match(r'^\(\w+\)', raw_value):                          # ['(crumple)']
-        return int(eval(re.sub(r'^\((\w+)\)', '\1', raw_value)))  # -> crumple
-
-    if re.match(r'^D', raw_value):                                # ['D']
-        return 'D'                                                # -> D
-
-    if re.match(r'^\-$', raw_value):                              # ['-']
-        return 0                                                  # -> 0
-
-    if re.match(r'^\-\d+', raw_value):                            # ['-1']
-        return int(re.sub(r'^(\-\d+)', '\1', raw_value))          # -> -1
-
-    if re.match(r'^±0', raw_value):                               # ['±0']
-        return 0                                                  # -> 0
-
-    if re.match(r'^\d+', raw_value):
-        return int(re.sub(r'^(\d+)', '\1', raw_value))
 
 
 def _get_recovery_on_block(move_tree):
@@ -585,30 +447,22 @@ def _get_recovery_on_block(move_tree):
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
         Return:     {int|str|None} number of recovery frame on block
     """
-    raw_value = move_tree.xpath('./td[6]/text()')
+    raw_value = _get_general_data_init(move_tree, './td[6]/text()')
+    if raw_value:
+        if re.match(r'GB', raw_value):               # 'GB'
+            return 'GB'                             # -> 'GB'
 
-    if raw_value == []:
+        if re.match(r'\-$', raw_value):             # '-'
+            return 0                                # -> 0
+
+        if re.match(r'^±0', raw_value):             # '±0'
+            return 0                                # -> 0
+
+        match = re.match(r'\-*\d+', raw_value)      # '-3' or '7'
+        if match:
+            return int(match.group())               # -> -3 or 7
+    else:
         return None
-
-    raw_value = ''.join(raw_value)                                # For have only one type of element to process -> str # noqa: E501
-
-    if re.match(r'^\(\w+\)', raw_value):                          # ['(crumple)']
-        return int(eval(re.sub(r'^\((\w+)\)', '\1', raw_value)))  # -> crumple
-
-    if re.match(r'^GB', raw_value):                               # ['GB']
-        return 'GB'                                               # -> GB
-
-    if re.match(r'^\-$', raw_value):                              # ['-']
-        return 0                                                  # -> 0
-
-    if re.match(r'^\-\d+', raw_value):                            # ['-1']
-        return int(re.sub(r'^(\-\d+)', '\1', raw_value))          # -> -1
-
-    if re.match(r'^±0', raw_value):                               # ['±0']
-        return 0                                                  # -> 0
-
-    if re.match(r'^\d+', raw_value):
-        return int(re.sub(r'^(\d+)', '\1', raw_value))
 
 
 def _get_recovery_xvt_on_hit(move_tree):
@@ -616,43 +470,33 @@ def _get_recovery_xvt_on_hit(move_tree):
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
         Return:     {int|str|None} number of recovery frame on V-trigger cancel on hit
     """
-    raw_value = move_tree.xpath('./td[7]/text()')
+    raw_value = _get_general_data_init(move_tree, './td[7]/text()')
+    if raw_value:
+        if re.match(r'D', raw_value):                # 'D'
+            return 'D'                              # -> 'D'
 
-    if raw_value == []:
+        match = re.match(r'\-*\d+', raw_value)      # '-3' or '7'
+        if match:
+            return int(match.group())               # -> -3 or 7
+    else:
         return None
-
-    raw_value = ''.join(raw_value)                                # For have only one type of element to process -> str # noqa: E501
-
-    if re.match(r'^D', raw_value):                                # ['D']
-        return 'D'                                                # -> D
-
-    if re.match(r'^\-\d+', raw_value):                            # ['-1']
-        return int(re.sub(r'^(\-\d+)', '\1', raw_value))          # -> -1
-
-    if re.match(r'^\d+', raw_value):
-        return int(re.sub(r'^(\d+)', '\1', raw_value))
 
 
 def _get_recovery_xvt_on_block(move_tree):
     """ Private function extract the number of recovery frame on V-trigger cancel on block
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
-        Return:     {int|str|None} number of recovery frame on V-trigger cancel on block
+        Return:     {int|None} number of recovery frame on V-trigger cancel on block
     """
-    raw_value = move_tree.xpath('./td[8]/text()')
+    raw_value = _get_general_data_init(move_tree, './td[8]/text()')
+    if raw_value:
+        if re.match(r'^\-\D*', raw_value):          # '-|-|-'
+            return 0                                # -> 0
 
-    if raw_value == []:
+        match = re.match(r'\-*\d+', raw_value)      # '-3' or '7'
+        if match:
+            return int(match.group())               # -> -3 or 7
+    else:
         return None
-
-    raw_value = ''.join(raw_value)                                # For have only one type of element to process -> str # noqa: E501
-
-    if re.match(r'^\-\D*', raw_value):                            # ['-|-|-']
-        return 0                                                  # -> 0
-
-    if re.match(r'^\-\d+', raw_value):                            # ['-1']
-        return int(re.sub(r'^(\-\d+)', '\1', raw_value))          # -> -1
-
-    if re.match(r'^\d+', raw_value):
-        return int(re.sub(r'^(\d+)', '\1', raw_value))
 
 
 def _get_cancel_info(move_tree):
@@ -673,21 +517,17 @@ def _get_damage(move_tree):
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
         Return:     {int|None} damage of the move
     """
-    raw_value = move_tree.xpath('./td[10]/span[@class="damageAll"]/text()')
+    raw_value = _get_general_data_init(move_tree, './td[10]/span[@class="damageAll"]/text()')
+    if raw_value:
+        match = re.match(r'\d+\s?\+\s?\d+', raw_value)  # '70+90' or '100 + 50'
+        if match:
+            return eval(match.group())                  # -> 160 or 150
 
-    if raw_value == []:
+        match = re.match(r'\d+', raw_value)             # '70'
+        if match:
+            return int(match.group())                   # -> 70
+    else:
         return None
-
-    raw_value = ''.join(raw_value)                                              # For have only one type of element to process -> str # noqa: E501
-
-    if re.match(r'^\d+\+\d+', raw_value):                                       # ['70+90']
-        return int(eval(re.sub(r'^(\d+\+\d+).*', '\1', raw_value)))             # -> 160
-
-    if re.match(r'^\d+\s+\+\s+\d+', raw_value):                                 # ['40 + 40']
-        return int(eval(re.sub(r'^(\d+)\s+\+\s+(\d+).*', '\1+\2', raw_value)))  # -> 80
-
-    if re.match(r'^\d+', raw_value):
-        return int(re.sub(r'^(\d+)', '\1', raw_value))
 
 
 def _get_stun(move_tree):
@@ -695,21 +535,17 @@ def _get_stun(move_tree):
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
         Return:     {int|None} stun of the move
     """
-    raw_value = move_tree.xpath('./td[11]/span[@class="stunAll"]/text()')
+    raw_value = _get_general_data_init(move_tree, './td[11]/span[@class="stunAll"]/text()')
+    if raw_value:
+        match = re.match(r'\d+\s?\+\s?\d+', raw_value)  # '70+90' or '100 + 50'
+        if match:
+            return eval(match.group())                  # -> 160 or 150
 
-    if raw_value == []:
+        match = re.match(r'\d+', raw_value)             # '70'
+        if match:
+            return int(match.group())                   # -> 70
+    else:
         return None
-
-    raw_value = ''.join(raw_value)                                              # For have only one type of element to process -> str # noqa: E501
-
-    if re.match(r'^\d+\+\d+', raw_value):                                       # ['70+90']
-        return int(eval(re.sub(r'^(\d+\+\d+).*', '\1', raw_value)))             # -> 160
-
-    if re.match(r'^\d+\s+\+\s+\d+', raw_value):                                 # ['40 + 40']
-        return int(eval(re.sub(r'^(\d+)\s+\+\s+(\d+).*', '\1+\2', raw_value)))  # -> 80
-
-    if re.match(r'^\d+', raw_value):
-        return int(re.sub(r'^(\d+)', '\1', raw_value))
 
 
 def _get_meter_gain(move_tree):
@@ -717,18 +553,17 @@ def _get_meter_gain(move_tree):
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
         Return:     {list[2]} meter gain of the move
     """
-    raw_value = move_tree.xpath('./td[12]/text()')
+    raw_value = _get_general_data_init(move_tree, './td[12]/text()')
+    if raw_value:
+        if '+' in raw_value:  # replace adition by the result !!!change raw_value!!!
+            egal = r'{}'.format(eval(re.search(r'\d+\+\d+', raw_value).group()))  # return a raw string
+            raw_value = re.sub(r'\d+\+\d+', egal, raw_value)
 
-    raw_value = ''.join(raw_value)                                                       # For have only one type of element to process -> str  # noqa: E501
-
-    if '+' in raw_value:  # replace adition by the result !!!change raw_value!!!
-        add = re.sub(r'(\d+\+\d+)', '\1', raw_value).split('+')
-        egal = str(int(add[0]) + int(add[1]))
-        raw_value = re.Sub(r'(\d+\+\d+)', egal, raw_value)
-
-    if re.match(r'^\s+\d+\s+\/\s+\d+\s+', raw_value):                                    # ['\n\n                0 / 20            '] # noqa: E501
-        temp_list = re.sub(r'.*(\-*\d+)\s+\/\s+(\d+).*$', '\1,\2', raw_value).split(',')
-        return [int(temp_list[0]), int(temp_list[1])]                                    # -> [10,20]
+        if re.search(r'^\s+\d+\s+\/\s+\d+\s+', raw_value):      # ['\n\n                0 / 20            '] # noqa: E501
+            temp_list = re.sub(r'.*(\-*\d+)\s+\/\s+(\d+).*$', r'\1,\2', raw_value).split(',')
+            return [int(temp_list[0]), int(temp_list[1])]       # -> [10,20]
+    else:
+        return None
 
 
 def _get_properties(move_tree):
@@ -736,23 +571,24 @@ def _get_properties(move_tree):
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
         Return:     {str|None} properties of the move
     """
-    return move_tree.xpath('./td[13]/text()')[0]
-    
-    
+    return _get_general_data_init(move_tree, './td[13]/text()')
+
+
 def _get_projectile_nullification(move_tree):
     """ Private function extract the projectile nullification properties of the move and return True or False
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
         Return:     {bool} projectile nullification properties of the move
     """
-    raw_value = move_tree.xpath('./td[14]/text()')[0]
-    return True if raw_value else False
+    raw_value = move_tree.xpath('./td[14]/text()')
+    return True if raw_value != [] else False
+
 
 def _get_airborn_hurtbox(move_tree):
     """ Private function extract the airborn hurtbox properties of the move and return it
         move_tree:  {lxml.html.HtmlElement} html element where you have all move information
         Return:     {str|None} airborn hurtbox properties of the move
     """
-    return move_tree.xpath('./td[15]/text()')[0]
+    return _get_general_data_init(move_tree, './td[15]/text()')
 
 
 def _get_comments(move_tree):
@@ -763,21 +599,6 @@ def _get_comments(move_tree):
     raw_value = [move.strip() for move in move_tree.xpath(
         './td[@class="remarks"]/text()') if move.strip() != '']
     return raw_value if raw_value != [] else None
-     
-
-def _sanityse(value):
-    """ Private function clean value.
-        value:  {*} value to clean
-        Return: {*} None if value is empty tuple or empty list
-                    Element if value is a one tuple element or a one list element
-                    value if value is already clean
-    """
-    if value == []:
-        return None
-    if len(value) == 1:
-        return value[0]
-
-    return value
 
 
 def _get_all_character_files(character_html_directory_path):
@@ -790,10 +611,12 @@ def _load_all_character_from_html(character_html_directory_path):
     return [Framedata.loadFromHTML(filename) for filename in character_html_files]
 
 
+def _save_all_character_to_json(all_character_framedata, character_json_directory_path):
+    for framedata in all_character_framedata:
+        framedata.saveToJSON('{}{}.json'.format(character_json_directory_path, framedata.character_name ))
+    
+
 # -[ Main ]-
 if __name__ == '__main__':
-    # framedata = Framedata.loadFromHTML( character_html_file_path )
-    # framedata.saveToJSON( character_json_file_path )
-    # framedata = Framedata.loadFromJSON( character_json_file_path )
-    # print( framedata )
-    _load_all_character_from_html(character_html_directory_path)
+    all_character_framedata = _load_all_character_from_html(character_html_directory_path)
+    _save_all_character_to_json(all_character_framedata, character_json_directory_path)

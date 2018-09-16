@@ -1,0 +1,3331 @@
+{
+    "character_name": "Ken",
+    "moves_vt1": [
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 7,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 5
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 0,
+                "on_hit": 0
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 2,
+                "recovery": 15,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 5,
+                "on_hit": 6
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Triggers Crush Counter (+7F)"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 2,
+                "recovery": 20,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 5
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 5,
+                "on_hit": 13
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 9,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -1,
+                "on_hit": 3
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 0,
+                "on_hit": 0
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Forces stand"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 19,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 1
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 6,
+                "on_hit": 9
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 2,
+                "recovery": 26,
+                "startup": 14
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 3
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 10
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 3,
+                "recovery": 7,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 0,
+                "on_hit": 0
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 12,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 5
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 6
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)",
+                "Forces stand",
+                "From active frame 2F"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": 22,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": -4
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 8
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 20,
+            "frame": {
+                "active": 2,
+                "recovery": 7,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 0,
+                "on_hit": -1
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 2,
+                "recovery": 14,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 0,
+                "on_hit": 1
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 3,
+                "recovery": 23,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -12,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": 0,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 6,
+                "recovery": null,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 6,
+                "recovery": null,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 7,
+                "recovery": null,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 19,
+                "startup": 22
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Inazuma Kick",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 1
+            },
+            "stun": 100,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": 3,
+                "recovery": 22,
+                "startup": 26
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Thunder Kick",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 2
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 34,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Thunder Kick (Feint)",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 2,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Chin Buster",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 0
+            },
+            "stun": 80,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": 5
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 3,
+                "recovery": 27,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "Chin Buster 2nd",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -13,
+                "on_hit": "D"
+            },
+            "stun": 80,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 3,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 50,
+            "frame": {
+                "active": 4,
+                "recovery": 20,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "Lion Breaker",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": 2,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 120,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "Knee Bash",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 120,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 140,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "Hell Wheel",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 200,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 22,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Quick Step",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 2,
+                "recovery": 25,
+                "startup": 24
+            },
+            "meter_gain": null,
+            "name": "Quick Step (Hold Button)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": 7,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "V-Gauge Timer + 1200F",
+                "1F  full invincibility",
+                "Special move performance enhanced while active"
+            ],
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 21,
+                "startup": 1
+            },
+            "meter_gain": null,
+            "name": "Heat Rush",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 25F  attack & projectile invincibility",
+                "Recover 200 stun upon activation"
+            ],
+            "damage": 40,
+            "frame": {
+                "active": 2,
+                "recovery": 24,
+                "startup": 12
+            },
+            "meter_gain": null,
+            "name": "Senpu Nataotoshi",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 2
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": null,
+                "recovery": 49,
+                "startup": 14
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "Hadoken",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": -2
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 14,
+                "on_hit": 20
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": null,
+                "recovery": 48,
+                "startup": 13
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "Hadoken",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -7,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": null,
+                "recovery": 45,
+                "startup": 12
+            },
+            "meter_gain": null,
+            "name": "EX Hadoken",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 3
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 21,
+                "on_hit": 23
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 110,
+            "frame": {
+                "active": null,
+                "recovery": 44,
+                "startup": 12
+            },
+            "meter_gain": null,
+            "name": "EX Hadoken",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 3,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - ",
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "1F - 5F  throw invincibility",
+                "Subject to counter hit during move duration",
+                "From active frame 2F"
+            ],
+            "damage": 110,
+            "frame": {
+                "active": 11,
+                "recovery": 30,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "L Shoryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -25,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 0,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "1F - 6F  invincible to mid-air attacks",
+                "Subject to counter hit during move duration",
+                "Only possible during 1st attack"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": 12,
+                "recovery": 35,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "M Shoryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -26,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 0,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "3F - 6F  attack & projectile invincibility",
+                "Subject to counter hit during move duration",
+                "Only possible during 1st, 2nd attack"
+            ],
+            "damage": 140,
+            "frame": {
+                "active": 13,
+                "recovery": 43,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "H Shoryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -34,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 0,
+                "on_hit": -12
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": [
+                "CA"
+            ],
+            "comments": [
+                "1F - 5F  throw invincibility",
+                "Subject to counter hit during move duration",
+                "From active frame 2F"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": 12,
+                "recovery": 27,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "L Shoryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -21,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "1F - 6F  invincible to mid-air attacks",
+                "Subject to counter hit during move duration",
+                "Only possible during 1st attack"
+            ],
+            "damage": 150,
+            "frame": {
+                "active": 13,
+                "recovery": 34,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "M Shoryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -24,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "3F - 6F  attack & projectile invincibility",
+                "Subject to counter hit during move duration",
+                "Only possible during 1st, 2nd attack"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": 14,
+                "recovery": 44,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "H Shoryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -34,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "7F - ",
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "1F - 5F  full invincibility",
+                "Subject to counter hit during move duration"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": 15,
+                "recovery": 60,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "EX Shoryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -45,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 0,
+                "on_hit": 7
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": null,
+            "comments": [
+                "1F - 6F  full invincibility",
+                "Subject to counter hit during move duration"
+            ],
+            "damage": 180,
+            "frame": {
+                "active": 19,
+                "recovery": 56,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "EX Shoryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -40,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "5F - ",
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "Can cross-up",
+                "Only possible during 1st attack"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 6,
+                "recovery": 25,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "L Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 2,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": "9F - ",
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "Can cross-up",
+                "Only possible during 1st attack",
+                "If the first hit does not connect, damage for the 2nd and 3rd hits increases from 40 + 40, to 75 + 75"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 10,
+                "recovery": 24,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "M Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": 9,
+                "on_hit": "D"
+            }
+        },
+        {
+            "airborne_hurtbox": "14F - ",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 140,
+            "frame": {
+                "active": 10,
+                "recovery": 21,
+                "startup": 14
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "H Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - ",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Can cross-up",
+                "Only possible during 1st attack"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 6,
+                "recovery": 23,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "L Tatsumaki Senpukyaku",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "9F - ",
+            "cancel_info": [
+                "CA*"
+            ],
+            "comments": [
+                "Can cross-up",
+                "Only possible during 1st attack",
+                "If the first hit does not connect, damage for the 2nd and 3rd hits increases from 50 + 50, to 75 + 75"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 13,
+                "recovery": 31,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "M Tatsumaki Senpukyaku",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "13F - ",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 160,
+            "frame": {
+                "active": 11,
+                "recovery": 21,
+                "startup": 13
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "H Tatsumaki Senpukyaku",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 160,
+            "frame": {
+                "active": 13,
+                "recovery": 45,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "EX Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -58,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - ",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 180,
+            "frame": {
+                "active": 13,
+                "recovery": 45,
+                "startup": 6
+            },
+            "meter_gain": null,
+            "name": "EX Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -58,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 10,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "L Airborne Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 10,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "M Airborne Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 10,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "H Airborne Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 6,
+                "recovery": 9,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "L Airborne Tatsumaki Senpukyaku",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 6,
+                "recovery": 9,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "M Airborne Tatsumaki Senpukyaku",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 100,
+            "frame": {
+                "active": 6,
+                "recovery": 9,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "H Airborne Tatsumaki Senpukyaku",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 6,
+                "recovery": 13,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "EX Airborne Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 16,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "EX Airborne Tatsumaki Senpukyaku",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "2F - 22F",
+            "cancel_info": null,
+            "comments": [
+                "1F - 6F  full invincibility"
+            ],
+            "damage": 340,
+            "frame": {
+                "active": 2,
+                "recovery": 44,
+                "startup": 5
+            },
+            "meter_gain": null,
+            "name": "Guren Enjinkyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -26,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "Critical Art",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        }
+    ],
+    "moves_vt2": [
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 7,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 5
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 2,
+                "recovery": 15,
+                "startup": 7
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 3
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Triggers Crush Counter (+7F)"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 2,
+                "recovery": 20,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -3,
+                "on_hit": 5
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 30,
+            "frame": {
+                "active": 2,
+                "recovery": 9,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Standing LK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -1,
+                "on_hit": 3
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Forces stand"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 19,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Standing MK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 1
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 2,
+                "recovery": 26,
+                "startup": 14
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Standing HK",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 3
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 30,
+            "frame": {
+                "active": 3,
+                "recovery": 7,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 12,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": 2,
+                "on_hit": 5
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)",
+                "Forces stand",
+                "From active frame 2F"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": 22,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HP",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": -4
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Can be rapid canceled"
+            ],
+            "damage": 20,
+            "frame": {
+                "active": 2,
+                "recovery": 7,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Crouching LK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 4
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 2,
+                "recovery": 14,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Crouching MK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 0
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Triggers Crush Counter  (D)"
+            ],
+            "damage": 90,
+            "frame": {
+                "active": 3,
+                "recovery": 23,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Crouching HK",
+            "projectile_nullification": false,
+            "properties": "Low",
+            "recovery": {
+                "on_block": -12,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 6,
+                "recovery": null,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 6,
+                "recovery": null,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 4,
+                "recovery": null,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HP",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 40,
+            "frame": {
+                "active": 7,
+                "recovery": null,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                20
+            ],
+            "name": "Jumping LK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 70,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 60,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Jumping MK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": 5,
+                "recovery": null,
+                "startup": 8
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Jumping HK",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 150,
+            "type": "Normal Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 60,
+            "frame": {
+                "active": 3,
+                "recovery": 19,
+                "startup": 22
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Inazuma Kick",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": 1
+            },
+            "stun": 100,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 80,
+            "frame": {
+                "active": 3,
+                "recovery": 22,
+                "startup": 26
+            },
+            "meter_gain": [
+                0,
+                50
+            ],
+            "name": "Thunder Kick",
+            "projectile_nullification": false,
+            "properties": "Mid",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": 2
+            },
+            "stun": 150,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 34,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Thunder Kick (Feint)",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 2,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "Chin Buster",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 0
+            },
+            "stun": 80,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 3,
+                "recovery": 27,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "Chin Buster 2nd",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -13,
+                "on_hit": "D"
+            },
+            "stun": 80,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "S",
+                "CA",
+                "V",
+                "VS"
+            ],
+            "comments": [
+                "Will not hit crouching opponents"
+            ],
+            "damage": 50,
+            "frame": {
+                "active": 4,
+                "recovery": 20,
+                "startup": 10
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "Lion Breaker",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Unique Attacks",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 120,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                70
+            ],
+            "name": "Knee Bash",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 120,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 140,
+            "frame": {
+                "active": 3,
+                "recovery": 17,
+                "startup": 5
+            },
+            "meter_gain": [
+                0,
+                100
+            ],
+            "name": "Hell Wheel",
+            "projectile_nullification": false,
+            "properties": "Throw",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 200,
+            "type": "Normal Throws",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": null,
+            "frame": {
+                "active": null,
+                "recovery": 22,
+                "startup": null
+            },
+            "meter_gain": null,
+            "name": "Quick Step",
+            "projectile_nullification": false,
+            "properties": null,
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": null,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": 2,
+                "recovery": 25,
+                "startup": 24
+            },
+            "meter_gain": null,
+            "name": "Quick Step (Hold Button)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -6,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "11F - ",
+            "cancel_info": [
+                "S",
+                "CA"
+            ],
+            "comments": [
+                "V-Gauge Timer + 3000F",
+                "19F - 61F  projectile invincibility",
+                "1F - 18F  projectile & throw invincibility",
+                "Gains an exclusive special move",
+                "Can rapid-press P on hit",
+                "Can cancel the landing recovery into a special move on hit"
+            ],
+            "damage": 140,
+            "frame": {
+                "active": 13,
+                "recovery": 58,
+                "startup": 9
+            },
+            "meter_gain": null,
+            "name": "Shinryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -51,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "11F - ",
+            "cancel_info": [
+                "S",
+                "CA"
+            ],
+            "comments": [
+                "Uses 1500F V-Gauge Timer",
+                "19F - 94F  projectile invincibility",
+                "1F - 18F  projectile & throw invincibility",
+                "Can cancel the landing recovery into a special move on hit"
+            ],
+            "damage": 170,
+            "frame": {
+                "active": 25,
+                "recovery": 94,
+                "startup": 9
+            },
+            "meter_gain": null,
+            "name": "Shinryuken (Lv2)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "11F - ",
+            "cancel_info": [
+                "S",
+                "CA"
+            ],
+            "comments": [
+                "Uses 1500F V-Gauge Timer",
+                "19F - 111F  projectile invincibility",
+                "1F - 18F  projectile & throw invincibility",
+                "Can cancel the landing recovery into a special move on hit"
+            ],
+            "damage": 180,
+            "frame": {
+                "active": 31,
+                "recovery": 111,
+                "startup": 9
+            },
+            "meter_gain": null,
+            "name": "Shinryuken (Lv3)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "1F - 25F  attack & projectile invincibility",
+                "Recover 200 stun upon activation"
+            ],
+            "damage": 40,
+            "frame": {
+                "active": 2,
+                "recovery": 24,
+                "startup": 12
+            },
+            "meter_gain": null,
+            "name": "Senpu Nataotoshi",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -2,
+                "on_hit": 2
+            },
+            "stun": 0,
+            "type": "V-System ",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": null,
+            "damage": 50,
+            "frame": {
+                "active": null,
+                "recovery": 49,
+                "startup": 14
+            },
+            "meter_gain": [
+                5,
+                20
+            ],
+            "name": "Hadoken",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": -2
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": [
+                "V"
+            ],
+            "comments": null,
+            "damage": 90,
+            "frame": {
+                "active": null,
+                "recovery": 45,
+                "startup": 12
+            },
+            "meter_gain": null,
+            "name": "EX Hadoken",
+            "projectile_nullification": true,
+            "properties": "High",
+            "recovery": {
+                "on_block": 1,
+                "on_hit": 3
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "6F - ",
+            "cancel_info": [
+                "CA",
+                "V"
+            ],
+            "comments": [
+                "1F - 5F  throw invincibility",
+                "Subject to counter hit during move duration",
+                "From active frame 2F"
+            ],
+            "damage": 110,
+            "frame": {
+                "active": 11,
+                "recovery": 30,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "L Shoryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -25,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "1F - 6F  invincible to mid-air attacks",
+                "Subject to counter hit during move duration",
+                "Only possible during 1st attack"
+            ],
+            "damage": 130,
+            "frame": {
+                "active": 12,
+                "recovery": 35,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "M Shoryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -26,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "3F - 6F  attack & projectile invincibility",
+                "Subject to counter hit during move duration",
+                "Only possible during 1st, 2nd attack"
+            ],
+            "damage": 140,
+            "frame": {
+                "active": 13,
+                "recovery": 43,
+                "startup": 4
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "H Shoryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -34,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "7F - ",
+            "cancel_info": [
+                "V"
+            ],
+            "comments": [
+                "1F - 5F  full invincibility",
+                "Subject to counter hit during move duration"
+            ],
+            "damage": 160,
+            "frame": {
+                "active": 15,
+                "recovery": 60,
+                "startup": 4
+            },
+            "meter_gain": null,
+            "name": "EX Shoryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -45,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "5F - ",
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "Can cross-up",
+                "Only possible during 1st attack"
+            ],
+            "damage": 70,
+            "frame": {
+                "active": 6,
+                "recovery": 25,
+                "startup": 3
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "L Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -8,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "9F - ",
+            "cancel_info": [
+                "CA*",
+                "V*"
+            ],
+            "comments": [
+                "Can cross-up",
+                "Only possible during 1st attack",
+                "If the first hit does not connect, damage for the 2nd and 3rd hits increases from 40 + 40, to 75 + 75"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 10,
+                "recovery": 24,
+                "startup": 6
+            },
+            "meter_gain": [
+                0,
+                30
+            ],
+            "name": "M Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -9,
+                "on_hit": "D"
+            },
+            "stun": 150,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "14F - ",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 140,
+            "frame": {
+                "active": 10,
+                "recovery": 21,
+                "startup": 14
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "H Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -4,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "8F - ",
+            "cancel_info": null,
+            "comments": null,
+            "damage": 160,
+            "frame": {
+                "active": 13,
+                "recovery": 45,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "EX Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -58,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 10,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "L Airborne Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 10,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "M Airborne Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": [
+                "Can cross-up"
+            ],
+            "damage": 80,
+            "frame": {
+                "active": 6,
+                "recovery": 10,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                60
+            ],
+            "name": "H Airborne Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": null
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": null,
+            "cancel_info": null,
+            "comments": null,
+            "damage": 70,
+            "frame": {
+                "active": 6,
+                "recovery": 13,
+                "startup": 8
+            },
+            "meter_gain": null,
+            "name": "EX Airborne Tatsumaki Senpukyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 100,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "12F - ",
+            "cancel_info": [
+                "S",
+                "CA"
+            ],
+            "comments": [
+                "Uses 2000F V-Gauge Timer",
+                "1F - 61F  projectile invincibility",
+                "Can be canceled into from V-Trigger-cancelable moves",
+                "Can rapid-press P on hit",
+                "Can cancel the landing recovery into a special move on hit"
+            ],
+            "damage": 140,
+            "frame": {
+                "active": 13,
+                "recovery": 58,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Shinryuken",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -51,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "12F - ",
+            "cancel_info": [
+                "S",
+                "CA"
+            ],
+            "comments": [
+                "Uses 1500F V-Gauge Timer",
+                "1F - 94F  projectile invincibility",
+                "Can cancel the landing recovery into a special move on hit"
+            ],
+            "damage": 170,
+            "frame": {
+                "active": 25,
+                "recovery": 94,
+                "startup": 9
+            },
+            "meter_gain": [
+                0,
+                40
+            ],
+            "name": "Shinryuken (Lv2)",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": null,
+                "on_hit": "D"
+            },
+            "stun": 200,
+            "type": "Special Moves",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        },
+        {
+            "airborne_hurtbox": "2F - 22F",
+            "cancel_info": null,
+            "comments": [
+                "1F - 6F  full invincibility"
+            ],
+            "damage": 340,
+            "frame": {
+                "active": 2,
+                "recovery": 44,
+                "startup": 5
+            },
+            "meter_gain": null,
+            "name": "Guren Enjinkyaku",
+            "projectile_nullification": false,
+            "properties": "High",
+            "recovery": {
+                "on_block": -26,
+                "on_hit": "D"
+            },
+            "stun": 0,
+            "type": "Critical Art",
+            "vt_cancel_recovery": {
+                "on_block": null,
+                "on_hit": null
+            }
+        }
+    ]
+}

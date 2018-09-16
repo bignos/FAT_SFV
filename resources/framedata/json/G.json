@@ -21,7 +21,7 @@
                 20
             ],
             "name": "Standing LP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": 3,
@@ -36,7 +36,9 @@
         },
         {
             "airborne_hurtbox": null,
-            "cancel_info": "V",
+            "cancel_info": [
+                "V"
+            ],
             "comments": null,
             "damage": 60,
             "frame": {
@@ -49,7 +51,7 @@
                 30
             ],
             "name": "Standing MP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": 3,
@@ -70,7 +72,9 @@
                 "V",
                 "VS"
             ],
-            "comments": "Triggers Crush Counter (D)",
+            "comments": [
+                "Triggers Crush Counter (D)"
+            ],
             "damage": 80,
             "frame": {
                 "active": 4,
@@ -82,7 +86,7 @@
                 50
             ],
             "name": "Standing HP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -3,
@@ -115,7 +119,7 @@
                 20
             ],
             "name": "Standing LK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": 1,
@@ -130,7 +134,9 @@
         },
         {
             "airborne_hurtbox": null,
-            "cancel_info": "V",
+            "cancel_info": [
+                "V"
+            ],
             "comments": null,
             "damage": 60,
             "frame": {
@@ -143,7 +149,7 @@
                 30
             ],
             "name": "Standing MK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -166,10 +172,7 @@
                 "On max-distance hit",
                 "Only possible during 1st attack"
             ],
-            "damage": [
-                90,
-                80
-            ],
+            "damage": 90,
             "frame": {
                 "active": 5,
                 "recovery": 25,
@@ -180,26 +183,17 @@
                 50
             ],
             "name": "Standing HK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
                 "on_hit": 2
             },
-            "stun": [
-                150,
-                100
-            ],
+            "stun": 150,
             "type": "Normal Moves",
             "vt_cancel_recovery": {
-                "on_block": [
-                    14,
-                    14
-                ],
-                "on_hit": [
-                    19,
-                    21
-                ]
+                "on_block": 14,
+                "on_hit": 19
             }
         },
         {
@@ -222,7 +216,7 @@
                 20
             ],
             "name": "Crouching LP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": 2,
@@ -255,7 +249,7 @@
                 30
             ],
             "name": "Crouching MP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": 2,
@@ -280,10 +274,7 @@
                 "Forces stand",
                 "From active frame 2F"
             ],
-            "damage": [
-                90,
-                80
-            ],
+            "damage": 90,
             "frame": {
                 "active": 4,
                 "recovery": 21,
@@ -294,7 +285,7 @@
                 50
             ],
             "name": "Crouching HP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -3,
@@ -309,7 +300,9 @@
         },
         {
             "airborne_hurtbox": null,
-            "cancel_info": "V",
+            "cancel_info": [
+                "V"
+            ],
             "comments": null,
             "damage": 20,
             "frame": {
@@ -322,7 +315,7 @@
                 20
             ],
             "name": "Crouching LK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": 1,
@@ -337,7 +330,9 @@
         },
         {
             "airborne_hurtbox": null,
-            "cancel_info": "V",
+            "cancel_info": [
+                "V"
+            ],
             "comments": null,
             "damage": 60,
             "frame": {
@@ -350,7 +345,7 @@
                 30
             ],
             "name": "Crouching MK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": 0,
@@ -386,7 +381,7 @@
                 50
             ],
             "name": "Crouching HK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -14,
@@ -414,7 +409,7 @@
                 20
             ],
             "name": "Jumping LP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -442,7 +437,7 @@
                 30
             ],
             "name": "Jumping MP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -470,7 +465,7 @@
                 50
             ],
             "name": "Jumping HP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -485,7 +480,9 @@
         },
         {
             "airborne_hurtbox": null,
-            "cancel_info": "VS",
+            "cancel_info": [
+                "VS"
+            ],
             "comments": null,
             "damage": 40,
             "frame": {
@@ -498,7 +495,7 @@
                 20
             ],
             "name": "Jumping LK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -526,7 +523,7 @@
                 30
             ],
             "name": "Jumping MK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -554,7 +551,7 @@
                 50
             ],
             "name": "Jumping HK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -590,7 +587,7 @@
                 50
             ],
             "name": "Wild President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -611,11 +608,10 @@
                 "V",
                 "VS"
             ],
-            "comments": "Can only be canceled into Message to the People.",
-            "damage": [
-                80,
-                70
+            "comments": [
+                "Can only be canceled into Message to the People."
             ],
+            "damage": 80,
             "frame": {
                 "active": 5,
                 "recovery": 23,
@@ -626,16 +622,13 @@
                 50
             ],
             "name": "Strong President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
                 "on_hit": "D"
             },
-            "stun": [
-                150,
-                150
-            ],
+            "stun": 150,
             "type": "Unique Attacks",
             "vt_cancel_recovery": {
                 "on_block": 10,
@@ -657,7 +650,7 @@
                 50
             ],
             "name": "Crash President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": -7,
@@ -673,7 +666,9 @@
         {
             "airborne_hurtbox": null,
             "cancel_info": null,
-            "comments": "Can cross-up",
+            "comments": [
+                "Can cross-up"
+            ],
             "damage": 60,
             "frame": {
                 "active": 7,
@@ -685,7 +680,7 @@
                 30
             ],
             "name": "Flying President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -721,7 +716,7 @@
             },
             "meter_gain": null,
             "name": "Message To The People * Pattern 1",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -757,7 +752,7 @@
             },
             "meter_gain": null,
             "name": "Message To The People * Pattern 2",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -793,7 +788,7 @@
             },
             "meter_gain": null,
             "name": "Message To The People * Pattern 3",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -809,7 +804,9 @@
         {
             "airborne_hurtbox": null,
             "cancel_info": null,
-            "comments": "Patterns 1-3 have the same functionality",
+            "comments": [
+                "Patterns 1-3 have the same functionality"
+            ],
             "damage": 0,
             "frame": {
                 "active": null,
@@ -818,7 +815,7 @@
             },
             "meter_gain": null,
             "name": "Message To The People (Cancel)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -846,7 +843,7 @@
                 70
             ],
             "name": "Violence President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -874,7 +871,7 @@
                 100
             ],
             "name": "Destroy President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -902,7 +899,7 @@
                 70
             ],
             "name": "Shining President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -929,22 +926,13 @@
             ],
             "damage": 50,
             "frame": {
-                "active": [
-                    13,
-                    23
-                ],
+                "active": 13,
                 "recovery": 23,
-                "startup": [
-                    13,
-                    9
-                ]
+                "startup": 13
             },
-            "meter_gain": [
-                0,
-                120
-            ],
+            "meter_gain": null,
             "name": "G Barrier",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -17,
@@ -967,22 +955,13 @@
             ],
             "damage": 50,
             "frame": {
-                "active": [
-                    16,
-                    26
-                ],
+                "active": 16,
                 "recovery": 11,
-                "startup": [
-                    13,
-                    9
-                ]
+                "startup": 13
             },
-            "meter_gain": [
-                0,
-                120
-            ],
+            "meter_gain": null,
             "name": "Airborne G Barrier",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": null,
@@ -1005,22 +984,16 @@
             ],
             "damage": 130,
             "frame": {
-                "active": [
-                    26,
-                    30
-                ],
+                "active": 26,
                 "recovery": 63,
-                "startup": [
-                    13,
-                    9
-                ]
+                "startup": 13
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "V G Barrier",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -1043,22 +1016,16 @@
             ],
             "damage": 130,
             "frame": {
-                "active": [
-                    13,
-                    20
-                ],
+                "active": 13,
                 "recovery": 11,
-                "startup": [
-                    13,
-                    9
-                ]
+                "startup": 13
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "V Airborne G Barrier",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": null,
@@ -1087,7 +1054,7 @@
             },
             "meter_gain": null,
             "name": "Maximum President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -1113,12 +1080,9 @@
                 "recovery": 24,
                 "startup": 17
             },
-            "meter_gain": [
-                300,
-                0
-            ],
+            "meter_gain": null,
             "name": "G Revenge",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -1148,11 +1112,11 @@
                 "startup": 16
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "L G Smash Over (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -1182,11 +1146,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "M G Smash Over (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -1214,17 +1178,14 @@
             "frame": {
                 "active": 5,
                 "recovery": 21,
-                "startup": [
-                    25,
-                    22
-                ]
+                "startup": 25
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "H G Smash Over (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -1254,11 +1215,11 @@
                 "startup": 16
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "L G Smash Over (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -1288,11 +1249,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "M G Smash Over (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -1320,17 +1281,14 @@
             "frame": {
                 "active": 5,
                 "recovery": 21,
-                "startup": [
-                    25,
-                    22
-                ]
+                "startup": 25
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "H G Smash Over (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -1361,11 +1319,11 @@
                 "startup": 13
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "G Smash Over (Lv3)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -6,
@@ -1397,11 +1355,11 @@
                 "startup": 13
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "V G Smash Over",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -6,
@@ -1416,7 +1374,9 @@
         },
         {
             "airborne_hurtbox": null,
-            "cancel_info": "CA",
+            "cancel_info": [
+                "CA"
+            ],
             "comments": [
                 "Uses 300F V-Gauge Timer",
                 "Can only be canceled into Message to the People on hit."
@@ -1428,11 +1388,11 @@
                 "startup": 13
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "V G Smash Over (Cancel)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -6,
@@ -1461,12 +1421,9 @@
                 "recovery": 22,
                 "startup": 13
             },
-            "meter_gain": [
-                -300,
-                0
-            ],
+            "meter_gain": null,
             "name": "EX G Smash Over",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -6,
@@ -1496,11 +1453,11 @@
                 "startup": 13
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "L G Smash Under (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -1530,11 +1487,11 @@
                 "startup": 16
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "M G Smash Under (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -1562,17 +1519,14 @@
             "frame": {
                 "active": 5,
                 "recovery": 25,
-                "startup": [
-                    23,
-                    20
-                ]
+                "startup": 23
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "H G Smash Under (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -1602,11 +1556,11 @@
                 "startup": 13
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "L G Smash Under (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -1636,11 +1590,11 @@
                 "startup": 16
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "M G Smash Under (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -6,
@@ -1668,17 +1622,14 @@
             "frame": {
                 "active": 5,
                 "recovery": 22,
-                "startup": [
-                    23,
-                    20
-                ]
+                "startup": 23
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "H G Smash Under (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -6,
@@ -1707,17 +1658,14 @@
             "frame": {
                 "active": 5,
                 "recovery": 22,
-                "startup": [
-                    18,
-                    13
-                ]
+                "startup": 18
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "G Smash Under (Lv3)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -1747,17 +1695,14 @@
             "frame": {
                 "active": 5,
                 "recovery": 22,
-                "startup": [
-                    18,
-                    13
-                ]
+                "startup": 18
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "V G Smash Under",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -1772,7 +1717,9 @@
         },
         {
             "airborne_hurtbox": null,
-            "cancel_info": "CA",
+            "cancel_info": [
+                "CA"
+            ],
             "comments": [
                 "Uses 300F V-Gauge Timer",
                 "When in contact",
@@ -1782,17 +1729,14 @@
             "frame": {
                 "active": 5,
                 "recovery": 22,
-                "startup": [
-                    18,
-                    13
-                ]
+                "startup": 18
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "V G Smash Under (Cancel)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -1820,17 +1764,11 @@
             "frame": {
                 "active": 5,
                 "recovery": 22,
-                "startup": [
-                    18,
-                    13
-                ]
+                "startup": 18
             },
-            "meter_gain": [
-                -300,
-                0
-            ],
+            "meter_gain": null,
             "name": "EX G Smash Under",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -1861,11 +1799,11 @@
                 "startup": 15
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "L G Burst (Lv1)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -8,
@@ -1896,11 +1834,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "M G Burst (Lv1)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -6,
@@ -1931,11 +1869,11 @@
                 "startup": 25
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "H G Burst (Lv1)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -1966,11 +1904,11 @@
                 "startup": 15
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "L G Burst (Lv2)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -2001,11 +1939,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "M G Burst (Lv2)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -3,
@@ -2036,11 +1974,11 @@
                 "startup": 25
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "H G Burst (Lv2)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -1,
@@ -2071,11 +2009,11 @@
                 "startup": 15
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "G Burst  (Lv3)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -2108,11 +2046,11 @@
                 "startup": 15
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "V G Burst",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -2127,7 +2065,9 @@
         },
         {
             "airborne_hurtbox": null,
-            "cancel_info": "CA",
+            "cancel_info": [
+                "CA"
+            ],
             "comments": [
                 "Uses 300F V-Gauge Timer",
                 "Can be canceled on whiff, except the CA",
@@ -2140,11 +2080,11 @@
                 "startup": 15
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "V G Burst (Cancel)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -2174,12 +2114,9 @@
                 "recovery": 64,
                 "startup": 15
             },
-            "meter_gain": [
-                -300,
-                0
-            ],
+            "meter_gain": null,
             "name": "EX G Burst",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -2194,7 +2131,9 @@
         },
         {
             "airborne_hurtbox": "16F - 30F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "Can only be canceled into G Charge",
                 "Can only be canceled into Message to the People."
@@ -2206,11 +2145,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                15,
+                5,
                 40
             ],
             "name": "L G Spin Kick (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -2225,7 +2164,9 @@
         },
         {
             "airborne_hurtbox": "21F - 35F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "Can only be canceled into G Charge",
                 "Can only be canceled into Message to the People."
@@ -2237,11 +2178,11 @@
                 "startup": 25
             },
             "meter_gain": [
-                15,
+                5,
                 40
             ],
             "name": "M G Spin Kick (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -2256,7 +2197,9 @@
         },
         {
             "airborne_hurtbox": "24F - 37F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "Can only be canceled into G Charge",
                 "Can only be canceled into Message to the People."
@@ -2268,11 +2211,11 @@
                 "startup": 28
             },
             "meter_gain": [
-                15,
+                5,
                 40
             ],
             "name": "H G Spin Kick (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -2287,7 +2230,9 @@
         },
         {
             "airborne_hurtbox": "17F - 29F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "First hit will not hit grounded opponents",
                 "Can only be canceled into G Charge",
@@ -2300,11 +2245,11 @@
                 "startup": 17
             },
             "meter_gain": [
-                15,
+                5,
                 20
             ],
             "name": "L G Spin Kick (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -2319,7 +2264,9 @@
         },
         {
             "airborne_hurtbox": "22F - 34F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "First hit will not hit grounded opponents",
                 "Can only be canceled into G Charge",
@@ -2332,11 +2279,11 @@
                 "startup": 22
             },
             "meter_gain": [
-                15,
+                5,
                 20
             ],
             "name": "M G Spin Kick (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -2351,7 +2298,9 @@
         },
         {
             "airborne_hurtbox": "25F - 37F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "First hit will not hit grounded opponents",
                 "Can only be canceled into G Charge",
@@ -2364,11 +2313,11 @@
                 "startup": 25
             },
             "meter_gain": [
-                15,
+                5,
                 20
             ],
             "name": "H G Spin Kick (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -2383,7 +2332,9 @@
         },
         {
             "airborne_hurtbox": "16F - 30F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "4F - 30F  projectile invincibility",
                 "Can only be canceled into G Charge",
@@ -2396,11 +2347,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                15,
+                5,
                 40
             ],
             "name": "G Spin Kick (Lv3)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -2432,11 +2383,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                15,
+                5,
                 40
             ],
             "name": "V G Spin Kick",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -2464,11 +2415,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                15,
+                5,
                 40
             ],
             "name": "V G Spin Kick (Cancel)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -2483,7 +2434,9 @@
         },
         {
             "airborne_hurtbox": "16F - 30F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "4F - 30F  projectile invincibility",
                 "Can only be canceled into G Charge on hit",
@@ -2495,12 +2448,9 @@
                 "recovery": 22,
                 "startup": 20
             },
-            "meter_gain": [
-                -300,
-                0
-            ],
+            "meter_gain": null,
             "name": "EX G Spin Kick",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -2524,11 +2474,11 @@
                 "startup": 12
             },
             "meter_gain": [
-                20,
+                0,
                 70
             ],
             "name": "G Impact (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -2548,7 +2498,9 @@
                 "CA",
                 "VS"
             ],
-            "comments": "Hit recovery can be canceled into special moves, CA, V-Skill",
+            "comments": [
+                "Hit recovery can be canceled into special moves, CA, V-Skill"
+            ],
             "damage": 70,
             "frame": {
                 "active": 2,
@@ -2556,11 +2508,11 @@
                 "startup": 12
             },
             "meter_gain": [
-                20,
+                0,
                 70
             ],
             "name": "G Impact (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -2580,7 +2532,9 @@
                 "CA",
                 "VS"
             ],
-            "comments": "Hit recovery can be canceled into special moves, CA, V-Skill",
+            "comments": [
+                "Hit recovery can be canceled into special moves, CA, V-Skill"
+            ],
             "damage": 80,
             "frame": {
                 "active": 2,
@@ -2588,11 +2542,11 @@
                 "startup": 12
             },
             "meter_gain": [
-                20,
+                0,
                 70
             ],
             "name": "G Impact (Lv3)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -2623,11 +2577,11 @@
                 "startup": 12
             },
             "meter_gain": [
-                20,
+                0,
                 70
             ],
             "name": "V G Impact",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -2658,11 +2612,11 @@
                 "startup": 5
             },
             "meter_gain": [
-                20,
+                0,
                 70
             ],
             "name": "V G Impact (Cancel)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -2682,19 +2636,18 @@
                 "CA",
                 "VS"
             ],
-            "comments": "Hit recovery can be canceled into special moves, V-Skill",
+            "comments": [
+                "Hit recovery can be canceled into special moves, V-Skill"
+            ],
             "damage": 80,
             "frame": {
                 "active": 2,
                 "recovery": 60,
                 "startup": 12
             },
-            "meter_gain": [
-                -300,
-                0
-            ],
+            "meter_gain": null,
             "name": "EX G Impact",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -2722,7 +2675,7 @@
             },
             "meter_gain": null,
             "name": "G Charge",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -2738,7 +2691,9 @@
         {
             "airborne_hurtbox": null,
             "cancel_info": null,
-            "comments": "Gain 1 President Lv on 43F, 120F",
+            "comments": [
+                "Gain 1 President Lv on 43F, 120F"
+            ],
             "damage": 0,
             "frame": {
                 "active": null,
@@ -2747,7 +2702,7 @@
             },
             "meter_gain": null,
             "name": "G Charge (Hold)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -2775,7 +2730,7 @@
             },
             "meter_gain": null,
             "name": "G Charge (Cancel)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -2791,19 +2746,18 @@
         {
             "airborne_hurtbox": null,
             "cancel_info": null,
-            "comments": "1F - 10F  full invincibility",
+            "comments": [
+                "1F - 10F  full invincibility"
+            ],
             "damage": 330,
             "frame": {
                 "active": 39,
                 "recovery": 73,
                 "startup": 6
             },
-            "meter_gain": [
-                -900,
-                0
-            ],
+            "meter_gain": null,
             "name": "Pangaea Burst",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -39,
@@ -2838,7 +2792,7 @@
                 20
             ],
             "name": "Standing LP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": 3,
@@ -2857,7 +2811,9 @@
                 "S*",
                 "V"
             ],
-            "comments": "Can only be canceled into G Explosion, G Rage",
+            "comments": [
+                "Can only be canceled into G Explosion, G Rage"
+            ],
             "damage": 60,
             "frame": {
                 "active": 3,
@@ -2869,7 +2825,7 @@
                 30
             ],
             "name": "Standing MP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": 3,
@@ -2890,7 +2846,9 @@
                 "V",
                 "VS"
             ],
-            "comments": "Triggers Crush Counter (D)",
+            "comments": [
+                "Triggers Crush Counter (D)"
+            ],
             "damage": 80,
             "frame": {
                 "active": 4,
@@ -2902,7 +2860,7 @@
                 50
             ],
             "name": "Standing HP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -3,
@@ -2935,7 +2893,7 @@
                 20
             ],
             "name": "Standing LK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": 1,
@@ -2954,7 +2912,9 @@
                 "S*",
                 "V"
             ],
-            "comments": "Can only be canceled into G Explosion, G Rage",
+            "comments": [
+                "Can only be canceled into G Explosion, G Rage"
+            ],
             "damage": 60,
             "frame": {
                 "active": 3,
@@ -2966,7 +2926,7 @@
                 30
             ],
             "name": "Standing MK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -2990,10 +2950,7 @@
                 "On max-distance hit",
                 "Only possible during 1st attack"
             ],
-            "damage": [
-                90,
-                80
-            ],
+            "damage": 90,
             "frame": {
                 "active": 5,
                 "recovery": 25,
@@ -3004,26 +2961,17 @@
                 50
             ],
             "name": "Standing HK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
                 "on_hit": 2
             },
-            "stun": [
-                150,
-                100
-            ],
+            "stun": 150,
             "type": "Normal Moves",
             "vt_cancel_recovery": {
-                "on_block": [
-                    14,
-                    14
-                ],
-                "on_hit": [
-                    19,
-                    21
-                ]
+                "on_block": 14,
+                "on_hit": 19
             }
         },
         {
@@ -3046,7 +2994,7 @@
                 20
             ],
             "name": "Crouching LP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": 2,
@@ -3079,7 +3027,7 @@
                 30
             ],
             "name": "Crouching MP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": 2,
@@ -3104,10 +3052,7 @@
                 "Forces stand",
                 "From active frame 2F"
             ],
-            "damage": [
-                90,
-                80
-            ],
+            "damage": 90,
             "frame": {
                 "active": 4,
                 "recovery": 21,
@@ -3118,7 +3063,7 @@
                 50
             ],
             "name": "Crouching HP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -3,
@@ -3137,7 +3082,9 @@
                 "S*",
                 "V"
             ],
-            "comments": "Can only be canceled into G Explosion, G Rage",
+            "comments": [
+                "Can only be canceled into G Explosion, G Rage"
+            ],
             "damage": 20,
             "frame": {
                 "active": 2,
@@ -3149,7 +3096,7 @@
                 20
             ],
             "name": "Crouching LK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": 1,
@@ -3168,7 +3115,9 @@
                 "S*",
                 "V"
             ],
-            "comments": "Can only be canceled into G Explosion, G Rage",
+            "comments": [
+                "Can only be canceled into G Explosion, G Rage"
+            ],
             "damage": 60,
             "frame": {
                 "active": 3,
@@ -3180,7 +3129,7 @@
                 30
             ],
             "name": "Crouching MK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": 0,
@@ -3215,7 +3164,7 @@
                 50
             ],
             "name": "Crouching HK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -14,
@@ -3243,7 +3192,7 @@
                 20
             ],
             "name": "Jumping LP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -3271,7 +3220,7 @@
                 30
             ],
             "name": "Jumping MP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -3299,7 +3248,7 @@
                 50
             ],
             "name": "Jumping HP",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -3314,7 +3263,9 @@
         },
         {
             "airborne_hurtbox": null,
-            "cancel_info": "VS",
+            "cancel_info": [
+                "VS"
+            ],
             "comments": null,
             "damage": 40,
             "frame": {
@@ -3327,7 +3278,7 @@
                 20
             ],
             "name": "Jumping LK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -3355,7 +3306,7 @@
                 30
             ],
             "name": "Jumping MK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -3383,7 +3334,7 @@
                 50
             ],
             "name": "Jumping HK",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -3418,7 +3369,7 @@
                 50
             ],
             "name": "Wild President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -3439,11 +3390,10 @@
                 "V",
                 "VS"
             ],
-            "comments": "Can only be canceled into Message to the People.",
-            "damage": [
-                80,
-                70
+            "comments": [
+                "Can only be canceled into Message to the People."
             ],
+            "damage": 80,
             "frame": {
                 "active": 5,
                 "recovery": 23,
@@ -3454,16 +3404,13 @@
                 50
             ],
             "name": "Strong President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
                 "on_hit": "D"
             },
-            "stun": [
-                150,
-                150
-            ],
+            "stun": 150,
             "type": "Unique Attacks",
             "vt_cancel_recovery": {
                 "on_block": 10,
@@ -3485,7 +3432,7 @@
                 50
             ],
             "name": "Crash President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": -7,
@@ -3501,7 +3448,9 @@
         {
             "airborne_hurtbox": null,
             "cancel_info": null,
-            "comments": "Can cross-up",
+            "comments": [
+                "Can cross-up"
+            ],
             "damage": 60,
             "frame": {
                 "active": 7,
@@ -3513,7 +3462,7 @@
                 30
             ],
             "name": "Flying President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Mid",
             "recovery": {
                 "on_block": null,
@@ -3549,7 +3498,7 @@
             },
             "meter_gain": null,
             "name": "Message To The People * Pattern 1",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -3585,7 +3534,7 @@
             },
             "meter_gain": null,
             "name": "Message To The People * Pattern 2",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -3621,7 +3570,7 @@
             },
             "meter_gain": null,
             "name": "Message To The People * Pattern 3",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -3637,7 +3586,9 @@
         {
             "airborne_hurtbox": null,
             "cancel_info": null,
-            "comments": "Patterns 1-3 have the same functionality",
+            "comments": [
+                "Patterns 1-3 have the same functionality"
+            ],
             "damage": 0,
             "frame": {
                 "active": null,
@@ -3646,7 +3597,7 @@
             },
             "meter_gain": null,
             "name": "Message To The People (Cancel)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -3674,7 +3625,7 @@
                 70
             ],
             "name": "Violence President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -3702,7 +3653,7 @@
                 100
             ],
             "name": "Destroy President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -3730,7 +3681,7 @@
                 70
             ],
             "name": "Shining President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -3757,22 +3708,13 @@
             ],
             "damage": 50,
             "frame": {
-                "active": [
-                    13,
-                    23
-                ],
+                "active": 13,
                 "recovery": 23,
-                "startup": [
-                    13,
-                    9
-                ]
+                "startup": 13
             },
-            "meter_gain": [
-                0,
-                120
-            ],
+            "meter_gain": null,
             "name": "G Barrier",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -17,
@@ -3794,22 +3736,13 @@
             ],
             "damage": 50,
             "frame": {
-                "active": [
-                    16,
-                    26
-                ],
+                "active": 16,
                 "recovery": 11,
-                "startup": [
-                    13,
-                    9
-                ]
+                "startup": 13
             },
-            "meter_gain": [
-                0,
-                120
-            ],
+            "meter_gain": null,
             "name": "Airborne G Barrier",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": null,
@@ -3836,12 +3769,9 @@
                 "recovery": 6,
                 "startup": 1
             },
-            "meter_gain": [
-                600,
-                0
-            ],
+            "meter_gain": null,
             "name": "Dangerous President",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -3867,12 +3797,9 @@
                 "recovery": 24,
                 "startup": 17
             },
-            "meter_gain": [
-                300,
-                0
-            ],
+            "meter_gain": null,
             "name": "G Revenge",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -3902,11 +3829,11 @@
                 "startup": 16
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "L G Smash Over (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -3936,11 +3863,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "M G Smash Over (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -3968,17 +3895,14 @@
             "frame": {
                 "active": 5,
                 "recovery": 21,
-                "startup": [
-                    25,
-                    22
-                ]
+                "startup": 25
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "H G Smash Over (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -4008,11 +3932,11 @@
                 "startup": 16
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "L G Smash Over (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -4042,11 +3966,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "M G Smash Over (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -4074,17 +3998,14 @@
             "frame": {
                 "active": 5,
                 "recovery": 21,
-                "startup": [
-                    25,
-                    22
-                ]
+                "startup": 25
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "H G Smash Over (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -4114,11 +4035,11 @@
                 "startup": 13
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "G Smash Over (Lv3)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -6,
@@ -4133,7 +4054,9 @@
         },
         {
             "airborne_hurtbox": null,
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "Can only be canceled into G Charge, G Explosion",
                 "Can only be canceled into Message to the People."
@@ -4144,12 +4067,9 @@
                 "recovery": 22,
                 "startup": 13
             },
-            "meter_gain": [
-                -300,
-                0
-            ],
+            "meter_gain": null,
             "name": "EX\u3000G Smash Over",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -6,
@@ -4179,11 +4099,11 @@
                 "startup": 13
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "L G Smash Under (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -4213,11 +4133,11 @@
                 "startup": 16
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "M G Smash Under (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -4245,17 +4165,14 @@
             "frame": {
                 "active": 5,
                 "recovery": 25,
-                "startup": [
-                    23,
-                    20
-                ]
+                "startup": 23
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "H G Smash Under (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -4285,11 +4202,11 @@
                 "startup": 13
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "L G Smash Under (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -4319,11 +4236,11 @@
                 "startup": 16
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "M G Smash Under (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -6,
@@ -4351,17 +4268,14 @@
             "frame": {
                 "active": 5,
                 "recovery": 22,
-                "startup": [
-                    23,
-                    20
-                ]
+                "startup": 23
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "H G Smash Under (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -6,
@@ -4389,17 +4303,14 @@
             "frame": {
                 "active": 5,
                 "recovery": 22,
-                "startup": [
-                    18,
-                    13
-                ]
+                "startup": 18
             },
             "meter_gain": [
-                10,
+                0,
                 40
             ],
             "name": "G Smash Under (Lv3)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -4414,7 +4325,9 @@
         },
         {
             "airborne_hurtbox": null,
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "When in contact",
                 "Can only be canceled into G Charge, G Explosion",
@@ -4424,17 +4337,11 @@
             "frame": {
                 "active": 5,
                 "recovery": 22,
-                "startup": [
-                    18,
-                    13
-                ]
+                "startup": 18
             },
-            "meter_gain": [
-                -300,
-                0
-            ],
+            "meter_gain": null,
             "name": "EX G Smash Under",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Low",
             "recovery": {
                 "on_block": -8,
@@ -4465,11 +4372,11 @@
                 "startup": 15
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "L G Burst (Lv1)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -8,
@@ -4500,11 +4407,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "M G Burst (Lv1)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -6,
@@ -4535,11 +4442,11 @@
                 "startup": 25
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "H G Burst (Lv1)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -4,
@@ -4570,11 +4477,11 @@
                 "startup": 15
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "L G Burst (Lv2)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -4605,11 +4512,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "M G Burst (Lv2)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -3,
@@ -4640,11 +4547,11 @@
                 "startup": 25
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "H G Burst (Lv2)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -1,
@@ -4676,11 +4583,11 @@
                 "startup": 15
             },
             "meter_gain": [
-                10,
+                0,
                 20
             ],
             "name": "G Burst  (Lv3)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -4710,12 +4617,9 @@
                 "recovery": 64,
                 "startup": 15
             },
-            "meter_gain": [
-                -300,
-                0
-            ],
+            "meter_gain": null,
             "name": "EX G Burst",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -4730,7 +4634,9 @@
         },
         {
             "airborne_hurtbox": "16F - 30F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "Can only be canceled into G Charge, G Explosion",
                 "Can only be canceled into Message to the People."
@@ -4742,11 +4648,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                15,
+                5,
                 40
             ],
             "name": "L G Spin Kick (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -4761,7 +4667,9 @@
         },
         {
             "airborne_hurtbox": "21F - 35F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "Can only be canceled into G Charge, G Explosion",
                 "Can only be canceled into Message to the People."
@@ -4773,11 +4681,11 @@
                 "startup": 25
             },
             "meter_gain": [
-                15,
+                5,
                 40
             ],
             "name": "M G Spin Kick (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -4792,7 +4700,9 @@
         },
         {
             "airborne_hurtbox": "24F - 37F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "Can only be canceled into G Charge, G Explosion",
                 "Can only be canceled into Message to the People."
@@ -4804,11 +4714,11 @@
                 "startup": 28
             },
             "meter_gain": [
-                15,
+                5,
                 40
             ],
             "name": "H G Spin Kick (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -4823,7 +4733,9 @@
         },
         {
             "airborne_hurtbox": "17F - 29F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "First hit will not hit grounded opponents",
                 "Can only be canceled into G Charge, G Explosion",
@@ -4836,11 +4748,11 @@
                 "startup": 17
             },
             "meter_gain": [
-                15,
+                5,
                 20
             ],
             "name": "L G Spin Kick (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -4855,7 +4767,9 @@
         },
         {
             "airborne_hurtbox": "22F - 34F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "First hit will not hit grounded opponents",
                 "Can only be canceled into G Charge, G Explosion",
@@ -4868,11 +4782,11 @@
                 "startup": 22
             },
             "meter_gain": [
-                15,
+                5,
                 20
             ],
             "name": "M G Spin Kick (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -4887,7 +4801,9 @@
         },
         {
             "airborne_hurtbox": "25F - 37F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "First hit will not hit grounded opponents",
                 "Can only be canceled into G Charge, G Explosion",
@@ -4900,11 +4816,11 @@
                 "startup": 25
             },
             "meter_gain": [
-                15,
+                5,
                 20
             ],
             "name": "H G Spin Kick (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -5,
@@ -4919,7 +4835,9 @@
         },
         {
             "airborne_hurtbox": "16F - 30F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "4F - 30F  throw invincibility",
                 "Can only be canceled into G Charge on hit",
@@ -4932,11 +4850,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                15,
+                5,
                 40
             ],
             "name": "G Spin Kick (Lv3)",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -4951,7 +4869,9 @@
         },
         {
             "airborne_hurtbox": "16F - 30F",
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "4F - 30F  throw invincibility",
                 "Can only be canceled into G Charge on hit",
@@ -4963,12 +4883,9 @@
                 "recovery": 22,
                 "startup": 20
             },
-            "meter_gain": [
-                -300,
-                0
-            ],
+            "meter_gain": null,
             "name": "EX G Spin Kick",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -2,
@@ -4992,11 +4909,11 @@
                 "startup": 12
             },
             "meter_gain": [
-                20,
+                0,
                 70
             ],
             "name": "G Impact (Lv1)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -5016,7 +4933,9 @@
                 "CA",
                 "VS"
             ],
-            "comments": "Hit recovery can be canceled into special moves, CA, V-Skill",
+            "comments": [
+                "Hit recovery can be canceled into special moves, CA, V-Skill"
+            ],
             "damage": 70,
             "frame": {
                 "active": 2,
@@ -5024,11 +4943,11 @@
                 "startup": 12
             },
             "meter_gain": [
-                20,
+                0,
                 70
             ],
             "name": "G Impact (Lv2)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -5048,7 +4967,9 @@
                 "CA",
                 "VS"
             ],
-            "comments": "Hit recovery can be canceled into special moves, CA, V-Skill",
+            "comments": [
+                "Hit recovery can be canceled into special moves, CA, V-Skill"
+            ],
             "damage": 80,
             "frame": {
                 "active": 2,
@@ -5056,11 +4977,11 @@
                 "startup": 12
             },
             "meter_gain": [
-                20,
+                0,
                 70
             ],
             "name": "G Impact (Lv3)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -5080,19 +5001,18 @@
                 "CA",
                 "VS"
             ],
-            "comments": "Hit recovery can be canceled into special moves, V-Skill",
+            "comments": [
+                "Hit recovery can be canceled into special moves, V-Skill"
+            ],
             "damage": 80,
             "frame": {
                 "active": 2,
                 "recovery": 60,
                 "startup": 12
             },
-            "meter_gain": [
-                -300,
-                0
-            ],
+            "meter_gain": null,
             "name": "EX G Impact",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -5120,7 +5040,7 @@
             },
             "meter_gain": null,
             "name": "G Charge",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -5136,7 +5056,9 @@
         {
             "airborne_hurtbox": null,
             "cancel_info": null,
-            "comments": "Gain 1 President Lv on 43F, 120F",
+            "comments": [
+                "Gain 1 President Lv on 43F, 120F"
+            ],
             "damage": 0,
             "frame": {
                 "active": null,
@@ -5145,7 +5067,7 @@
             },
             "meter_gain": null,
             "name": "G Charge (Hold)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -5173,7 +5095,7 @@
             },
             "meter_gain": null,
             "name": "G Charge (Cancel)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": null,
             "recovery": {
                 "on_block": null,
@@ -5188,37 +5110,33 @@
         },
         {
             "airborne_hurtbox": null,
-            "cancel_info": "S*",
+            "cancel_info": [
+                "S*"
+            ],
             "comments": [
                 "Uses 1000F V-Gauge Timer",
                 "On max-distance hit",
                 "Can only be canceled into G Charge",
                 "Can only be canceled into Message to the People."
             ],
-            "damage": [
-                150,
-                150
-            ],
+            "damage": 150,
             "frame": {
                 "active": 12,
                 "recovery": 38,
                 "startup": 12
             },
             "meter_gain": [
-                10,
+                0,
                 50
             ],
             "name": "G Explosion",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "High",
             "recovery": {
                 "on_block": -28,
                 "on_hit": "D"
             },
-            "stun": [
-                200,
-                200
-            ],
+            "stun": 200,
             "type": "Special Moves",
             "vt_cancel_recovery": {
                 "on_block": null,
@@ -5239,11 +5157,11 @@
                 "startup": 20
             },
             "meter_gain": [
-                10,
+                0,
                 70
             ],
             "name": "G Rage",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -5270,11 +5188,11 @@
                 "startup": 25
             },
             "meter_gain": [
-                10,
+                0,
                 70
             ],
             "name": "G Rage (Cancel)",
-            "projectile_nullification": null,
+            "projectile_nullification": false,
             "properties": "Throw",
             "recovery": {
                 "on_block": null,
@@ -5290,19 +5208,18 @@
         {
             "airborne_hurtbox": null,
             "cancel_info": null,
-            "comments": "1F - 10F  full invincibility",
+            "comments": [
+                "1F - 10F  full invincibility"
+            ],
             "damage": 330,
             "frame": {
                 "active": 42,
                 "recovery": 73,
                 "startup": 6
             },
-            "meter_gain": [
-                -900,
-                0
-            ],
+            "meter_gain": null,
             "name": "Pangaea Burst",
-            "projectile_nullification": "\u25cb",
+            "projectile_nullification": true,
             "properties": "High",
             "recovery": {
                 "on_block": -39,
