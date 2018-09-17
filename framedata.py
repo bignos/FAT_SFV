@@ -1,6 +1,18 @@
 # This module extract frame data from official html file
-# [STATE]   : POC ( Unfinished )
+# [STATE]   : POC ( Functionnal )
 # [AUTHOR]  : bignos@gmail.com
+#
+# Main Class: Framedata
+# Under Class:
+#   - Move
+#       - Frame
+#       - Recovery
+#
+# With this module you can:
+# - Load framedata from HTML file
+# - Load framedata from JSON file
+# - Save framedata to JSON file
+# - Process framedata
 
 # coding=utf-8
 
@@ -23,6 +35,8 @@ class Framedata():
         - moves_vt2         {list(Move)}    Move list of the framedata for V-Trigger 2
     """
 
+    # -[ Internals ]-
+
     def __init__(self, character_name, moves_vt1, moves_vt2):
         self.character_name = character_name
         self.moves_vt1 = moves_vt1
@@ -42,6 +56,8 @@ move list VT2:
 {}
 --------------------------------------------------------------------------------
         """.format(self.character_name, move_list_vt1, move_list_vt2)
+
+    # -[ Static ]-
 
     def loadFromJSON(path):
         """ Static method to build a framedata from a JSON file
@@ -64,6 +80,83 @@ move list VT2:
             move_list_vt2.append(Framedata._create_move_from_json_node(move))
 
         return Framedata(character_name, move_list_vt1, move_list_vt2)
+
+    def loadFromHTML(path):
+        """ Static method to load a Framedata object from an HTML file
+            path:   {str}       Path of the HTML file
+            Return: {Framedata} Framedata from the HTML file
+        """
+        try:
+            html_document = _read_html_file(path)
+        except FileNotFoundError as exception:
+            print('File not found: {}'.format(exception.filename))
+            sys.exit()
+        except PermissionError as exception:
+            print('Permission denied: {}'.format(exception.filename))
+            sys.exit()
+
+        filename = os.path.basename(path)
+        character_name = '.'.join(filename.split('.')[:-1])
+        move_list_vt1 = _extract_data_from_tree(lxml.html.fromstring(html_document), 1)
+        move_list_vt2 = _extract_data_from_tree(lxml.html.fromstring(html_document), 2)
+
+        return Framedata(character_name, move_list_vt1, move_list_vt2)
+
+    def loadAllCharacterFromHTML(character_html_directory_path):
+        """ Load all character HTML file and return a list of Framedata
+            character_html_directory_path:  {str}   Path of the directory of the characters HTML file
+            Return: {list(Framedata)|None}   List of Framedata for all characters or None if no HTML files found
+        """
+        charater_html_files = Framedata.getAllCharacterHTMLFiles(character_html_directory_path)
+
+        if charater_html_files != []:
+            return [Framedata.loadFromHTML(filename) for filename in charater_html_files]
+        else:
+            return None  # Maybe Throw an error is better
+
+    def getAllCharacterHTMLFiles(character_html_directory_path):
+        """ List all html file in the directory character_html_directory_path
+            character_html_directory_path:  {str} path of the directory of character HTML files
+            Return: {list(str)} List of HTML character files
+        """
+        return [character_html_directory_path + filepath for filepath in os.listdir(character_html_directory_path)
+                if filepath.endswith('.html')]
+
+    def saveCharacterFramedataListToJSON(framedata_list, character_json_directory_path):
+        """ Save character framedata list to individual(per character) JSON files
+            framedata_list:                 {list(Framedata)}   list of Framedata to convert
+            character_json_directory_path:  {str}               Path of the JSON character directory
+        """
+        for framedata in framedata_list:
+            framedata.saveToJSON('{}{}.json'.format(character_json_directory_path, framedata.character_name))
+
+    # -[ Public ]-
+
+    def saveToJSON(self, path):
+        """ Save the framedata object to a JSON file
+            path:   {str}   Path of the JSON file
+            Return: None
+        """
+        with open(path, 'w') as json_file:
+            json.dump(self, json_file, indent=4, separators=(',', ': '), sort_keys=True, cls=FramedataEncoder)
+
+    def getSafeMoves(self):
+        """ get all safe moves from the framedata
+            Return: {list(Move)}    List of safe moves
+        """
+        safe_moves = list()
+        move_names = list()
+        for move in self.moves_vt1:
+            if move.recovery.on_block and move.recovery.on_block >= -2:
+                move_names.append(move.name)
+                safe_moves.append(move)
+        for move in self.moves_vt2:
+            if move.recovery.on_block and move.name not in move_names and move.recovery.on_block >= -2:
+                safe_moves.append(move)
+
+        return safe_moves
+
+    # -[ Private ]-
 
     def _create_move_from_json_node(move_json):
         """ Private method to create a Move instance with a JSON move node
@@ -89,35 +182,6 @@ move list VT2:
             move_json['projectile_nullification'],
             move_json['airborne_hurtbox'],
             move_json['comments'])
-
-    def loadFromHTML(path):
-        """ Static method to load a Framedata object from an HTML file
-            path:   {str}       Path of the HTML file
-            Return: {Framedata} Framedata from the HTML file
-        """
-        try:
-            html_document = _read_html_file(path)
-        except FileNotFoundError as exception:
-            print('File not found: {}'.format(exception.filename))
-            sys.exit()
-        except PermissionError as exception:
-            print('Permission denied: {}'.format(exception.filename))
-            sys.exit()
-
-        filename = os.path.basename(path)
-        character_name = '.'.join(filename.split('.')[:-1])
-        move_list_vt1 = _extract_data_from_tree(lxml.html.fromstring(html_document), 1)
-        move_list_vt2 = _extract_data_from_tree(lxml.html.fromstring(html_document), 2)
-
-        return Framedata(character_name, move_list_vt1, move_list_vt2)
-
-    def saveToJSON(self, path):
-        """ Save the framedata object to a JSON file
-            path:   {str}   Path of the JSON file
-            Return: None
-        """
-        with open(path, 'w') as json_file:
-            json.dump(self, json_file, indent=4, separators=(',', ': '), sort_keys=True, cls=FramedataEncoder)
 
 
 class Move():
@@ -601,22 +665,11 @@ def _get_comments(move_tree):
     return raw_value if raw_value != [] else None
 
 
-def _get_all_character_files(character_html_directory_path):
-    return [character_html_directory_path + filepath for filepath in os.listdir(character_html_directory_path)
-            if filepath.endswith('.html')]
-
-
-def _load_all_character_from_html(character_html_directory_path):
-    character_html_files = _get_all_character_files(character_html_directory_path)
-    return [Framedata.loadFromHTML(filename) for filename in character_html_files]
-
-
-def _save_all_character_to_json(all_character_framedata, character_json_directory_path):
-    for framedata in all_character_framedata:
-        framedata.saveToJSON('{}{}.json'.format(character_json_directory_path, framedata.character_name ))
-    
-
 # -[ Main ]-
 if __name__ == '__main__':
-    all_character_framedata = _load_all_character_from_html(character_html_directory_path)
-    _save_all_character_to_json(all_character_framedata, character_json_directory_path)
+    g_framedata = Framedata.loadFromJSON('{}{}.json'.format(character_json_directory_path, 'G'))
+    safe_moves  = g_framedata.getSafeMoves()
+
+    for move in safe_moves:
+        result = 'name: {}\nRecovery on block: {}\n'.format(move.name, move.recovery.on_block)
+        print(result)

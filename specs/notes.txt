@@ -20,7 +20,7 @@ Objectifs du programme:
 --------------------------------------------------------------------------------
 
 Développement:
-	[ Objectif 1 ]: 
+	[ Objectif 1 ]: OK 
 		Charger la frame data d'un personnage et transformer le tout
 		en JSON
 	
@@ -35,10 +35,29 @@ Développement:
 			de personnage et pour faire l'initialisation du projet
 			je suis partit d'une fiche spécifique
 
-	[ Solutions ]
+	[ Solutions ]: data_analyse.py
 		#1	Faire un programme qui récolte les différentes possibilités
 			sur une colonne avec l'ensemble des fiches.
 			Ensuite on pourra faire un cleaner complet
+
+    [ Objectif 2]: OK
+        Charger la framedata de tous les personnages à partir des fichier HTML
+        et transformer chaque framedata en fichier JSON
+
+    [ Objectif 3]:
+        Utiliser la framedata pour extraire les informations petinente 
+        sur chaque personnage:
+            - Liste des coups safe
+            - Liste des coups unsafe
+            - Liste des coups pour les frametraps
+                -> Anti 3 frames
+                -> Anti 4 frames
+                -> Anti chope
+            - Liste des coups qui permettent de faire des mixup
+            - Liste des cancel vtrigger pour faire des frametraps
+            - Liste des cancel vtrigger pour faire des combos
+            - Liste des links
+            - Liste des cancel
 
 --------------------------------------------------------------------------------
 
