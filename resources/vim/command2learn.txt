@@ -1,0 +1,95 @@
+--------------------------------------------------------------------------------
+				Vim command to learn
+--------------------------------------------------------------------------------
+
+
+[Normal]
+
+ZZ 		Write current file, if modified, and exit.
+gf 		Edit the file whose name is under or after the cursor. Mnemonic: "goto file".
+
+V		Enter visual mode linewise
+C-v		Enter visual mode for block selection
+R		Replace mode
+
+f		Finds specified character to the right of current cursor position
+C-r		Redo
+o		Begin a new line BELOW the cursor and insert text
+s		Substitutes the character(or the selection of characters)
+S		Substitutes the entire line
+cc		Erase current line and set insert mode
+cw		Erase word and set insert mode
+D 		Delete the characters under the cursor until the end of the line
+~ 		Switch case of the character under the cursor and move the cursor to the right. If a [count] is given, do that many characters.
+.		Repeats the last INSERT edit
+gx		Opens the URL under the cursor in a web browser
+
+q[a-z]		Start recording, everything will be recorded including movement actions
+@[a-z]		Excecute the recorded actions
+
+H        	Jump to TOP of screen
+M        	Jump to MIDDLE of screen
+L        	Jump to BOTTOM of screen
+C-b      	Move back one full screen (page up)
+C-f      	Move forward one full screen (page down)
+C-d      	Move forward 1/2 screen; half page down
+C-u      	Move back (up) 1/2 screen; half page up
+
+w        	jump by start of words (punctuation considered words)
+e        	jump to end of words (punctuation considered words)
+b        	jump backward by words (punctuation considered words)
+0  		start of line
+^        	first non-blank character of line
+$        	end of line
+G        	bottom of file
+gg       	top of file
+%		Moves cursor to the next bracket(or parenthesis)
+(		Moves cursor to the previous sentence
+)		Moves cursor to the next sentence
+{		Moves cursor to the previous paragraph
+}		Moves cursor to the next paragraph
+#G       	goto line #
+
+'.       	jump back to last edited line.
+g;       	jump back to last edited position.
+
+ma       	set mark a at current cursor location
+'a       	jump to line of mark a (first non-blank character in line)
+:marks   	list all the current marks
+:delm!		Clear all marks[a-z]
+
+z. 		Center the screen on the cursor
+zt 		Scroll the screen so the cursor is at the top
+zb 		Scroll the screen so the cursor is at the bottom
+
+*		Searches forward for word under curso
+
+[Insert/Replace]
+
+
+[Visual]
+
+"<REG>y		Copy selected region into register <REG> (Register [a-z])
+"<REG>p		Paste selected region into register <REG>
+c		Cut selection
+gq		Reformat selection
+
+
+[Command]
+
+:wa		Saves all windows
+:x		Save and quit
+:r[ead] [name] 	Insert the file [name] below the cursor.
+:r[ead] !{cmd} 	Execute {cmd} and insert its standard output below the cursor. 
+
+.		Current line
+2,5		Range( line 2 to 5 )
+
+--------------------------------------------------------------------------------
+
+Vim init:
+
+autocmd BufNewFile *.html or ~/skeleton.html
+	Insert a skeleton file if the file in the buffer don't exist
+
+--------------------------------------------------------------------------------
