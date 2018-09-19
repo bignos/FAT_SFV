@@ -44,7 +44,7 @@ let g:ncm2#auto_popup			= 0
 
 " { jedi-vim }
 let g:jedi#completions_enabled 		= 0
-let g:jedi#show_call_signatures 	= 0
+let g:jedi#show_call_signatures 	= 2
 
 " { vim-flake8 }
 let g:flake8_show_in_gutter		= 1
@@ -114,5 +114,19 @@ map <M-e> :NERDTreeToggle<CR>
 
 " Exit of terminal insert mode
 tnoremap <Esc> <C-\><C-n>
+
+
+" -[ Function ]-
+
+" Clear all vim registry [not very usefull]
+function ClearRegs()
+	let regs 	= 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-"'
+	let i		= 0
+	while(i<strlen(regs))
+		exec 'let @'.regs[i].'=""'
+		let i = i + 1
+	endwhile
+	unlet regs
+endfunction
 
 " -[ Final ]-
