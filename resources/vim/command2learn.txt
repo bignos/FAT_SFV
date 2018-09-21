@@ -13,11 +13,15 @@ C-v		Enter visual mode for block selection
 R		Replace mode
 A		Place at the end of the line and enter Insert mode
 
-f		Finds specified character to the right of current cursor position
+f		Finds specified character to the right of the cursor position
+F		Finds specified character to the left of the cursor position
+;		Move to next occurence of f/F
+,		Move to previous occurence of f/F
 C-r		Redo
 o		Begin a new line BELOW the cursor and insert text
 s		Substitutes the character(or the selection of characters)
 S		Substitutes the entire line
+c		Change(not very well understand for the moment)
 cc		Erase current line and set insert mode
 cw		Erase word and set insert mode
 D 		Delete the characters under the cursor until the end of the line
@@ -46,6 +50,7 @@ gg       	top of file
 
 '.       	jump back to last edited line.
 g;       	jump back to last edited position.
+%		jump to the end of a block
 
 ma       	set mark a at current cursor location
 'a       	jump to line of mark a (first non-blank character in line)
@@ -55,16 +60,41 @@ ma       	set mark a at current cursor location
 H        	Jump to TOP of screen
 M        	Jump to MIDDLE of screen
 L        	Jump to BOTTOM of screen
-C-b      	Move back one full screen (page up)
 C-f      	Move forward one full screen (page down)
+C-b      	Move back one full screen (page up)
 C-d      	Move forward 1/2 screen; half page down
 C-u      	Move back (up) 1/2 screen; half page up
-z. 		Center the screen on the cursor
+C-e		Show one more line at bottom
+C-y		Show one more line at top of window
+
+z<CR>		Reposition line with cursor: to top of screen
+z.		Reposition line with cursor: to middle of screen
+z-		Reposition line with cursor: to bottom of screen
 zt 		Scroll the screen so the cursor is at the top
 zb 		Scroll the screen so the cursor is at the bottom
 zz		Shifts page content so current line sits at the middle of the viewport
 
+zf		Create a fold
+zc		Close the fold
+zo		Open the fold
+za		Alternate the fold
+
+/<pattern>	Search forward for pattern
+?<pattern>	Search backward for pattern
 *		Searches forward for word under curso
+
+C-a		Increment number under cursor
+C-x		Decrement number under cursor
+
+g-		Move backward through history, including previous branches
+g+		Move forward through history, including previous branches
+
+C-o		Return to the last editing position
+
+gn		Search and edit next
+gN		Search and edit previous
+
+Q		Ex Mode
 
 [Insert/Replace]
 
@@ -74,6 +104,11 @@ C-r=		Enter an expression register
 
 
 [Visual]
+I		Insert
+A		Append
+
+o		Move the cursor to the opposite side
+O		Move the cursor to the opposite side of the same line
 
 "<REG>y		Copy selected region into register <REG> (Register [a-z])
 "<REG>p		Paste selected region into register <REG>
@@ -82,6 +117,7 @@ gq		Reformat selection
 
 i		Selected inside(use it with Text Object, ex: iw to select the word inside the cursor)
 a		Selected around(use it with Text Object)
+t		Selected until condition(ex: va[t) if you want to select block begin by '[' until ')' is found)
 
 {Text Object} (using for selection)
 - w[ord] 
@@ -92,15 +128,88 @@ a		Selected around(use it with Text Object)
 - {}|()|[]|<>[block]
 
 
+[Windows]
+
+c-w s		Split window horizontaly
+c-w v		Split window verticaly
+c-w [H|J|K|L]	Move windows to Left|Down|Up|Right
+
+c-w +		Increase the window height by one row
+c-w -		Reduces the window height by one row
+c-w >		Increase the window width by one column
+c-w < 		Reduces the window width by one column
+
+c-w _		Enlarges current window height to full capacity
+c-w |		Enlarges current window with to full capacity
+c-w = 		Resize all windows to balanced dimension (equal space)
+
+c-w T		Move window to a Tab
+
+:sp {file}	Create horizontal window split
+:vp {file}	Create vertical window split
+
+[Tab]
+:tabonly	Closing all tab
+:tabmove 1	Move tab to position 1 [fist tab is 0]
+
 [Command]
 
-:wa		Saves all windows
+:wa		Saves all modified buffer
 :x		Save and quit
 :r[ead] [name] 	Insert the file [name] below the cursor.
-:r[ead] !{cmd} 	Execute {cmd} and insert its standard output below the cursor. 
+:r[ead] !{cmd} 	Execute {cmd} and insert its standard output below the cursor.
+
+:bufdo		Apply same command to all buffer
+:windo		Apply same command to all windows(visible buffer)
+:tabdo		Apply same command to all tab
+:argdo		Apply same command to all args(list of args :args)	
+
+:args		Display all arguments
+
+:wundo {file}	Save change 
+:rundo {file}	Load change
+
+:g/{pattern}/{cmd}
+		exemple :g/\v(a|g)/:d
+		Erase all line begin by 'a' or 'g'
+:%s/{pattern}/\={vimL}/
+		example :%s/today/\=strftime("%c")/
+		replace all 'today' with the actual date
+:%s/{pattern}/\=@{register}/
+		example :%s/\v(today)/\=@x/
+		replace all 'today' with the content of register x
 
 .		Current line
 2,5		Range( line 2 to 5 )
+
+:sba		Split all buffer in windows
+:vert sba	Split verticaly all buffer in windows
+:bd *.php<c-a>	Close all buffer with filename *.php
+:bd 3 5		Close buffer 3 and 5
+:4,7 bd		Close buffer 4 to 7(range)
+:bufdo bd	Close all buffer
+
+[Ex]
+
+vim -E -s config.txt <<-EOF
+	:%s/foo/bar
+	:update
+	:quit
+EOF
+
+:h holy-grail	See all vim commands
+
+
+[Macro]
+
+q{register}{commands}q
+		Record macro{register}[0-9/a-z] with {commands}
+		example: qa0f=wvg_xalog()<Esc>""Pjq
+
+@{register}	Execute macro{register}
+@@		Execute the last executed macro
+
+5@:.		Execute the last command 5 times
 
 --------------------------------------------------------------------------------
 
@@ -110,10 +219,18 @@ autocmd BufNewFile *.html or ~/skeleton.html
 	Insert a skeleton file if the file in the buffer don't exist
 
 --------------------------------------------------------------------------------
+Vim games:
+
+- https://www.vimgolf.com
+- https://vim-adventures.com
+
+--------------------------------------------------------------------------------
 test:
 
 9 * 16 =144
 
-Mark was born in 1982 (36). Catherine was born in 1987 ().
+Mark was born in 1982 (36). Catherine was born in 1989 (29).
+
+one two three
 
 --------------------------------------------------------------------------------
