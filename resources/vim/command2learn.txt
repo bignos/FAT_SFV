@@ -48,12 +48,21 @@ gg       	top of file
 }		Moves cursor to the next paragraph
 #G       	goto line #
 
-'.       	jump back to last edited line.
-g;       	jump back to last edited position.
+]'		Next mark line position
+['		Previous mark line position
+]`		Next mark line and column position
+[`		Previous mark line and column position
+
+'.       	jump back to last edited line
+g;       	jump back to previous edited position
+g,		jump back to next edited position
 %		jump to the end of a block
 
 ma       	set mark a at current cursor location
 'a       	jump to line of mark a (first non-blank character in line)
+`a		jump to line and column of mark a
+g'a		jump to line of mark a without affect the jumps list
+g`a		Jump to line and colum of mark a without affect the jump list
 :marks   	list all the current marks
 :delm!		Clear all marks[a-z]
 
@@ -89,7 +98,8 @@ C-x		Decrement number under cursor
 g-		Move backward through history, including previous branches
 g+		Move forward through history, including previous branches
 
-C-o		Return to the last editing position
+C-o		Move to previous jump position
+C-i		Move to next jump position
 
 gn		Search and edit next
 gN		Search and edit previous
@@ -159,6 +169,8 @@ c-w T		Move window to a Tab
 :r[ead] [name] 	Insert the file [name] below the cursor.
 :r[ead] !{cmd} 	Execute {cmd} and insert its standard output below the cursor.
 
+:m[ove]{line}	Move content to {line}
+
 :bufdo		Apply same command to all buffer
 :windo		Apply same command to all windows(visible buffer)
 :tabdo		Apply same command to all tab
@@ -168,6 +180,14 @@ c-w T		Move window to a Tab
 
 :wundo {file}	Save change 
 :rundo {file}	Load change
+
+:changes	Show changes list
+:changes {n}	Move cursor to the change number n
+
+:jumps		Show jumps list
+:keepjumps	Jump without recording jump in jump list (usefull for plugins)
+		example: :keepjumps normal 5G
+:clearjumps	Clear the jump list of the current window.
 
 :g/{pattern}/{cmd}
 		exemple :g/\v(a|g)/:d
@@ -200,6 +220,7 @@ EOF
 :h holy-grail	See all vim commands
 
 
+
 [Macro]
 
 q{register}{commands}q
@@ -211,6 +232,49 @@ q{register}{commands}q
 
 5@:.		Execute the last command 5 times
 
+:bufdo normal @a
+		Execute macro 'a' on all buffers(Work only if set hidden)
+:bufdo exe "normal @a" | write
+		Execute macro 'a' on all buffers and write the changes
+
+Redefine macro:
+- add some action at the end 'qA'
+- Change macro:
+	:put a
+	Change what you want
+	0V
+	"ay
+[Marks]
+
+:marks		List all the current marks.
+:marks {arg}	List the marks that are mentioned in {arg} 
+:delm {marks}	Delete the specified marks
+
+{List of Marks Vim Automatically Generates}
+'		Marks the line where the cursor jumped from (in current buffer)
+`		Marks the position where the cursor jumped from (in current buffer)
+.		Marks the position where the last change occured (in current buffer)
+"		Marks the position where the user last exited the current buffer
+[		Marks the beginning of the previously changed or yanked text
+]		Marks the end of the previously changed or yanked text
+<		Marks the beginning of the last visual selection
+>		Marks the end of the last visual selection
+
+[View]
+
+:mkview [1-9|path]
+		Create a view for the current file
+:loadview [1-9]	Load a view
+:source {path}	Load a view from file
+
+[Session]
+
+:mks[ession][!] [file]	Write a Vim script that restores the current editing session
+			When [!] is included an existing file is overwritten.
+			When [file] is omitted "Session.vim" is used.
+:source {path}		Loading session from {path}
+
+$> vim -S {path}	Loading sesssion, command line version
 --------------------------------------------------------------------------------
 
 Vim init:
@@ -223,14 +287,5 @@ Vim games:
 
 - https://www.vimgolf.com
 - https://vim-adventures.com
-
---------------------------------------------------------------------------------
-test:
-
-9 * 16 =144
-
-Mark was born in 1982 (36). Catherine was born in 1989 (29).
-
-one two three
 
 --------------------------------------------------------------------------------
