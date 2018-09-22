@@ -8,6 +8,11 @@
 ZZ 		Write current file, if modified, and exit.
 gf 		Edit the file whose name is under or after the cursor. Mnemonic: "goto file".
 
+gg=G		Indent all buffer ( gg -> begining of the buffer / = -> indent until / G -> end of the buffer)
+==		Indent the line under cursor
+={txt_obj}	Indent text object(example: =i{ to indent inside a block)
+={motion}	Indent motion(example: =% to indent under bracket)
+
 V		Enter visual mode linewise
 C-v		Enter visual mode for block selection
 R		Replace mode
@@ -53,10 +58,14 @@ gg       	top of file
 ]`		Next mark line and column position
 [`		Previous mark line and column position
 
+]c		Move to next diff change
+[c		Move to previous diff change
+
 '.       	jump back to last edited line
 g;       	jump back to previous edited position
 g,		jump back to next edited position
 %		jump to the end of a block
+C-]		jump to definition (work only with ctags)
 
 ma       	set mark a at current cursor location
 'a       	jump to line of mark a (first non-blank character in line)
@@ -106,6 +115,7 @@ gN		Search and edit previous
 
 Q		Ex Mode
 
+J		Join lines, with a minimum of two lines(remove line break)
 [Insert/Replace]
 
 C-o		Go to normal mode and return to insert mode after the first command
@@ -169,6 +179,16 @@ c-w T		Move window to a Tab
 :r[ead] [name] 	Insert the file [name] below the cursor.
 :r[ead] !{cmd} 	Execute {cmd} and insert its standard output below the cursor.
 
+:t		Copy
+
+:! {cmd}	Execute {cmd} (Terminal command)
+:'<,'>! {cmd}	Execute {cmd} on selected line
+		example: :'<,'>! tr '[:lower:]' '[:upper:]'
+			to transform selection to uppercase
+:%! {cmd}	Execute {cmd} on the entire buffer
+		example: :%! column -t
+			to align all column
+
 :m[ove]{line}	Move content to {line}
 
 :bufdo		Apply same command to all buffer
@@ -183,6 +203,9 @@ c-w T		Move window to a Tab
 
 :changes	Show changes list
 :changes {n}	Move cursor to the change number n
+
+:earlier {when}	Go to older buffer state. {when} can be COUNT, s, m, h, d, f
+:later {when}	Go to newer buffer state
 
 :jumps		Show jumps list
 :keepjumps	Jump without recording jump in jump list (usefull for plugins)
@@ -209,6 +232,49 @@ c-w T		Move window to a Tab
 :4,7 bd		Close buffer 4 to 7(range)
 :bufdo bd	Close all buffer
 
+:difft[his]	Make the current window part of the diff windows
+:windo difft	Diff all windows
+:diffs[plit] {filename}
+		Open a new window on the file {filename} to diff
+:diffoff[!]	Turn off diff tools
+:diffget	Gets change
+:diffput	Puts change
+do		Gets change
+dp		Puts change
+:diffupdate	Refresh all window viewports and update the diff hightlighting
+:TOhtml		Convert file to HTML, also convert diff
+
+:map {key} {command}
+		Map {key} to {command}
+		example: 	:map j gg
+				When you press j you go on top of the buffer
+:noremap {key} {command}
+		No recursive mapping {key} to {command}
+		like map but without recurse
+:nmap 		Normal mode mapping
+:imap		Insert mode mapping
+:xmap		Visual mode mapping
+:smap		Select mode mapping
+:vmap		Visual and Select mode mapping
+:cmap		Command-line mode mapping
+:omap		Operator pending mode
+!! noremap version example vnoremap = Visual and Select no recurse mode mapping
+
+:command [attributes] {name_of_command} {command}
+		Create custom command
+		example: :command ThisFile put %
+		example with args: :command -nargs=+ Search execute 'vimgrep /' . [<f-args>][0] . '/ **/*.' . [<f-args>][1]
+
+:Sexplore	Native vim file explorer with horizontal split window
+:Explore	Native vim file explorer
+
+:echo glob($VIMRUNTIME . '/syntax/*.vim)
+		See all supported file type by vim
+:set ft?	What filetype setting is used for this buffer
+:setf {syntax}	Force {syntax} for this buffer
+
+:sort		Sort all line in the buffer
+
 [Ex]
 
 vim -E -s config.txt <<-EOF
@@ -216,9 +282,6 @@ vim -E -s config.txt <<-EOF
 	:update
 	:quit
 EOF
-
-:h holy-grail	See all vim commands
-
 
 
 [Macro]
@@ -275,13 +338,61 @@ Redefine macro:
 :source {path}		Loading session from {path}
 
 $> vim -S {path}	Loading sesssion, command line version
---------------------------------------------------------------------------------
 
+
+[Help]
+
+:h holy-grail		See all vim commands
+:h functions		See all vimL functions
+:h tags			See tags help(command, usage, keybidding)
+:h autocmd		See how to use autocmd
+:h netrw		See help for native file explorer
+
+--------------------------------------------------------------------------------
 Vim init:
+
+autocmd {event} {pattern} {cmd}
+	Add {cmd} to the list of commands that Vim will execute automatically on {event} for a file matching {pattern}
 
 autocmd BufNewFile *.html or ~/skeleton.html
 	Insert a skeleton file if the file in the buffer don't exist
 
+filetype indent on
+	Active auto indentation
+
+autocmd FileType sh,cucumber,ruby,yaml,zsh,vim setlocal shiftwidth=2 tabstop=2 expandtab
+
+autocmd Bufread,BufNewFile *.md set filetype=markdown
+
+--------------------------------------------------------------------------------
+Vim command line:
+
+nvim --headless -c "TOhtml|update|quit|quit" framedata.py
+			To convert framedata.py to framedata.py.html
+--------------------------------------------------------------------------------
+Vim tricks:
+
+:e **/*.py<TAB>		Cycle to all .py file of your project
+
+d/{search}		Delete until found {search}
+
+:t.			Duplicate line(like yyp)
+
+:1,3t4			Duplicate line 1 to 3 and paste after line 4
+
+4d 4			Start line 4 and delete 4 lines
+
+c2l			Delete 2 character and place on Insert mode
+
+:1,10 w {other_file}	Write line 1 to 10 to {other_file}
+
+:1,10 w >> {other_file}	Append line 1 to 10 to the end of {other_file}
+
+2f!			Move the cursor to the second '!' found of the current line
+
+:%normal A!		Place '!' in the end of all line
+
+:later 2f		File states, go back 2 buffer writes
 --------------------------------------------------------------------------------
 Vim games:
 
