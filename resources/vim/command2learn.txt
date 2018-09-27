@@ -8,7 +8,7 @@
 ZZ 		Write current file, if modified, and exit.
 gf 		Edit the file whose name is under or after the cursor. Mnemonic: "goto file".
 
-gg=G		Indent all buffer ( gg -> begining of the buffer / = -> indent until / G -> end of the buffer)
+gg=G		Indent all buffer ( gg -> beginning of the buffer / = -> indent until / G -> end of the buffer)
 ==		Indent the line under cursor
 ={txt_obj}	Indent text object(example: =i{ to indent inside a block)
 ={motion}	Indent motion(example: =% to indent under bracket)
@@ -20,8 +20,8 @@ A		Place at the end of the line and enter Insert mode
 
 f		Finds specified character to the right of the cursor position
 F		Finds specified character to the left of the cursor position
-;		Move to next occurence of f/F
-,		Move to previous occurence of f/F
+;		Move to next occurrence of f/F
+,		Move to previous occurrence of f/F
 C-r		Redo
 o		Begin a new line BELOW the cursor and insert text
 s		Substitutes the character(or the selection of characters)
@@ -35,7 +35,7 @@ D 		Delete the characters under the cursor until the end of the line
 gx		Opens the URL under the cursor in a web browser
 
 q[a-z]		Start recording, everything will be recorded including movement actions
-@[a-z]		Excecute the recorded actions
+@[a-z]		Execute the recorded actions
 
 w        	jump by start of words (punctuation considered words)
 e        	jump to end of words (punctuation considered words)
@@ -71,7 +71,7 @@ ma       	set mark a at current cursor location
 'a       	jump to line of mark a (first non-blank character in line)
 `a		jump to line and column of mark a
 g'a		jump to line of mark a without affect the jumps list
-g`a		Jump to line and colum of mark a without affect the jump list
+g`a		Jump to line and column of mark a without affect the jump list
 :marks   	list all the current marks
 :delm!		Clear all marks[a-z]
 
@@ -99,7 +99,7 @@ za		Alternate the fold
 
 /<pattern>	Search forward for pattern
 ?<pattern>	Search backward for pattern
-*		Searches forward for word under curso
+*		Searches forward for word under cursor
 
 C-a		Increment number under cursor
 C-x		Decrement number under cursor
@@ -150,8 +150,8 @@ t		Selected until condition(ex: va[t) if you want to select block begin by '[' u
 
 [Windows]
 
-c-w s		Split window horizontaly
-c-w v		Split window verticaly
+c-w s		Split window horizontally
+c-w v		Split window vertically
 c-w [H|J|K|L]	Move windows to Left|Down|Up|Right
 
 c-w +		Increase the window height by one row
@@ -208,12 +208,12 @@ c-w T		Move window to a Tab
 :later {when}	Go to newer buffer state
 
 :jumps		Show jumps list
-:keepjumps	Jump without recording jump in jump list (usefull for plugins)
+:keepjumps	Jump without recording jump in jump list (useful for plugins)
 		example: :keepjumps normal 5G
 :clearjumps	Clear the jump list of the current window.
 
 :g/{pattern}/{cmd}
-		exemple :g/\v(a|g)/:d
+		example :g/\v(a|g)/:d
 		Erase all line begin by 'a' or 'g'
 :%s/{pattern}/\={vimL}/
 		example :%s/today/\=strftime("%c")/
@@ -226,7 +226,7 @@ c-w T		Move window to a Tab
 2,5		Range( line 2 to 5 )
 
 :sba		Split all buffer in windows
-:vert sba	Split verticaly all buffer in windows
+:vert sba	Split vertically all buffer in windows
 :bd *.php<c-a>	Close all buffer with filename *.php
 :bd 3 5		Close buffer 3 and 5
 :4,7 bd		Close buffer 4 to 7(range)
@@ -241,7 +241,7 @@ c-w T		Move window to a Tab
 :diffput	Puts change
 do		Gets change
 dp		Puts change
-:diffupdate	Refresh all window viewports and update the diff hightlighting
+:diffupdate	Refresh all window viewports and update the diff highlighting
 :TOhtml		Convert file to HTML, also convert diff
 
 :map {key} {command}
@@ -316,7 +316,7 @@ Redefine macro:
 {List of Marks Vim Automatically Generates}
 '		Marks the line where the cursor jumped from (in current buffer)
 `		Marks the position where the cursor jumped from (in current buffer)
-.		Marks the position where the last change occured (in current buffer)
+.		Marks the position where the last change occurred (in current buffer)
 "		Marks the position where the user last exited the current buffer
 [		Marks the beginning of the previously changed or yanked text
 ]		Marks the end of the previously changed or yanked text
@@ -337,16 +337,28 @@ Redefine macro:
 			When [file] is omitted "Session.vim" is used.
 :source {path}		Loading session from {path}
 
-$> vim -S {path}	Loading sesssion, command line version
+$> vim -S {path}	Loading session, command line version
 
+[Spell checking]
+
+:setlocal spell spelllang=en_gb
+			Set spellchecking for English(GB) !!On neowin not functionnal
+:setlocal nospell	Disable spellchecking
+z=			Suggest alternative word
+<C-w>s			In insert mode auto-complete drop down list for word sugestion
+]s			Move to the next misspelled word
+[s			Move to the previous misspelled word
+:spellr			Repeat last spelling correction
 
 [Help]
 
 :h holy-grail		See all vim commands
 :h functions		See all vimL functions
-:h tags			See tags help(command, usage, keybidding)
+:h tags			See tags help(command, usage, key bidding)
 :h autocmd		See how to use autocmd
 :h netrw		See help for native file explorer
+:h spell		See help for spell checking
+:h pattern-atoms	Sell list of all available atoms
 
 --------------------------------------------------------------------------------
 Vim init:
@@ -393,6 +405,16 @@ c2l			Delete 2 character and place on Insert mode
 :%normal A!		Place '!' in the end of all line
 
 :later 2f		File states, go back 2 buffer writes
+
+:set scrollbind		Synchronize scroll with other windows
+:set noscrollbind	Stop scroll synchronization
+
+Files renaming example with an empty buffer:
+:r! ls
+ggdd
+:%s/\v(\w)(\.txt)/mv & \L\1-\2/ | %s/\.txt$/\=strftime("%Y-%b-%d") . ".txt"/
+:w !sh
+
 --------------------------------------------------------------------------------
 Vim games:
 
