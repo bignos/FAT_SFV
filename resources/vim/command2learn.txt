@@ -1,12 +1,145 @@
 --------------------------------------------------------------------------------
-				Vim command to learn
+			      Vim command to learn
 --------------------------------------------------------------------------------
 
 
-[Normal]
+[Command-line]
+vim -R {file}	Open {file} in read-only mode
+vim -r {file}	Recorver {file} and recent edit after a crash
+vim +{file}	Open {file} at last line
+vim +{line} {file}
+		Open {file} and place the cursor at {line}
+vim +/{pattern} file
+		Open {file} and place the cursor at first occurence of the search pattern
+vim -c {command} {file}
+		Open {file} and execute {command}
 
+
+[Vim standard command synthax]
+[command][number]textobject
+[number][command]textobject
+
+
+[Movement]
+{character}
+h, j, k, l	Left, Down, Up, Right
+
+{text}
+w, W, b, B	Forward, backward by word
+e, E		End of word
+(, )		Beginning of previous/next sentence
+{, }		Beginning of previous/next paragraph
+[[, ]]		Beginning of previous/next section
+
+{Lines}
+<Enter>		First nonblank character of next line
+0,$,g_		First, end and end without '\n' of current line
+^		First nonblank character of current line
++,-		First nonblank character of next/previous line
+{n}|		Column {n} of current line
+H,M,L		Top, Middle, Last line of screen
+{n}H		{n} line after top line
+{n}L		{n} line before last line
+
+{Scrolling}
+C-f,C-b		Scroll forward/backward one screen
+C-d,C-u		Scroll down/up one half screen
+C-e,C-y		Show one more line at bottom/top of window
+z<CR>		Reposition line with cursor: to top of screen
+z.		Reposition line with cursor: to middle of screen
+z-		Reposition line with cursor: to bottom of screen
+
+{Searches}
+/{pattern}	Search forward for {pattern}
+?{pattern}	Search backward for {pattern}
+n,N		Repeat last search in same/opposite direction
+/,?		Repeat previous search forward/backward
+f{char}		Search forward for character {char} in current line
+F{char}		Search backward for character {char} in current line
+t{char}		Search forward to character before {char} in current line
+T{char}		Search backward to character after {char} in current line
+;		Repeat previous current-line search
+,		Repeat previous current-line search in opposite direction
+
+{Line number}
+C-g		Display current line number
+{n}G		Goto line {n}
+G		Goto last line
+:{n}		Goto line {n}
+
+{Marking position}
+m{char}		Mark current position as {char}
+`{char}		Goto mark {char}
+``		Return to previous mark or context
+'{char}		Goto beginning of line containing mark {char}
+''		Return to beginning of line containing previous mark
+
+
+[Editing]
+{Insert}
+i,a		Insert mode before/after cursor
+I,A		Insert mode before beginning/after end of line
+o,O		Insert new line below/above and active insert mode
+
+{Change}
+cw		Delete a word and active insert mode
+cc		Delete current line and active insert mode
+c{motion}	Delete character under motion and active insert mode
+C		Delete to the end of the line and active insert mode
+r		Change one character
+R		Active Replace mode
+s		Delete character and active insert mode
+S		Delete current line and active insert mode
+
+{Delete/Move}
+x		Delete character under cursor
+X		Delete character before cursor
+dw		Delete a word
+dd		Delete Current line
+d{motion}	Delete text between the cursor and the target of {motion}
+D		Delete to end of the line
+p,P		Paste deleted text after/before cursor
+"{register}p	Paste text from register {register}
+
+{Copy}
+yw		Copy word
+yy		Copy current line
+"{register}yy	Copy current line into register {register}
+y{motion}	Copy text between the cursor and the target of {motion}
+
+{Other commands}
+.		Repeat last edit command
+u,U		Undo last edit/Restore current line
+J		Join two lines
+
+{Ex edit commands}
+:d		Delete lines
+:m		Move lines
+:co OR :t	Copy lines
+
+{Exit commands}
+:w		Write file
+:w!		Write file [Force]
+:wq		Write file and quit
+:x		Write file and quit
+ZZ		Write file and quit
+:{range}w {file}
+		Write line from {range} to {file}
+:{range}w>> {file}
+		Append line from {range} to {file}
+Q		Ex mode
+:e {file}	Edit {file}
+:n		Edit next file
+:e!		Return to last file saved state
+%		Current filename
+#		Alternate filename
+
+
+[Normal]
 ZZ 		Write current file, if modified, and exit.
 gf 		Edit the file whose name is under or after the cursor. Mnemonic: "goto file".
+gd		Goto definition
+gD		Goto Global definition
 
 gg=G		Indent all buffer ( gg -> beginning of the buffer / = -> indent until / G -> end of the buffer)
 ==		Indent the line under cursor
@@ -51,7 +184,7 @@ gg       	top of file
 )		Moves cursor to the next sentence
 {		Moves cursor to the previous paragraph
 }		Moves cursor to the next paragraph
-#G       	goto line #
+{n}G       	goto line {n}
 
 ]'		Next mark line position
 ['		Previous mark line position
@@ -99,7 +232,10 @@ za		Alternate the fold
 
 /<pattern>	Search forward for pattern
 ?<pattern>	Search backward for pattern
+#		Searches backward for word under cursor
 *		Searches forward for word under cursor
+g#		Searches backward for line content word under cursor
+g*		Searches forward for line content word under cursor
 
 C-a		Increment number under cursor
 C-x		Decrement number under cursor
@@ -116,11 +252,19 @@ gN		Search and edit previous
 Q		Ex Mode
 
 J		Join lines, with a minimum of two lines(remove line break)
-[Insert/Replace]
 
+
+[Insert/Replace]
 C-o		Go to normal mode and return to insert mode after the first command
 C-r<REG>	Get the <REG> register content
 C-r=		Enter an expression register
+
+
+[Completion]
+C-x{what}	Call completion for specific {what}
++
+C-f		Completion for filename
+C-l		Completion for whole line
 
 
 [Visual]
@@ -149,7 +293,6 @@ t		Selected until condition(ex: va[t) if you want to select block begin by '[' u
 
 
 [Windows]
-
 c-w s		Split window horizontally
 c-w v		Split window vertically
 c-w [H|J|K|L]	Move windows to Left|Down|Up|Right
@@ -173,7 +316,6 @@ c-w T		Move window to a Tab
 :tabmove 1	Move tab to position 1 [fist tab is 0]
 
 [Command]
-
 :wa		Saves all modified buffer
 :x		Save and quit
 :r[ead] [name] 	Insert the file [name] below the cursor.
@@ -227,6 +369,7 @@ c-w T		Move window to a Tab
 
 :sba		Split all buffer in windows
 :vert sba	Split vertically all buffer in windows
+:bd		Close actual buffer
 :bd *.php<c-a>	Close all buffer with filename *.php
 :bd 3 5		Close buffer 3 and 5
 :4,7 bd		Close buffer 4 to 7(range)
@@ -274,6 +417,15 @@ dp		Puts change
 :setf {syntax}	Force {syntax} for this buffer
 
 :sort		Sort all line in the buffer
+:[range]ce[nter] [width]
+		Center text in [range] with line width [width]
+
+:vimgrep /{pattern}/[j][g] {range of file}
+		Searches {pattern} to {range of file}
+:clist		Show all vimgrep search found
+:cnext		Go to next vimgrep search result
+:cprev		Go to previous vimgrep search result
+
 
 [Ex]
 
@@ -285,7 +437,6 @@ EOF
 
 
 [Macro]
-
 q{register}{commands}q
 		Record macro{register}[0-9/a-z] with {commands}
 		example: qa0f=wvg_xalog()<Esc>""Pjq
@@ -307,8 +458,9 @@ Redefine macro:
 	Change what you want
 	0V
 	"ay
-[Marks]
 
+
+[Marks]
 :marks		List all the current marks.
 :marks {arg}	List the marks that are mentioned in {arg} 
 :delm {marks}	Delete the specified marks
@@ -324,23 +476,22 @@ Redefine macro:
 >		Marks the end of the last visual selection
 
 [View]
-
 :mkview [1-9|path]
 		Create a view for the current file
 :loadview [1-9]	Load a view
 :source {path}	Load a view from file
 
-[Session]
 
+[Session]
 :mks[ession][!] [file]	Write a Vim script that restores the current editing session
 			When [!] is included an existing file is overwritten.
 			When [file] is omitted "Session.vim" is used.
 :source {path}		Loading session from {path}
 
-$> vim -S {path}	Loading session, command line version
+>$ vim -S {path}	Loading session, command line version
+
 
 [Spell checking]
-
 :setlocal spell spelllang=en_gb
 			Set spellchecking for English(GB) !!On neowin not functionnal
 :setlocal nospell	Disable spellchecking
@@ -350,8 +501,8 @@ z=			Suggest alternative word
 [s			Move to the previous misspelled word
 :spellr			Repeat last spelling correction
 
-[Help]
 
+[Help]
 :h holy-grail		See all vim commands
 :h functions		See all vimL functions
 :h tags			See tags help(command, usage, key bidding)
@@ -359,6 +510,18 @@ z=			Suggest alternative word
 :h netrw		See help for native file explorer
 :h spell		See help for spell checking
 :h pattern-atoms	Sell list of all available atoms
+
+
+[Settings]
+:set nu[mber]		Active line number
+:set nonu[mber]		Disable line number
+:set cursorline		Active current line highlight
+:set nocursorline	Disable current line highlight
+:set cursorcolumn	Active current line and column highlight
+:set nocursorcolumn	Disable current line and column highlight
+:set spelllang=en,us,fr	Activate spell language [English, US, French]
+:set list		Activate view all hidden characters
+:set nolist		Disable view all hidden characters
 
 --------------------------------------------------------------------------------
 Vim init:
@@ -375,6 +538,18 @@ filetype indent on
 autocmd FileType sh,cucumber,ruby,yaml,zsh,vim setlocal shiftwidth=2 tabstop=2 expandtab
 
 autocmd Bufread,BufNewFile *.md set filetype=markdown
+
+
+[Abbreviations]
+
+:abbreviate		Abbreviations for all modes
+:iabbrev		Abbreviation for Insert mode
+:cabbrev		Abbreviation for Command mode
+
+:iabbrev {abbrev} {repl}
+			Set abbreviation {abbrev} for replacement {repl}
+example:
+	:iabbrev myAddr 32 Lincoln Road, Birmingham B27 6PA, United Kingdom
 
 --------------------------------------------------------------------------------
 Vim command line:
@@ -420,112 +595,5 @@ Vim games:
 
 - https://www.vimgolf.com
 - https://vim-adventures.com
-
---------------------------------------------------------------------------------
-TMux:
-
-<P>= TMux prefix key
-
-
-<P>:list-keys		TMux key bidding information
-<P>:list-commands	TMux commands list
-<P>:info		TMux session information
-
-<P>~			TMux messages
-<P>:show-messages	TMux messages
-
-<P>:choose-session	To change TMux session
-<P>(			Move to next session
-<P>)			Move to previous session
-<P>$			Renaming session
-<P>:rename-session -t {current_id} {new_id}
-			Renaming session
-$>tmux rename-session -t {current_id} {new_id}
-			Renaming session
-
-<P>:copy-mode
-<P>[			Copy mode
-<P>:paste-mode
-<P>]			Paste last copy
-<P>:list-buffers	
-<P>#			List all copy buffer
-<P>:show-buffer		Show last copy
-<P>:capture-pane	Copy the entire pane
-<P>:save-buffer {file}	Save the entire pane to {file}
-<P>:choose-buffer
-<P>=			Choose buffer to paste
-
-
-{copy-mode}
-:50			Goto line 50
-/{pattern}		Search forward through the buffer
-?{pattern}		Search backward through the buffer
-<space>			Active selection
-<CR> or q		Quit copy-mode
-
-{Panes}
-<P>:split-window -h
-<P>%			Split pane horizontally
-<P>:split-window -v
-<P>"			Split pane vertically
-<C-d>			Close a pane
-<P>x			Force quit pane
-
-<P>o			Cycle through pane
-<P>:select-pane -L	
-<P><left>		Move to pane Left
-<P>:select-pane -R	
-<P><right>		Move to pane Right
-<P>:select-pane -U	
-<P><up>			Move to pane Up
-<P>:select-pane -D	
-<P><down>		Move to pane Down
-<P>q			Display numeric value on top of each pane
-<P>q{pane_id}		Move to pane {pane_id}
-<P>;			Goto last pane
-
-<P><C-left>		Resize pane on left
-<P><C-right>		Resize pane on right
-<P><C-up>		Resize pane on up
-<P><C-down>		Resize pane on down
-<P><M-left>		Resize pane on left by 5
-<P><M-right>		Resize pane on right by 5
-<P><M-up>		Resize pane on up by 5
-<P><M-down>		Resize pane on down by 5
-<P>:resize-pane
-<P>z			Resize pane to take all the place / return to normal size
-<P>:break-pane
-<P>!			Detach pane(transform pane to window)
-
-<P>{			Rotate pane clockwise
-<P>}			Rotate pane counterclockwise
-<P><space>		Switch pane layout
-
-<P>:select-layout even-horizontal
-			Distribute same space horizontally on all pane
-<P>:select-layout even-vertical
-			Distribute same space vertically on all pane
-
-{Windows}
-<P>:new-window
-<P>c			Create a new window
-<P>:rename-window -t {window_id|window_name} {new_name}
-			Rename windows({window_id} or {window_name}) with {new_name}
-
-<P>:join-pane -s {source_window} -t {target_window}
-			Join the source window into the target window
-			Transform window to pane
-
-<P>{window_id}		Goto {window_id} window
-<P>n			Goto next window
-<P>p			Goto previous window
-<P>:choose-window
-<P>w			Choose a window
-
-{Synchronize pane}
-<P>:setw synchronize-panes on
-			Active pane synchronization
-<P>:setw synchronize-panes off
-			Disable pane synchronization
 
 --------------------------------------------------------------------------------
