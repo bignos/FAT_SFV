@@ -229,6 +229,8 @@ zf		Create a fold
 zc		Close the fold
 zo		Open the fold
 za		Alternate the fold
+zM		Close all folds
+zR		Open all folds
 
 /<pattern>	Search forward for pattern
 ?<pattern>	Search backward for pattern
@@ -265,6 +267,12 @@ C-x{what}	Call completion for specific {what}
 +
 C-f		Completion for filename
 C-l		Completion for whole line
+C-k		Completion with dictionary
+		Don't forget to set dictionary
+		:set dictionary+={dictionary_pat
+C-o		Omnicompletion(AKA personal user completion)
+		Don't forget to set omnifunc
+		:set omnifunc={Personal_completion_function}
 
 
 [Visual]
@@ -342,6 +350,9 @@ c-w T		Move window to a Tab
 
 :wundo {file}	Save change 
 :rundo {file}	Load change
+
+:undolist	Show change branch list
+:undo {n}	Return to state {n}
 
 :changes	Show changes list
 :changes {n}	Move cursor to the change number n
@@ -475,6 +486,26 @@ Redefine macro:
 <		Marks the beginning of the last visual selection
 >		Marks the end of the last visual selection
 
+
+[Read-only registers]
+"%		Name of the file of current active buffer
+"#		Name of the previous name of current active buffer, also called alternate file
+".		Last insered text
+":		Last command exectuted
+
+
+[Special registers]
+"*		Clipboard of your windowing system
+"+		Selected text clipboard
+"~		Last selection dropped into vim
+
+"-		Black Hole register, think of this like a trash
+"/		Search pattern register
+
+"=		Expression register, don't forget to use p to paste the result
+		In Insert mode you can use c-r= to paste the result of the expression register
+
+
 [View]
 :mkview [1-9|path]
 		Create a view for the current file
@@ -486,6 +517,10 @@ Redefine macro:
 :mks[ession][!] [file]	Write a Vim script that restores the current editing session
 			When [!] is included an existing file is overwritten.
 			When [file] is omitted "Session.vim" is used.
+:mkview {file}		Write a Vim script that restores the current view(like :mksession but for view)
+			You can specify the view directory with
+			:set viewdir={view_dir}
+:loadview {file}	Load a view from {file}
 :source {path}		Loading session from {path}
 
 >$ vim -S {path}	Loading session, command line version
@@ -509,8 +544,12 @@ z=			Suggest alternative word
 :h autocmd		See how to use autocmd
 :h netrw		See help for native file explorer
 :h spell		See help for spell checking
-:h pattern-atoms	Sell list of all available atoms
+:h pattern-atoms	See list of all available atoms
+:h ins-completion	See insert completion help
+:h expression		See how to put together a valid Vim expression
 
+:helpgrep {pattern}	Search {pattern} in vim help
+			Use clist to navigage(:cl, :cn, :cp)
 
 [Settings]
 :set nu[mber]		Active line number
@@ -532,6 +571,15 @@ autocmd {event} {pattern} {cmd}
 autocmd BufNewFile *.html or ~/skeleton.html
 	Insert a skeleton file if the file in the buffer don't exist
 
+autocmd BufNewFile * silent! Or ~/templates/%:e.tpl
+
+function! LoadTemplate(extension)
+	silent! :execute 'Or ~/templates/' . a:extension . '.tpl'
+	silent! execute 'source ~/templates/' . a:extension . '.abbr'
+endfunction
+autocmd BufNewFile * silent! call LoadTemplate('%:e')
+
+
 filetype indent on
 	Active auto indentation
 
@@ -550,6 +598,93 @@ autocmd Bufread,BufNewFile *.md set filetype=markdown
 			Set abbreviation {abbrev} for replacement {repl}
 example:
 	:iabbrev myAddr 32 Lincoln Road, Birmingham B27 6PA, United Kingdom
+
+
+[Sign]
+:sign define {name} {argument}
+		Define a sign for visual markup
+		example: 
+			:sign define information text=!> linehl=Warning texthl=Error
+
+:exe ":sign place 77 line=" . line('.') . " name=information file=" . expand("%:p")
+		Place the information sign with id 77 on current line
+
+:map <F7> :exe ":sign place 77 line=" . line('.') . " name=information file=" . expand("%:p")<CR>
+		For mapping the sign placement to <F7>
+
+:sign unplace {id}
+		Unplace the sign with {id}
+:sign unplace	Unplace the sign for the current line
+
+:sign jump {id} file={file}
+		Jump to sign {id} on file {file}
+:sign jump {id} buffer={buffer}
+		Jump to sign {id} on buffer {buffer}
+
+[Templates]
+example:
+put this on a file:
+<html>
+	<head>
+	<title><+TITLE+></title>
+	<meta name="generator" content="<+GENERATOR+>" />
+	<meta name="author" content="<+AUTHOR+>" />
+	</head>
+
+	<body>
+		<p><+CONTENT+></p>
+	</body>
+</html>
+
+put this on your vimrc:
+nnoremap <c-j> /<+.\{-1,}+><cr>c/+>/e<cr>
+inoremap <c-j> <esc>/<+.\{-1,}+><cr>c/+>/e<cr>
+
+you can mark <+{replace}+> with:
+match Todo /<+.\++>/
+
+You can make template with abbreviation:
+
+iabbrev for for(!cursor!; <++>; <++>)<cr>{<cr><tab><++><cr><backspace>}<esc>:call search('!cursor!', 'b')<cr>cf!
+
+
+[Tags]
+:set tags={tags_path}
+		Use the tag file in {tags_path}
+:tags		See the tag stack
+:tag		Goto the next tag in the stack
+:pop		Goto the previous tag in the stack
+:tselect	Get a list of matching tags
+:ptselect	Show list of matching tags in a preview window
+:tnext		Goto the next tag in the list
+:tprev		Goto the previous tag in the list
+
+c-]		Goto tag definition
+c-t		Jump back from the definition
+c-w c-]		Open the definition in a horizontal split
+g]		Select one tag on a list
+
+
+[Session/View]
+set viewdir={view_path}
+autocmd BufWinLeave * mkview
+autocmd BufWinEnter * silent loadview
+
+autocmd VimEnter * call LoadSession()
+autocmd VimLeave * call SaveSession()
+function SaveSession()
+	execute 'mksession! {path_to_vim_session}'
+endfunction
+function LoadSession()
+	if argc() == 0
+		execute 'source {path_to_vim_session}'
+	endif
+endfunction
+
+:set sessionoptions={options}
+:echo &sessionoptions
+
+silent source! Session.vim
 
 --------------------------------------------------------------------------------
 Vim command line:

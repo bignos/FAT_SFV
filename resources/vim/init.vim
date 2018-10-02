@@ -26,6 +26,10 @@ Plug 'Raimondi/delimitMate'		" Auto completion for delimiter
 Plug 'vim-airline/vim-airline'		" Enhanced status bar
 Plug 'godlygeek/tabular'		" Easy tabular indentation
 
+Plug 'vim-scripts/taglist.vim'		" Code navigation plugin (IDE project viewer)
+					" Don't forget to install exuberant ctags 
+					" sudo apt-get install exuberant-ctags
+
 call plug#end()
 
 " -[ Plugins specific configuration ]-
@@ -74,6 +78,9 @@ hi Visual ctermfg=LightRed ctermbg=DarkRed
 set foldmethod=indent
 set foldlevel=99
 
+" Load ctags for this project
+set tags=./tags
+
 " PEP 8 indentation
 au BufNewFile,BufRead *.py 
 			\ set tabstop=4 	| 
@@ -111,6 +118,9 @@ nnoremap <space> za
 
 " Enable NERDTree with alt+e
 map <M-e> :NERDTreeToggle<CR>
+
+" Enable vim-taglist panel
+map <M-d> :TlistToggle<CR>
 
 " Exit of terminal insert mode
 tnoremap <Esc> <C-\><C-n>
