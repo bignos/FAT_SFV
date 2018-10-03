@@ -1,4 +1,4 @@
---------------------------------------------------------------------------------
+================================================================================
 			      Vim command to learn
 --------------------------------------------------------------------------------
 
@@ -13,6 +13,8 @@ vim +/{pattern} file
 		Open {file} and place the cursor at first occurence of the search pattern
 vim -c {command} {file}
 		Open {file} and execute {command}
+vim -d {file1} {file2}
+		Diffting on file1 and file2
 
 
 [Vim standard command synthax]
@@ -52,6 +54,8 @@ z-		Reposition line with cursor: to bottom of screen
 {Searches}
 /{pattern}	Search forward for {pattern}
 ?{pattern}	Search backward for {pattern}
+/{pattern}\c	Search forward for {pattern} case insensitive
+?{pattern}\c	Search backward for {pattern} case insensitive
 n,N		Repeat last search in same/opposite direction
 /,?		Repeat previous search forward/backward
 f{char}		Search forward for character {char} in current line
@@ -211,6 +215,7 @@ g`a		Jump to line and column of mark a without affect the jump list
 H        	Jump to TOP of screen
 M        	Jump to MIDDLE of screen
 L        	Jump to BOTTOM of screen
+C-l		Refresh screen
 C-f      	Move forward one full screen (page down)
 C-b      	Move back one full screen (page up)
 C-d      	Move forward 1/2 screen; half page down
@@ -255,6 +260,10 @@ Q		Ex Mode
 
 J		Join lines, with a minimum of two lines(remove line break)
 
+gq{Text Object}	Reformat {Text Object}
+gw{Text Object}	Reformat {Text Object} without move the cursor
+lgqG		Reformat all paragraph in a file
+
 
 [Insert/Replace]
 C-o		Go to normal mode and return to insert mode after the first command
@@ -286,6 +295,7 @@ O		Move the cursor to the opposite side of the same line
 "<REG>p		Paste selected region into register <REG>
 c		Cut selection
 gq		Reformat selection
+gw		Same as gq but without moving cursor
 
 i		Selected inside(use it with Text Object, ex: iw to select the word inside the cursor)
 a		Selected around(use it with Text Object)
@@ -386,16 +396,6 @@ c-w T		Move window to a Tab
 :4,7 bd		Close buffer 4 to 7(range)
 :bufdo bd	Close all buffer
 
-:difft[his]	Make the current window part of the diff windows
-:windo difft	Diff all windows
-:diffs[plit] {filename}
-		Open a new window on the file {filename} to diff
-:diffoff[!]	Turn off diff tools
-:diffget	Gets change
-:diffput	Puts change
-do		Gets change
-dp		Puts change
-:diffupdate	Refresh all window viewports and update the diff highlighting
 :TOhtml		Convert file to HTML, also convert diff
 
 :map {key} {command}
@@ -421,6 +421,12 @@ dp		Puts change
 
 :Sexplore	Native vim file explorer with horizontal split window
 :Explore	Native vim file explorer
+:Nread ftp://{user}@{host}{file_path}
+		Open file on a remote server
+:Nread {host} {user} {password} {file_path}
+		Open file on a remote server
+:set bufhidden=hide
+		This setting is a trick to edit multiple remote buffer without relog when you switch buffer
 
 :echo glob($VIMRUNTIME . '/syntax/*.vim)
 		See all supported file type by vim
@@ -437,9 +443,44 @@ dp		Puts change
 :cnext		Go to next vimgrep search result
 :cprev		Go to previous vimgrep search result
 
+:highlight	Show all defined highlight colors
+
+:UseVimball {dir}
+		Install the vimball on specified directory {dir}
+:VimballList	Show all files contained in the vimball
+:RmVimball {vimball}
+		Uninstall vimball {vimball}
+
+
+[Diff]
+:difft[his]	Make the current window part of the diff windows
+:windo difft	Diff all windows
+:diffs[plit] {filename}
+		Open a new window horizontally on the file {filename} to diff
+:vert diffsplit {filename}
+		Open a new window vertically on the file {filename} to diff
+:diffoff[!]	Turn off diff tools
+:diffget	Gets change
+:diffput	Puts change
+do		Gets change
+dp		Puts change
+:diffupdate	Refresh all window viewports and update the diff highlighting
+
+[c		Goto start of the previous change
+]c		Goto start of the next change
+
+function DiffWithFileFromDisk()
+	let filename = expand('%')
+	let diffname = filename . '.fileFromBuffer'
+	exec 'saveas! ' . diffname
+	diffthis
+	vsplit
+	exec 'edit ' . filename
+	diffthis
+endfunction
+
 
 [Ex]
-
 vim -E -s config.txt <<-EOF
 	:%s/foo/bar
 	:update
@@ -537,16 +578,76 @@ z=			Suggest alternative word
 :spellr			Repeat last spelling correction
 
 
+[Format]
+Format function have 3 variables:
+v:num			The line number of the first line to format
+v:count			The number of lines to format
+v:char			This variable holds a character that is going to be insered(it can be empty)
+
+Formating function example:
+function MyFormatter()
+	let first = v:num
+	let last  = v:num + v:count
+	while(first<-last)
+		call setline(first, '> ' . getline(first))
+		let first = first + 1
+	endwhile
+endfunction
+
+:[range]center {width}	Center line contain in [range](if empty current line) with width {width}
+:[range]left [indent]	Left align with indetation [indent]
+:[range]right {width}	Right align with width {width}
+
+yypVr=			Add text headline(copy, paste, replace all characters by '=')
+
+Function for numbered list example:
+function! NumberList() range
+	" set line numbers in front of lines
+	let beginning 	= line("'<")
+	let ending 	= line("'>")
+	let difsize 	= ending-beginning + 1
+	let pre		= ' '
+	while (beginning <= ending)
+		if match(difsize, '^9*$') == 0
+			let pre = pre . ' '
+		endif
+		call setline(ending, pre . difsize . "\t" . getline(ending))
+		let ending = ending - 1
+		let difsize = difsize - 1
+	endwhile
+endfunction
+
+Function for make indentation, use it with indentexpr:
+function! MyIndenter()
+	" Find previous line and get its indentation
+	let prev_lineo 	= s:prevnonblank(v:lnum)
+	let ind		= indent(prev_lineo)
+	return ind
+endfunction
+
+
 [Help]
 :h holy-grail		See all vim commands
 :h functions		See all vimL functions
 :h tags			See tags help(command, usage, key bidding)
 :h autocmd		See how to use autocmd
-:h netrw		See help for native file explorer
+:h netrw		See help for native file explorer(NETwork Read Write)
+:h netrw-externapp	See help of tool use by native file explore(NETwork Read Write)
+:h netrw-netrc		See how to use configuration file for native file explore(NETwork Read Write)
 :h spell		See help for spell checking
 :h pattern-atoms	See list of all available atoms
 :h ins-completion	See insert completion help
 :h expression		See how to put together a valid Vim expression
+:h vimdiff		See how to use vimdiff
+:h formatoptions	See vim format option
+:h fo-table		See how to set format option table
+:h co			See comment format option
+:h sts			See Soft tab stop(Converted TAB to space)
+:h ts			See space tab option
+:h indentexpr		See indentexpr documentation
+:h indent-expression	See more about indent expression
+:h syn-oneline		See help for syntax oneline option
+:h syn-arguments	See syntax argument documentation
 
 :helpgrep {pattern}	Search {pattern} in vim help
 			Use clist to navigage(:cl, :cn, :cp)
@@ -561,6 +662,22 @@ z=			Suggest alternative word
 :set spelllang=en,us,fr	Activate spell language [English, US, French]
 :set list		Activate view all hidden characters
 :set nolist		Disable view all hidden characters
+:set textwidth={n}	Activate format of {n} characters by line
+:set formatexpr={lang}#{format_function}
+			Use {format_function} to format language {lang}
+:set autoindent		Activate automatic indentation
+:set smartindent	Activate smart indentation(for C style code)
+:set indentexpr={indent_function}
+			Activate indentation with {indent_function}
+:set paste		Activate paste mode (for avoid stair effect when paste from external)
+:set nopaste		Disable paste mode
+:set equalprog={command}
+			Activate the use of {command} to indent
+:set formatprg={command}
+			Use {command} to format
+			example: :set formatprg=par\ -w78
+			to format lines with no more than 78 characters
+
 
 --------------------------------------------------------------------------------
 Vim init:
@@ -586,6 +703,9 @@ filetype indent on
 autocmd FileType sh,cucumber,ruby,yaml,zsh,vim setlocal shiftwidth=2 tabstop=2 expandtab
 
 autocmd Bufread,BufNewFile *.md set filetype=markdown
+
+autocmd FileType xml execute ":silent 1,$!tidy --input-xml true --indent yes -q"
+autocmd FileType html, htm execute ":silent 1,$!tidy --indent yes -f /dev/null -q"
 
 
 [Abbreviations]
@@ -726,9 +846,87 @@ ggdd
 :w !sh
 
 --------------------------------------------------------------------------------
+Vim Script
+
+{Simple synthax color}
+======================
+syntax match myComments "/\*.*\*/"
+" Alternative
+" syntax region myComments start=/\/\*/ end=/\*\//
+" Or more efficient with keyword colorization on commentary
+" syntax region myComments start=/\/\*/ end=/\*\// contains=myKeywords
+" With
+" syntax keyword myKeywords OBSOLETE FIXME TODO
+syntax keyword myVars x y
+syntax match mySymbols "[{}();=]"
+syntax keyword myKeywords if return
+
+highlight myVars ctermfg=red guifg=red
+highlight mySymbols ctermfg=blue guifg=blue
+highlight myKeywords ctermfg=green guifg=green
+highlight myComments ctermfg=yellow guifg=yellow
+======================
+
+{File type detection}
+=====================
+augroup filetypedetect
+autocmd BufNewFile,BufRead *.my setfiletype my
+augroup END
+=====================
+
+{Variable Scope}
+================
+v:	Vim predefined global scope
+g:	Global scope
+b:	Buffer scope 		- Only available in the buffer where it was defined
+t:	Tab scope 		- Only available in the Vim tab where it was defined
+w:	Window scope		- Only available to the current Vim window (viewport)
+l:	Function scope		- Local to the function it is defined in
+s:	Sourced file scope 	- Local to Vim script loaded using :source
+a:	Argument scope		- Used in arguments for functions
+================
+
+
+{Variable Scope example}
+========================
+let g:sum=0
+function SumNumbers(num1, num2)
+	let l:sum = a:num1 + a:num2
+	" check if previous sum was lower than this
+	if g:sum < l:sum
+		let g:sum = l:sum
+	endif
+	return l:sum
+endfunction
+
+" Test code, this will print 7 (value of l:sum)
+echo SumNumbers(3,4)
+" This should also print 7 (value of g:sum)
+echo g:sum
+========================
+
+{Logical operator}
+==================
+==	equal
+!=	not equal
+>	higher than
+<	Lower than
+>=	higher than or equal
+<=	Lower than or equal
+
+<String specific operator>
+=~	contains or equal
+!~	not contains
+==================
+
+
+--------------------------------------------------------------------------------
+Urls:
+
+--------------------------------------------------------------------------------
 Vim games:
 
 - https://www.vimgolf.com
 - https://vim-adventures.com
 
---------------------------------------------------------------------------------
+================================================================================
