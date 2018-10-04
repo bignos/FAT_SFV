@@ -15,6 +15,7 @@ vim -c {command} {file}
 		Open {file} and execute {command}
 vim -d {file1} {file2}
 		Diffting on file1 and file2
+vim -D {file}	Start vim in debug mode
 
 
 [Vim standard command synthax]
@@ -239,6 +240,8 @@ zR		Open all folds
 
 /<pattern>	Search forward for pattern
 ?<pattern>	Search backward for pattern
+C-g		move to the next match in 'incsearch' mode [command-line]
+C-T		move to the previous match in 'incsearch' mode [command-line]
 #		Searches backward for word under cursor
 *		Searches forward for word under cursor
 g#		Searches backward for line content word under cursor
@@ -451,6 +454,25 @@ c-w T		Move window to a Tab
 :RmVimball {vimball}
 		Uninstall vimball {vimball}
 
+:delfunction {function-name}
+		Delete function named {function-name}
+
+:debug call {function}()
+		Active debug mode for {function}
+
+:enew		Open a new empty buffer
+
+:perl {perl_command}
+		Execute {perl_command}
+:python3 {python3_command}
+		Execute {python3_command}
+:pyfile {python_file}
+		Load {python_file}
+:ruby {ruby_command}
+		Execute {ruby_command}
+:rubyfile {ruby_file}
+		Load {ruby_file}
+
 
 [Diff]
 :difft[his]	Make the current window part of the diff windows
@@ -627,27 +649,43 @@ endfunction
 
 
 [Help]
-:h holy-grail		See all vim commands
-:h functions		See all vimL functions
-:h tags			See tags help(command, usage, key bidding)
+:h <Plug>		See all about special key name <Plug>
+:h <SID>		See all about special key name <SID>
 :h autocmd		See how to use autocmd
+:h co			See comment format option
+:h compiler		See how you can compile in vim
+:h ex-command-index	See all Ex command
+:h expression		See how to put together a valid Vim expression
+:h feature-list		See the complete list of features you can check with has() function
+:h fo-table		See how to set format option table
+:h formatoptions	See vim format option
+:h function-list	See all builtin function of Vim
+:h functions		See all vimL functions
+:h help-translated	See how to distribute documentation in multiple languages
+:h holy-grail		See all vim commands
+:h indent-expression	See more about indent expression
+:h indentexpr		See indentexpr documentation
+:h ins-completion	See insert completion help
 :h netrw		See help for native file explorer(NETwork Read Write)
 :h netrw-externapp	See help of tool use by native file explore(NETwork Read Write)
 :h netrw-netrc		See how to use configuration file for native file explore(NETwork Read Write)
-:h spell		See help for spell checking
 :h pattern-atoms	See list of all available atoms
-:h ins-completion	See insert completion help
-:h expression		See how to put together a valid Vim expression
-:h vimdiff		See how to use vimdiff
-:h formatoptions	See vim format option
-:h fo-table		See how to set format option table
-:h co			See comment format option
+:h quickfix		See all about quickfix list
+:h ruby-vim		See ruby-vim documentation
+:h script-local		See help about local script
+:h spell		See help for spell checking
 :h sts			See Soft tab stop(Converted TAB to space)
-:h ts			See space tab option
-:h indentexpr		See indentexpr documentation
-:h indent-expression	See more about indent expression
-:h syn-oneline		See help for syntax oneline option
 :h syn-arguments	See syntax argument documentation
+:h syn-oneline		See help for syntax oneline option
+:h tags			See tags help(command, usage, key bidding)
+:h ts			See space tab option
+:h vimdiff		See how to use vimdiff
+:h write-compiler-plugin
+:h write-filetype-plugin
+:h write-library-script
+
+:helptags {documentation_directory}
+			Install documentation from {documentation_directory}
 
 :helpgrep {pattern}	Search {pattern} in vim help
 			Use clist to navigage(:cl, :cn, :cp)
@@ -677,6 +715,7 @@ endfunction
 			Use {command} to format
 			example: :set formatprg=par\ -w78
 			to format lines with no more than 78 characters
+:set nocompatible	Active no compatible mode to have more vim features
 
 
 --------------------------------------------------------------------------------
@@ -919,10 +958,241 @@ echo g:sum
 !~	not contains
 ==================
 
+{Function with ...}
+===================
+function PrintSum(num1, num2, ...)
+	let sum = a:num1 + a:num2
+	let argcounter = 1
+	" a:0 size of ...
+	while argcounter <= a:0
+		" a:{n} is the value of the variable argument number n
+		let sum += a:{argcounter}
+		let argcounter += 1
+	endwhile
+	echo "the sum is " . sum
+	return sum
+endfunction
+===================
+" Alternative
+function PrintSum(num1, num2, ...)
+	let sum = a:num1 + a:num2
+	" a:000 list of argument in ...
+	for arg in a:000
+		let sum += arg
+	endfor
+	echo "the sum is " . sum
+	return sum
+endfunction
+===================
+
+{Standard Vim script header}
+============================
+" myscript.vim		: Example script to show how a script is strutured
+" Version		: 1.0.5
+" Maintener		: bignos@gmail.com
+" Last modified		: 10/04/18
+" License		: This script is release under the Vim License
+============================
+
+{Script-loaded check}
+=====================
+if exists("loaded_myscript")
+	finish "Don't reload the script"
+endif
+let loaded_myscript = 1
+=====================
+
+{Save compatible mode}
+======================
+let s:global_cpo = &cpo		" Store current compatible-mode
+				" in local variable
+set cpo&vim			" Go into nocompatible-mode
+
+" And a the end of the script
+let &cpo = s:global_cpo
+unlet s:global_cpo
+======================
+
+{Script configuration}
+======================
+" variable myscript_path
+if !exist("myscript_path")
+	let s:vimhomepath = split(&runtimepath, ',')
+	let s:myscript_path = s:vimhomepath[0] . "/plugin/myscript.vim"
+else
+	let s:myscript_path = myscript_path
+	unlet myscript_path
+endif
+
+" variable myscript_indent
+if !exist("myscript_indent")
+	let s:myscript_indent = 4
+else
+	let s:myscript_indent = myscript_indent
+	unlet myscript_indent
+endif
+======================
+
+{Key mappings}
+==============
+if !hasmapto('<Plug>MyscriptMyfunctionA')
+	map <unique> <Leader>a <Plug>MyscriptMyfunctionA
+endif
+
+noremap <unique> <script> <Plug>MyscriptMyfunctionA <SID>MyfunctionA
+noremap <SID>MyfunctionA :call <SID>MyfunctionA()<CR>
+==============
+
+{Local script function}
+=======================
+" this is our local function with a mapping
+function s:MyfunctionA()
+	echo "This is the script-scope function MyfunctionA speaking"
+endfunction
+
+" this is a global function which can be called by anyone
+function MyglobalfunctionB()
+	echo "Hello from the global-scope function myglobalfunctionB"
+endfunction
+
+" this is another global function which can be called by anyone
+function MyglobalfunctionC()
+	echo "Hello from MyglobalfunctionC() now calling locally:"
+	call <SID>MyfunctionA()
+endfunction
+=======================
+
+{Gvim or Vim}
+=============
+if has("gui_running")
+	" execute gui-only commands here
+endif
+=============
+
+{Which operating system}
+========================
+if has("win16") || has("win32") || has("win64") || has("win95")
+	" do some shit for windows
+elseif has("unix")
+	" do real thing for linux/unix
+endif
+========================
+
+{Check Vim version}
+===================
+if v:version >= 702 || v:version == 701 && has("patch123")
+	" Code here is only done for version 7.1 with patch 123
+	" and version 7.2 and above
+endif
+===================
+
+{Using Perl in your function}
+=============================
+function MoveCursor(row, col)
+	if has("perl")
+		perl << EOF
+		($oldrow, $oldcol) = $curwin->Cursor();
+		VIM::Msg("Old position was: ($oldrow, $oldcol)");
+		$curwin->Cursor(row, col);
+EOF
+	else
+		echo "Perl not available. Canceling function call"
+	endif
+endfunction
+=============================
+
+
+--------------------------------------------------------------------------------
+[Debug mode]
+:debug {command}	Debug mode for {command}
+
+{Debug mode command}
+c[ont]			Continue executing code
+q[uit]			Quit the debuggin process without executing the last lines
+i[nterrupt]		Stop the current process and go back to the debugger
+s[tep]			Execute the next line of code and come back to the debugger
+n[ext]			Execute the next command and come back to the debugger
+f[inish]		Continue executing the script without stopping on breakpoint
+
+breakadd func {linenum} {functionname}
+			Add a breakpoint for function {functionname} at line {linenum}
+breakadd file {linenum} {finename}
+			Add a breakpoint at line {linenum} for file {filename}
+breakadd here		Add a breakpoint at this line
+breakdel {sameAsbreakadd}
+			Delete breakpoint
+breakdel *		Delete all breakpoints
+>$ vim -D -c 'breakadd file 15 */.vimrc' somefile.txt
+			Add a breakpoin with command line
+
+
+--------------------------------------------------------------------------------
+[Vim documentation]
+
+first line:
+	*docname.txt* single line of description
+	*myscript.txt* Documentation for example script myscript.vim
+
+example:
+
+*myscript.txt* Documentation for example script myscript.vim
+
+Script	:	myscript.vim - Example script for vim developpers
+Author	:	Bignose
+Email	:	<bignos@gmail.com>
+Changed	:	10/04/18
+================================================================================
+								*myscript-intro*
+
+1. Overview~
+
+This document gives a short introduction to the example
+script myscript.vim.
+This script is made as an example for vim users on how to
+struture a simple vim plugin script such that it is easy
+to read and figure out.
+The following is covered in this document:
+
+	1. Overview				|myscript-intro|
+	2. Mappings				|myscript-mappings|
+	3. Functions				|myscript-functions|
+	4. Todo					|myscript-todo|
+
+================================================================================
+							    *myscript-functions*
+
+3. Functions~
+Besides the functions available via mappings (as descibed 
+in |myscript-mappings|) there are some extra global functions
+available.
+
+Myglobalfunction()~
+This function is one of the global functions in this script.
+An example of usage could be: >
+	:call Myglobalfunction()
+
+<
+	Vim returns:
+	Hello from the global-scope function myglobalfunctionB~
+
+MyglobalfunctionC()~
+This function is a global function that also calls one of
+the internal functions ("s:MyfunctionA()") in the script.
+An example of usage could be: >
+	:call MyglobalfunctionC()
+
+<
+
+	Vim returns:
+	Hello from MyglobalfunctionC() now calling locally:~
+	This is the script-scope function MyfunctionA speaking~
+================================================================================
 
 --------------------------------------------------------------------------------
 Urls:
 
+- https://www.vim.org/					# Vim Home
+- http://vim.wikia.com/wiki/Vim_Tips_Wiki		# Vim Tips
 --------------------------------------------------------------------------------
 Vim games:
 
