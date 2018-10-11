@@ -43,6 +43,8 @@
 	:Ack! {pattern}		Do pattern search in all project file
 - [ Tabular ]
 	:Tabularize {pattern}	Do pattern tabulation ( see example in https://github.com/godlygeek/tabular/blob/master/doc/Tabular.txt )
+- [ Taglist ]
+	<M-d>			Toggle Taglist
 
 --------------------------------------------------------------------------------
 Notes:

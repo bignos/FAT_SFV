@@ -4,31 +4,31 @@
 
 call plug#begin()
 
-Plug 'tmhedberg/SimpylFold'		" folding
+Plug 'tmhedberg/SimpylFold'                                     " folding
 
-Plug 'ncm2/ncm2'			" Completion
-Plug 'roxma/nvim-yarp'			" remote plugin framework
+Plug 'ncm2/ncm2'                                                " Completion
+Plug 'roxma/nvim-yarp'                                          " remote plugin framework
 
-Plug 'ncm2/ncm2-path'			" System path completion
-Plug 'ncm2/ncm2-jedi'			" Python completion
+Plug 'ncm2/ncm2-path'                                           " System path completion
+Plug 'ncm2/ncm2-jedi'                , {'for': 'python'}        " Python completion
 
-Plug 'davidhalter/jedi-vim'		" Python code navigation
-Plug 'jeetsukumaran/vim-pythonsense'	" Python class and function navigation
+Plug 'davidhalter/jedi-vim'          , {'for': 'python'}        " Python code navigation
+Plug 'jeetsukumaran/vim-pythonsense' , {'for': 'python'}        " Python class and function navigation
 
-Plug 'nvie/vim-flake8'			" Synthax checker for Python
+Plug 'nvie/vim-flake8'               , {'for': 'python'}        " Synthax checker for Python
 
-Plug 'scrooloose/nerdtree'		" File viewer
-Plug 'ctrlpvim/ctrlp.vim'		" Filename searcher
-Plug 'mileszs/ack.vim'			" Files content searcher
+Plug 'scrooloose/nerdtree'           , {'on': 'NERDTreeToggle'} " File viewer
+Plug 'ctrlpvim/ctrlp.vim'                                       " Filename searcher
+Plug 'mileszs/ack.vim'                                          " Files content searcher
 
-Plug 'Raimondi/delimitMate'		" Auto completion for delimiter
+Plug 'Raimondi/delimitMate'                                     " Auto completion for delimiter
 
-Plug 'vim-airline/vim-airline'		" Enhanced status bar
-Plug 'godlygeek/tabular'		" Easy tabular indentation
+Plug 'vim-airline/vim-airline'                                  " Enhanced status bar
+Plug 'godlygeek/tabular'                                        " Easy tabular indentation
 
-Plug 'vim-scripts/taglist.vim'		" Code navigation plugin (IDE project viewer)
-					" Don't forget to install exuberant ctags 
-					" sudo apt-get install exuberant-ctags
+Plug 'vim-scripts/taglist.vim'       ,  {'on': 'TlistToggle'}   " Code navigation plugin (IDE project viewer)
+					                        " Don't forget to install exuberant ctags
+					                        " sudo apt-get install exuberant-ctags
 
 call plug#end()
 
