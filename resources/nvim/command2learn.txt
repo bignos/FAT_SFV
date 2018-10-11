@@ -884,6 +884,15 @@ ggdd
 :%s/\v(\w)(\.txt)/mv & \L\1-\2/ | %s/\.txt$/\=strftime("%Y-%b-%d") . ".txt"/
 :w !sh
 
+Add this to your ~/.bashrc to use nvim to read man
+
+# Use nvim for read man pages
+function man(){
+    for arg in "$@"; do
+        nvim -c 'execute "normal! :let no_man_maps = 1\<cr>:runtime ftplugin/man.vim\<cr>:Man '"${arg}"'\<cr>:wincmd o\<cr>"'
+    done
+}
+
 --------------------------------------------------------------------------------
 Vim Script
 
