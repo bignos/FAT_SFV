@@ -43,8 +43,6 @@ If you want to mark something as code, indent it by **4 spaces**
 ---------------
 If you want to mark inline element as code, use **\`** (backquote)
 
-### Output
-
 ### Markdown
     Markdown is a `<em>text-to-html</em>` convertion tool for writers
 
@@ -55,7 +53,7 @@ Markdown is a `<em>text-to-html</em>` convertion tool for writers
 --------------------------------------------------------------------------------
 
 
-[ Emphasis: Italics ]
+[ Emphasis: Italic ]
 ---------------------
 To emphasize text wrap it with either a **\*** or **\_**.
 
@@ -69,7 +67,7 @@ This is *emphasized* _text_.
 --------------------------------------------------------------------------------
 
 
-[ Emphasis: Strong ]
+[ Emphasis: Bold ]
 --------------------
 To boldly emphasize text, wrap it with either __\*\*__ or **\_\_**.
 
@@ -78,6 +76,20 @@ To boldly emphasize text, wrap it with either __\*\*__ or **\_\_**.
 
 ### Output
 This is very heavily **emphasized** __text__.
+
+
+--------------------------------------------------------------------------------
+
+
+[ Emphasis: Strikethrough ]
+--------------------
+To Strikethrough emphasize text, wrap it with either __\~\~__ .
+
+### Markdown
+    This is a ~~mistaken text~~.
+
+### Output
+This is a ~~mistaken text~~.
 
 
 --------------------------------------------------------------------------------
@@ -254,6 +266,23 @@ Nest a list requires you to indent by **exactly 4 spaces**.
 --------------------------------------------------------------------------------
 
 
+[ Task lists ] 
+---------------
+To create a task list, preface list items with a regular space character followed by __[ ]__. To mark a task as complete, use __[x]__.
+
+### Markdown
+    - [x] Finish my changes
+    - [ ] Push my commits to GitHub
+    - [ ] Open a pull request
+
+### Output
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+
+--------------------------------------------------------------------------------
+
+
 [ Paragraphs ]
 --------------
 A paragraph is one or more consecutive lines of text separated by one or more blank lines.  
@@ -269,5 +298,76 @@ This is a paragraph. It has two sentences.
 
 This is another paragraph. It also has two sentences.
 
+--------------------------------------------------------------------------------
+
+
+[ Table ] 
+----------
+You can create tables with **|** and **-**.  
+Hyphens are used to create each column's header, while pipes separate each column.  
+You must include a blank line before your table in order for it to correctly render.
+
+### Markdown
+    
+    | First Header  | Second Header |
+    | ------------- | ------------- |
+    | Content Cell  | Content Cell  |
+    | Content Cell  | Content Cell  |
+
+### Output
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 --------------------------------------------------------------------------------
+
+
+[ Fenced code blocks ] 
+-----------------------
+You can create fenced code blocks by placing **\`\`\` before and after the code block**.  
+We recommend placing a blank line before and after code blocks to make the raw formatting easier to read.
+
+### Markdown
+    ```
+    
+    function test() {
+      console.log("notice the blank line before this function?");
+    }
+    
+    ```
+
+### Output
+```
+
+function test() {
+  console.log("notice the blank line before this function?");
+}
+
+```
+
+--------------------------------------------------------------------------------
+
+
+[ Syntax highlighting ] 
+------------------------
+You can add an optional language identifier to enable syntax highlighting in your fenced code block.
+
+### Markdown
+    ```ruby
+    require 'redcarpet'
+    markdown = Redcarpet.new("Hello World!")
+    puts markdown.to_html
+    ```
+### Output
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+--------------------------------------------------------------------------------
+
+
+
