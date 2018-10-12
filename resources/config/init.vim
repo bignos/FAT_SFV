@@ -30,6 +30,8 @@ Plug 'vim-scripts/taglist.vim'       ,  {'on': 'TlistToggle'}   " Code navigatio
 					                        " Don't forget to install exuberant ctags
 					                        " sudo apt-get install exuberant-ctags
 
+Plug 'plasticboy/vim-markdown'       ,  {'for': 'markdown'}	" Markdown
+
 call plug#end()
 
 " -[ Plugins specific configuration ]-
