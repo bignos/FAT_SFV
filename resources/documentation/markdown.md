@@ -301,8 +301,8 @@ This is another paragraph. It also has two sentences.
 --------------------------------------------------------------------------------
 
 
-[ Table ] 
-----------
+[ Table ] *GFM*
+---------------
 You can create tables with **|** and **-**.  
 Hyphens are used to create each column's header, while pipes separate each column.  
 You must include a blank line before your table in order for it to correctly render.
@@ -324,8 +324,8 @@ You must include a blank line before your table in order for it to correctly ren
 --------------------------------------------------------------------------------
 
 
-[ Fenced code blocks ] 
------------------------
+[ Fenced code blocks ] *GFM* 
+-----------------------------
 You can create fenced code blocks by placing **\`\`\` before and after the code block**.  
 We recommend placing a blank line before and after code blocks to make the raw formatting easier to read.
 
@@ -350,8 +350,8 @@ function test() {
 --------------------------------------------------------------------------------
 
 
-[ Syntax highlighting ] 
-------------------------
+[ Syntax highlighting ] *GFM* 
+------------------------------
 You can add an optional language identifier to enable syntax highlighting in your fenced code block.
 
 ### Markdown
@@ -366,6 +366,41 @@ require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
+
+--------------------------------------------------------------------------------
+
+
+[ No interpretation block ] *GFM* 
+----------------------------------
+You can use **Normal Text** block to have a block with no markdown interpretation.
+
+### Markdown
+    Normal Text
+    
+    <p align="center">
+      <b>Some Links:</b><br>
+      <a href="#">Link 1</a> |
+      <a href="#">Link 2</a> |
+      <a href="#">Link 3</a>
+      <br><br>
+      <img src="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    </p>
+    
+    Normal text
+
+### Output
+Normal Text
+
+<p align="center">
+  <b>Some Links:</b><br>
+  <a href="#">Link 1</a> |
+  <a href="#">Link 2</a> |
+  <a href="#">Link 3</a>
+  <br><br>
+  <img src="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+</p>
+
+Normal text
 
 --------------------------------------------------------------------------------
 
