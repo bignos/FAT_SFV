@@ -284,6 +284,36 @@ This is another paragraph. It also has two sentences.
 --------------------------------------------------------------------------------
 
 
+[ HTML ]
+--------
+You can use HTML code to customise the display
+
+### Markdown
+```html
+<p align="center">
+  <b>Some Links:</b><br>
+  <a href="#">Link 1</a> |
+  <a href="#">Link 2</a> |
+  <a href="#">Link 3</a>
+  <br><br>
+  <img src="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+</p>
+```
+
+### Output
+<p align="center">
+  <b>Some Links:</b><br>
+  <a href="#">Link 1</a> |
+  <a href="#">Link 2</a> |
+  <a href="#">Link 3</a>
+  <br><br>
+  <img src="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+</p>
+
+
+--------------------------------------------------------------------------------
+
+
 ![github flavored markdown](https://lh3.googleusercontent.com/UCXiIJ_T8BDlpqTMp6YsqCo-bkajIl92lDqcuz2z0Nil4VjJzHnYYhbx_G_IkU60ICFRfj0dzF0=w128-h128-e365)
 
 [ Task lists ] 
@@ -374,41 +404,6 @@ require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
-
---------------------------------------------------------------------------------
-
-
-![github flavored markdown](https://lh3.googleusercontent.com/UCXiIJ_T8BDlpqTMp6YsqCo-bkajIl92lDqcuz2z0Nil4VjJzHnYYhbx_G_IkU60ICFRfj0dzF0=w128-h128-e365)
-
-[ No interpretation block ]
----------------------------
-You can use **Normal Text** block to have a block with no markdown interpretation.
-
-### Markdown
-    Normal Text
-    
-    <p align="center">
-      <b>Some Links:</b><br>
-      <a href="#">Link 1</a> |
-      <a href="#">Link 2</a> |
-      <a href="#">Link 3</a>
-      <br><br>
-      <img src="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    </p>
-    
-    Normal text
-
-### Output
-
-<p align="center">
-  <b>Some Links:</b><br>
-  <a href="#">Link 1</a> |
-  <a href="#">Link 2</a> |
-  <a href="#">Link 3</a>
-  <br><br>
-  <img src="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-</p>
-
 
 --------------------------------------------------------------------------------
 
