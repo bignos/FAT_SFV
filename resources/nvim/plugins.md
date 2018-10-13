@@ -23,7 +23,7 @@ Vim plugins install notes
     K                       Show documentation
     :Pyimport <module>      Open the module
 
-#### [ Vim-pythonsense ]        
+#### [ Vim-pythonsense ]
 
     [[                      Jump to previous class or function (normal, visual, operator modes)
     ]]                      Jump to next class or function  (normal, visual, operator modes)
