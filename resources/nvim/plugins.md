@@ -5,15 +5,15 @@ Vim plugins install notes
 --------------
 
 --------------------------------------------------------------------------------
-####[ NCM2 ]###
+#### [ NCM2 ]
 
     <C-Space>		        Code completion
 
-####[ vim-flake8 ]
+#### [ vim-flake8 ]
 
 	<F7>			        Check Python style(PEP8) and synthax
 
-####[ Jedi-vim ]
+#### [ Jedi-vim ]
 
 	\g			            Goto assignements
 	\d			            Goto definition
@@ -22,7 +22,7 @@ Vim plugins install notes
 	K			            Show documentation
 	:Pyimport <module>	    Open the module
 
-####[ Vim-pythonsense]		
+#### [ Vim-pythonsense]		
 
 	[[    			        Jump to previous class or function (normal, visual, operator modes)
 	]]    			        Jump to next class or function  (normal, visual, operator modes)
@@ -34,27 +34,27 @@ Vim plugins install notes
 	aM    			        Select a function or method. Ex: vaM, daM, yaM, caM (normal, operator modes)
 	iM    			        Select inner function or method. Ex: viM, diM, yiM, ciM (normal, operator modes)
 
-####[ SimpylFold ]
+#### [ SimpylFold ]
 
 	<Space>			        Fold/unfold
 
-####[ NERDTree ]
+#### [ NERDTree ]
 
 	<M-e>			        Toggle NERDTree
 
-####[ CtrlP ]
+#### [ CtrlP ]
 
 	<C-p>			        Activate file search
 
-####[ Ack ]
+#### [ Ack ]
 
 	:Ack! {pattern}		    Do pattern search in all project file
 
-####[ Tabular ]
+#### [ Tabular ]
 
 	:Tabularize {pattern}	Do pattern tabulation ( see example in https://github.com/godlygeek/tabular/blob/master/doc/Tabular.txt )
 
-####[ Taglist ]
+#### [ Taglist ]
 
 	<M-d>			        Toggle Taglist
 
