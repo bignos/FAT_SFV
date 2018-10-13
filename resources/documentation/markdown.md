@@ -266,23 +266,6 @@ Nest a list requires you to indent by **exactly 4 spaces**.
 --------------------------------------------------------------------------------
 
 
-[ Task lists ] 
----------------
-To create a task list, preface list items with a regular space character followed by __[ ]__. To mark a task as complete, use __[x]__.
-
-### Markdown
-    - [x] Finish my changes
-    - [ ] Push my commits to GitHub
-    - [ ] Open a pull request
-
-### Output
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
-
---------------------------------------------------------------------------------
-
-
 [ Paragraphs ]
 --------------
 A paragraph is one or more consecutive lines of text separated by one or more blank lines.  
@@ -301,8 +284,29 @@ This is another paragraph. It also has two sentences.
 --------------------------------------------------------------------------------
 
 
-[ Table ] *GFM*
----------------
+![github flavored markdown](https://lh3.googleusercontent.com/UCXiIJ_T8BDlpqTMp6YsqCo-bkajIl92lDqcuz2z0Nil4VjJzHnYYhbx_G_IkU60ICFRfj0dzF0=w128-h128-e365)
+
+[ Task lists ] 
+--------------
+To create a task list, preface list items with a regular space character followed by __[ ]__. To mark a task as complete, use __[x]__.
+
+### Markdown
+    - [x] Finish my changes
+    - [ ] Push my commits to GitHub
+    - [ ] Open a pull request
+
+### Output
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+
+--------------------------------------------------------------------------------
+
+
+![github flavored markdown](https://lh3.googleusercontent.com/UCXiIJ_T8BDlpqTMp6YsqCo-bkajIl92lDqcuz2z0Nil4VjJzHnYYhbx_G_IkU60ICFRfj0dzF0=w128-h128-e365)
+
+[ Table ]
+---------
 You can create tables with **|** and **-**.  
 Hyphens are used to create each column's header, while pipes separate each column.  
 You must include a blank line before your table in order for it to correctly render.
@@ -324,8 +328,10 @@ You must include a blank line before your table in order for it to correctly ren
 --------------------------------------------------------------------------------
 
 
-[ Fenced code blocks ] *GFM* 
------------------------------
+![github flavored markdown](https://lh3.googleusercontent.com/UCXiIJ_T8BDlpqTMp6YsqCo-bkajIl92lDqcuz2z0Nil4VjJzHnYYhbx_G_IkU60ICFRfj0dzF0=w128-h128-e365)
+
+[ Fenced code blocks ]
+----------------------
 You can create fenced code blocks by placing **\`\`\` before and after the code block**.  
 We recommend placing a blank line before and after code blocks to make the raw formatting easier to read.
 
@@ -350,8 +356,10 @@ function test() {
 --------------------------------------------------------------------------------
 
 
-[ Syntax highlighting ] *GFM* 
-------------------------------
+![github flavored markdown](https://lh3.googleusercontent.com/UCXiIJ_T8BDlpqTMp6YsqCo-bkajIl92lDqcuz2z0Nil4VjJzHnYYhbx_G_IkU60ICFRfj0dzF0=w128-h128-e365)
+
+[ Syntax highlighting ]
+-----------------------
 You can add an optional language identifier to enable syntax highlighting in your fenced code block.
 
 ### Markdown
@@ -370,8 +378,10 @@ puts markdown.to_html
 --------------------------------------------------------------------------------
 
 
-[ No interpretation block ] *GFM* 
-----------------------------------
+![github flavored markdown](https://lh3.googleusercontent.com/UCXiIJ_T8BDlpqTMp6YsqCo-bkajIl92lDqcuz2z0Nil4VjJzHnYYhbx_G_IkU60ICFRfj0dzF0=w128-h128-e365)
+
+[ No interpretation block ]
+---------------------------
 You can use **Normal Text** block to have a block with no markdown interpretation.
 
 ### Markdown
@@ -389,7 +399,6 @@ You can use **Normal Text** block to have a block with no markdown interpretatio
     Normal text
 
 ### Output
-Normal Text
 
 <p align="center">
   <b>Some Links:</b><br>
@@ -400,7 +409,6 @@ Normal Text
   <img src="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
 </p>
 
-Normal text
 
 --------------------------------------------------------------------------------
 
