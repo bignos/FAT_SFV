@@ -32,6 +32,8 @@ This is very heavily **emphasized** __text__.
 --------------------------------------------------------------------------------
 
 
+![github flavored markdown](https://lh3.googleusercontent.com/UCXiIJ_T8BDlpqTMp6YsqCo-bkajIl92lDqcuz2z0Nil4VjJzHnYYhbx_G_IkU60ICFRfj0dzF0=w128-h128-e365)
+
 [ Emphasis: Strikethrough ]
 --------------------
 To Strikethrough emphasize text, wrap it with either `~~` .
@@ -49,7 +51,9 @@ This is a ~~mistaken text~~.
 [ Header ]
 ----------
 HTML headings are produced by placing a number of `#` before the header text corresponding to the level of heading desired (HTML offers 6 levels of headings).  
-You can also place under the header `===` for h1  or `---` for h2. 
+You can also place under the header: 
+-   `===` for h1
+-   `---` for h2 
 
 ### Markdown
 
@@ -151,6 +155,47 @@ Nest a list requires you to indent by `exactly 4 spaces`.
 --------------------------------------------------------------------------------
 
 
+[ List: Ordered ] 
+------------------
+Creating ordered lists is done by using `[1. - n.]`
+
+### Markdown
+    1. First element
+    2. Second element
+        1. first under element
+    3. Third element
+    4. Fourth element
+
+### Output
+1. First element
+2. Second element
+    1. first under element
+3. Third element
+4. Fourth element
+
+--------------------------------------------------------------------------------
+
+
+[ List: Dynamic Ordered ] 
+------------------------
+Creating dynamic ordered lists is done by using only `1.`
+*This option is less readable in text mode*
+
+### Markdown
+    1. First element
+    1. Second element
+    1. Third element
+    1. Fourth element
+
+### Output
+1. First element
+1. Second element
+1. Third element
+1. Fourth element
+
+--------------------------------------------------------------------------------
+
+
 [ Horizontal rules ]
 --------------------
 You can create a horizontal rule (`<hr />`) by placing `3 or more -, *, or _ on a single line by themselves`.  
@@ -178,6 +223,20 @@ You can also place spaces between them.
 
 ---------------------------------------
   
+
+--------------------------------------------------------------------------------
+
+
+[ Links: Auto ] 
+----------------
+Autolinks are absolute URIs and email addresses inside `<` and `>`.  
+They are parsed as links, where the URI or email address itself is used as the link's label.
+
+### Markdown
+    <https://www.google.com>
+
+### Output
+<https://www.google.com>
 
 --------------------------------------------------------------------------------
 
@@ -223,6 +282,82 @@ This is a guide on Markdown [Markdown][1].
 
 [1]: http://en.wikipedia.org/wiki/Markdown "Markdown"
 
+
+--------------------------------------------------------------------------------
+
+
+[ Links: Named Anchor ] 
+------------------------
+Named anchors enable you to jump to the specified anchor point on the same page.
+_Note that placement of achors is arbitrary, you can put them anywhere you want, not just in headings.  
+This makes adding cross-references easy when writing markdown._
+
+### Markdown
+~~~
+# Table of Contents
+* [Chapter 1](#chapter-1)
+* [Chapter 2](#chapter-2)
+* [Chapter 3](#chapter-3)
+
+## Chapter 1 <a name="chapter-1"></a>
+Content for chapter one.
+
+## Chapter 2 <a name="chapter-2"></a>
+Content for chapter one.
+
+## Chapter 3 <a name="chapter-3"></a>
+Content for chapter one.
+~~~
+
+### Output
+# Table of Contents
+* [Chapter 1](#chapter-1)
+* [Chapter 2](#chapter-2)
+* [Chapter 3](#chapter-3)
+
+## Chapter 1 <a name="chapter-1"></a>
+Content for chapter one.
+
+## Chapter 2 <a name="chapter-2"></a>
+Content for chapter one.
+
+## Chapter 3 <a name="chapter-3"></a>
+Content for chapter one.
+
+
+--------------------------------------------------------------------------------
+
+
+[ Links: Footnotes ] 
+--------------------
+Markdown footnotes are denoted by `[^N]` _N is a number_.
+
+### Markdown
+~~~
+This is some text[^1] with a footnote reference link.
+
+[^1]: "This is a footnote"
+~~~
+
+### Output
+This is some text[^1] with a footnote reference link.
+
+[^1]: "This is a footnote"
+
+
+--------------------------------------------------------------------------------
+
+
+[ Links: Inline footnotes ] 
+----------------------------
+
+### Markdown
+~~~
+[^2 "This is an Inline footnote"]
+~~~
+
+### Output
+[^2 "This is an Inline footnote"]
 
 --------------------------------------------------------------------------------
 
@@ -273,20 +408,21 @@ You can use HTML code to customise the display
 [ Blockquote ]
 --------------
 To enclose a segment of text in blockquotes, one must prefix each written line with a `>`.
+Also you can use nested level of quoting with `more >`.
 
 ### Markdown
     > ## Blockquoted header
     >
     > This is a blockquoted text
-    >
-    > This is a second paragraph withing the blockquoted text
+    >> This is a level 2 
+    >>> This is a level 3
 
 ### Output
 > ## Blockquoted header
 >
 > This is a blockquoted text
->
-> This is a second paragraph withing the blockquoted text
+>> This is a level 2 
+>>> This is a level 3
 
 
 --------------------------------------------------------------------------------
@@ -294,9 +430,9 @@ To enclose a segment of text in blockquotes, one must prefix each written line w
 
 [ Code:Inline ]
 ---------------
-If you want to mark inline element as code, use _`_ (backquote)
+If you want to mark inline element as code, use __`__ (backtick)
 
-### Markdown
+### Markdownn
     Markdown is a `<em>text-to-html</em>` convertion tool for writers
 
 ### Output
@@ -324,8 +460,11 @@ If you want to mark something as code, indent it by `4 spaces`
 
 [ Fenced code blocks ]
 ----------------------
-You can create fenced code blocks by placing a `triple backquote before and after the code block`.  
-We recommend placing a blank line before and after code blocks to make the raw formatting easier to read.
+You can create fenced code blocks by placing:
+- ` ``` ` 
+- `~~~`
+before and after the code block.  
+*We recommend placing a blank line before and after code blocks to make the raw formatting easier to read.*
 
 ### Markdown
     ```
@@ -377,6 +516,11 @@ puts markdown.to_html
 You can create tables with `|` and `-`.  
 Hyphens are used to create each column's header, while pipes separate each column.  
 You must include a blank line before your table in order for it to correctly render.
+
+Align text in column with
+- `---` Left
+- `-:-` Center
+- `--:` Right
 
 ### Markdown
     
