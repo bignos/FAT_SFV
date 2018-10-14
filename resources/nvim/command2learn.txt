@@ -1,5 +1,5 @@
 ================================================================================
-			      Vim command to learn
+                              Vim command to learn
 --------------------------------------------------------------------------------
 
 
@@ -400,6 +400,8 @@ c-w T		Move window to a Tab
 :bufdo bd	Close all buffer
 
 :TOhtml		Convert file to HTML, also convert diff
+
+:retab      Convert all tab(\t) to space
 
 :map {key} {command}
 		Map {key} to {command}
