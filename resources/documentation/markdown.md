@@ -196,28 +196,6 @@ Creating dynamic ordered lists is done by using only `1.`
 --------------------------------------------------------------------------------
 
 
-[ List: Definition ] 
----------------------
-
-### Markdown
-~~~
-Vim
-:Best word processor in the world
-
-Google
-:Your God
-~~~
-
-### Output
-Vim
-:Best word processor in the world
-
-Google
-:Your God
-
---------------------------------------------------------------------------------
-
-
 [ Horizontal rules ]
 --------------------
 You can create a horizontal rule (`<hr />`) by placing `3 or more -, *, or _ on a single line by themselves`.  
@@ -346,26 +324,6 @@ Content for chapter one.
 ## Chapter 3 <a name="chapter-3"></a>
 Content for chapter one.
 
-
---------------------------------------------------------------------------------
-
-
-[ Links: Footnotes ] 
---------------------
-Markdown footnotes are denoted by `[^N]` _N is a number_.
-
-### Markdown
-~~~
-This is some text [^1] with a footnote reference link.
-
-[^1]: "This is a footnote"
-~~~
-
-### Output
-This is some text [^1] with a footnote reference link.
-
-[^1]: "This is a footnote"
-
 --------------------------------------------------------------------------------
 
 
@@ -468,8 +426,9 @@ If you want to mark something as code, indent it by `4 spaces`
 [ Fenced code blocks ]
 ----------------------
 You can create fenced code blocks by placing:
-- __```__
-- `~~~`
+    - __```__
+    - __~~~__
+
 before and after the code block.  
 *We recommend placing a blank line before and after code blocks to make the raw formatting easier to read.*
 
