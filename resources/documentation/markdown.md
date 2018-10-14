@@ -32,8 +32,6 @@ This is very heavily **emphasized** __text__.
 --------------------------------------------------------------------------------
 
 
-![github flavored markdown](https://lh3.googleusercontent.com/UCXiIJ_T8BDlpqTMp6YsqCo-bkajIl92lDqcuz2z0Nil4VjJzHnYYhbx_G_IkU60ICFRfj0dzF0=w128-h128-e365)
-
 [ Emphasis: Strikethrough ]
 --------------------
 To Strikethrough emphasize text, wrap it with either `~~` .
