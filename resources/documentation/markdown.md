@@ -426,8 +426,8 @@ If you want to mark something as code, indent it by `4 spaces`
 [ Fenced code blocks ]
 ----------------------
 You can create fenced code blocks by placing:
-    - __```__
-    - __~~~__
+- __```__
+- __~~~__
 
 before and after the code block.  
 *We recommend placing a blank line before and after code blocks to make the raw formatting easier to read.*
