@@ -180,7 +180,10 @@ gD              Goto Global definition
 ~~~
 
 ~~~
-gg=G            Indent all buffer ( gg -> beginning of the buffer / = -> indent until / G -> end of the buffer)
+gg=G            Indent all buffer 
+                    gg -> beginning of the buffer
+                    =  -> indent until
+                    G  -> end of the buffer
 ==              Indent the line under cursor
 ={txt_obj}      Indent text object(example: =i{ to indent inside a block)
 ={motion}       Indent motion(example: =% to indent under bracket)
@@ -206,7 +209,8 @@ c               Change(not very well understand for the moment)
 cc              Erase current line and set insert mode
 cw              Erase word and set insert mode
 D               Delete the characters under the cursor until the end of the line
-~               Switch case of the character under the cursor and move the cursor to the right. If a [count] is given, do that many characters.
+~               Switch case of the character under the cursor and move the cursor to the right. 
+                    If a [count] is given, do that many characters.
 .               Repeats the last INSERT edit
 gx              Opens the URL under the cursor in a web browser
 ~~~
@@ -355,7 +359,8 @@ C-r=            Enter an expression register
 ~~~
 C-x{what}       Call completion for specific {what}
 ~~~
-+
+
+#### {what}
 ~~~
     C-f         Completion for filename
     C-l         Completion for whole line
@@ -390,17 +395,19 @@ gw              Same as gq but without moving cursor
 ~~~
 i               Selected inside(use it with Text Object, ex: iw to select the word inside the cursor)
 a               Selected around(use it with Text Object)
-t               Selected until condition(ex: va[t) if you want to select block begin by '[' until ')' is found)
+t               Selected until condition
+                    example: va[t) if you want to select block begin by '[' until ')' is found
 ~~~
 
+
+#### {Text Object} (using for selection)
 ~~~
-{Text Object} (using for selection)
-- w[ord]
-- s[entences]
-- p[aragraphs]
-- t[ags]
-- '|"|`[quotes]
-- {}|()|[]|<>[block]
+w[ord]
+s[entences]
+p[aragraphs]
+t[ags]
+'|"|`[quotes]
+{}|()|[]|<>[block]
 ~~~
 
 
@@ -1123,6 +1130,7 @@ autocmd BufWinEnter * silent loadview
 autocmd VimEnter * call LoadSession()
 autocmd VimLeave * call SaveSession()
 ~~~
+
 ```viml
 function SaveSession()
     execute 'mksession! {path_to_vim_session}'
@@ -1145,42 +1153,45 @@ silent source! Session.vim
 --------------------------------------------------------------------------------
 
 
-### Vim command line
+### Vim command line
 ~~~
 >$ nvim --headless -c "TOhtml|update|quit|quit" framedata.py
                 To convert framedata.py to framedata.py.html
 ~~~
-
 
 --------------------------------------------------------------------------------
 
 
 ### Vim tricks
 ~~~
-:e **/*.py<TAB>     Cycle to all .py file of your project
+:e **/*.py<TAB> Cycle to all .py file of your project
 
 d/{search}      Delete until found {search}
 
-:t.         Duplicate line(like yyp)
+:t.             Duplicate line(like yyp)
 
 :1,3t4          Duplicate line 1 to 3 and paste after line 4
 
 4d 4            Start line 4 and delete 4 lines
 
-c2l         Delete 2 character and place on Insert mode
+c2l             Delete 2 character and place on Insert mode
 
-:1,10 w {other_file}    Write line 1 to 10 to {other_file}
+:1,10 w {other_file)
+                Write line 1 to 10 to {other_file}
 
-:1,10 w >> {other_file} Append line 1 to 10 to the end of {other_file}
+:1,10 w >> {other_file}
+                Append line 1 to 10 to the end of {other_file}
 
-2f!         Move the cursor to the second '!' found of the current line
+2f!             Move the cursor to the second '!' found of the current line
 
 :%normal A!     Place '!' in the end of all line
 
 :later 2f       File states, go back 2 buffer writes
 
-:set scrollbind     Synchronize scroll with other windows
-:set noscrollbind   Stop scroll synchronization
+:set scrollbind
+                Synchronize scroll with other windows
+:set noscrollbind
+                Stop scroll synchronization
 ~~~
 
 #### {Files renaming example with an empty buffer}
