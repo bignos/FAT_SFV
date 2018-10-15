@@ -59,4 +59,13 @@ Vim plugins install notes
 
     <M-d>                   Toggle Taglist
 
+#### [ Scratch ]
+
+    :Scratch                Open a scratch buffer in a new window
+    gs                      Normal mode:
+                                Open the scratch window and enter insert mode
+                            Visual mode:
+                                Paste the current selection into scratch buffer
+    gS                      Clear the buffer before opening
+
 --------------------------------------------------------------------------------

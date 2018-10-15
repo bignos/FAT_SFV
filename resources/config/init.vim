@@ -32,6 +32,8 @@ Plug 'vim-scripts/taglist.vim'       ,  {'on': 'TlistToggle'}   " Code navigatio
 
 Plug 'plasticboy/vim-markdown'       ,  {'for': 'markdown'}	" Markdown
 
+Plug 'mtth/scratch.vim'						" Scratch window
+
 call plug#end()
 
 " -[ Plugins specific configuration ]-
@@ -63,6 +65,9 @@ set encoding=utf-8
 
 " No mode show ( because of the status bar, this information is redondant )
 set noshowmode
+
+" Hidden mode for hidding none use window
+set hidden
 
 " Colors
 set hlsearch
