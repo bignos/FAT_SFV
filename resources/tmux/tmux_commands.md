@@ -141,7 +141,10 @@ tmux send-key "vim" "C-m" "i"
 | Command                                                | Information                                                                   |
 | ------------------------------------------------------ | ----------------------------------------------------------------------------- |
 | %P`:run-shell [-b] [-t {pane_id}] "{shell_command}"`   | Run {shell_command} without use of window                                     |
-|                                                        |                                                                               |
-| `bind-key u if-shell "test $(ls | grep Dropbox | wc -l) -gt 0" "display-message 'Folder does not exist'" "display-message 'Folder exist'"` | Conditional key bindings, if directory "Dropbox" exist %Pu display a message and if not %Pu display a different message |
+  
+  
+  
+`bind-key u if-shell "test $(ls | grep Dropbox | wc -l) -gt 0" "display-message 'Folder does not exist'" "display-message 'Folder exist'"`  
+Conditional key bindings, if directory "Dropbox" exist %Pu display a message and if not %Pu display a different message |
 
 --------------------------------------------------------------------------------
