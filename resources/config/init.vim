@@ -84,7 +84,7 @@ set foldlevel=99
 set tags=./tags
 
 " PEP 8 indentation
-au BufNewFile,BufRead *.py 
+au BufNewFile,BufRead *.py,*.md 
 			\ set tabstop=4 	| 
 			\ set softtabstop=4 	| 
 			\ set shiftwidth=4 	|  
@@ -93,7 +93,7 @@ au BufNewFile,BufRead *.py
 			\ set nonumber		|
 			\ set fileformat=unix
 
-au BufNewFile,BufRead *.js, *.html, *.css 
+au BufNewFile,BufRead *.js,*.html,*.css 
 			\ set tabstop=2 	| 
 			\ set softtabstop=2 	| 
 			\ set shiftwidth=2
