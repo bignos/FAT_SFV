@@ -34,6 +34,11 @@ Plug 'plasticboy/vim-markdown'       ,  {'for': 'markdown'}	" Markdown
 
 Plug 'mtth/scratch.vim'						" Scratch window
 
+Plug 'fatih/vim-go'		     , { 'for': 'go' }		" Go
+
+Plug 'mattn/emmet-vim'		     , { 'for': 'html'}		" Emmet for html abrevation
+Plug 'tpope/vim-surround'					" Surround
+
 call plug#end()
 
 " -[ Plugins specific configuration ]-

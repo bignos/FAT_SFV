@@ -68,4 +68,15 @@ Vim plugins install notes
                                 Paste the current selection into scratch buffer
     gS                      Clear the buffer before opening
 
+#### [ Emmet ]
+
+    META: <C-y>
+    :he emmet-tutorial                              A complete tutorial
+    https://docs.emmet.io/abbreviations/syntax/     Abreviation synthax
+
+#### [ Surround ]
+
+    META: s
+    :he surround-mappings                           Complete mapping list  
+    
 --------------------------------------------------------------------------------
