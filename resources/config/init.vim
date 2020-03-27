@@ -4,40 +4,45 @@
 
 call plug#begin()
 
-Plug 'tmhedberg/SimpylFold'                                     " folding
-
-Plug 'ncm2/ncm2'                                                " Completion
-Plug 'roxma/nvim-yarp'                                          " remote plugin framework
+" -[ Completion ]-
+Plug 'ncm2/ncm2'                                                " Completion engine for neovim
+Plug 'roxma/nvim-yarp'                                          " remote plugin framework (needed by ncm2)
 
 Plug 'ncm2/ncm2-path'                                           " System path completion
 Plug 'ncm2/ncm2-jedi'                , {'for': 'python'}        " Python completion
 
+Plug 'Raimondi/delimitMate'                                     " Auto completion for delimiter
+
+Plug 'mattn/emmet-vim'		     , { 'for': 'html'}		" Emmet for html abrevation
+
+" -[ Code navigation ]-
 Plug 'davidhalter/jedi-vim'          , {'for': 'python'}        " Python code navigation
 Plug 'jeetsukumaran/vim-pythonsense' , {'for': 'python'}        " Python class and function navigation
 
-Plug 'nvie/vim-flake8'               , {'for': 'python'}        " Synthax checker for Python
-
-Plug 'scrooloose/nerdtree'           , {'on': 'NERDTreeToggle'} " File viewer
-Plug 'ctrlpvim/ctrlp.vim'                                       " Filename searcher
-Plug 'mileszs/ack.vim'                                          " Files content searcher
-
-Plug 'Raimondi/delimitMate'                                     " Auto completion for delimiter
-
-Plug 'vim-airline/vim-airline'                                  " Enhanced status bar
-Plug 'godlygeek/tabular'                                        " Easy tabular indentation
-
-Plug 'vim-scripts/taglist.vim'       ,  {'on': 'TlistToggle'}   " Code navigation plugin (IDE project viewer)
+Plug 'vim-scripts/taglist.vim'       , {'on': 'TlistToggle'}    " Code navigation plugin (IDE project viewer)
 					                        " Don't forget to install exuberant ctags
 					                        " sudo apt-get install exuberant-ctags
 
-Plug 'plasticboy/vim-markdown'       ,  {'for': 'markdown'}	" Markdown
+" -[ Linter ]-
+Plug 'nvie/vim-flake8'               , {'for': 'python'}        " Synthax checker for Python
 
+" -[ Synthax highlighting ]-
+Plug 'sheerun/vim-polyglot'					" Support a lot of language syntax hightlighting
+
+" -[ Tools ]-
+Plug 'tmhedberg/SimpylFold'                                     " folding
+Plug 'scrooloose/nerdtree'           , {'on': 'NERDTreeToggle'} " File viewer
+Plug 'ctrlpvim/ctrlp.vim'                                       " Filename searcher
+Plug 'mileszs/ack.vim'                                          " Files content searcher
+Plug 'godlygeek/tabular'                                        " Easy tabular indentation
 Plug 'mtth/scratch.vim'						" Scratch window
-
-Plug 'fatih/vim-go'		     , { 'for': 'go' }		" Go
-
-Plug 'mattn/emmet-vim'		     , { 'for': 'html'}		" Emmet for html abrevation
 Plug 'tpope/vim-surround'					" Surround
+
+" -[ Visual ]-
+Plug 'vim-airline/vim-airline'                                  " Enhanced status bar
+
+" -[ Spell checker ]-
+Plug 'dpelle/vim-LanguageTool'					" LanguageTool to check french grammar
 
 call plug#end()
 
@@ -63,6 +68,10 @@ let g:jedi#show_call_signatures 	= 2
 let g:flake8_show_in_gutter		= 1
 let g:flake8_show_in_file		= 1
 
+" { LanguageTool }
+let g:languagetool_jar='/home/bignose/Static/LanguageTool-4.8/languagetool-commandline.jar'
+let g:languagetool_lang='fr'
+
 " -[ Neovim configuration ]-
 
 " UTF-8 support
@@ -82,10 +91,6 @@ hi Search ctermfg=Red
 hi MatchParen cterm=bold ctermbg=DarkRed ctermfg=magenta
 hi Visual ctermfg=LightRed ctermbg=DarkRed
 
-" Python colors highlight
-" let python_highlight_all=1
-" syntax on
-
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
@@ -103,10 +108,13 @@ au BufNewFile,BufRead *.py,*.md
 			\ set nonumber		|
 			\ set fileformat=unix
 
-au BufNewFile,BufRead *.js,*.html,*.css 
+au BufNewFile,BufRead *.js,*.html,*.css,*.tex 
 			\ set tabstop=2 	| 
 			\ set softtabstop=2 	| 
 			\ set shiftwidth=2
+
+" Latex file setting
+let g:tex_flavor='latex'
 
 " -[ Key biding ]-
 
