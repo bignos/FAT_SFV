@@ -16,11 +16,12 @@
 
 # coding=utf-8
 
-import sys              # for exit()
-import os               # for path and basename
-import lxml.html        # for parse XML
-import re               # for Regular expression
-import json             # for JSON dump and load
+import json  # for JSON dump and load
+import os  # for path and basename
+import re  # for Regular expression
+import sys  # for exit()
+
+import lxml.html  # for parse XML
 
 # -[ Data ]-
 character_html_directory_path = './resources/framedata/html/'
