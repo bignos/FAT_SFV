@@ -59,6 +59,7 @@ move list VT2:
 
     # -[ Static ]-
 
+    @staticmethod
     def loadFromJSON(path):
         """ Static method to build a framedata from a JSON file
             path:   {str}       Path of the JSON file
@@ -81,6 +82,7 @@ move list VT2:
 
         return Framedata(character_name, move_list_vt1, move_list_vt2)
 
+    @staticmethod
     def loadFromHTML(path):
         """ Static method to load a Framedata object from an HTML file
             path:   {str}       Path of the HTML file
@@ -102,6 +104,7 @@ move list VT2:
 
         return Framedata(character_name, move_list_vt1, move_list_vt2)
 
+    @staticmethod
     def loadAllCharacterFromHTML(character_html_directory_path):
         """ Load all character HTML file and return a list of Framedata
             character_html_directory_path:  {str}   Path of the directory of the characters HTML file
@@ -114,6 +117,7 @@ move list VT2:
         else:
             return None  # Maybe Throw an error is better
 
+    @staticmethod
     def getAllCharacterHTMLFiles(character_html_directory_path):
         """ List all html file in the directory character_html_directory_path
             character_html_directory_path:  {str} path of the directory of character HTML files
@@ -122,6 +126,7 @@ move list VT2:
         return [character_html_directory_path + filepath for filepath in os.listdir(character_html_directory_path)
                 if filepath.endswith('.html')]
 
+    @staticmethod
     def saveCharacterFramedataListToJSON(framedata_list, character_json_directory_path):
         """ Save character framedata list to individual(per character) JSON files
             framedata_list:                 {list(Framedata)}   list of Framedata to convert
@@ -158,6 +163,7 @@ move list VT2:
 
     # -[ Private ]-
 
+    @staticmethod
     def _create_move_from_json_node(move_json):
         """ Private method to create a Move instance with a JSON move node
             move_json:  {dict}  The JSON node
@@ -296,7 +302,7 @@ class Recovery():
 class MoveEncoder(json.JSONEncoder):
     """ Encode to JSON Move instance object """
 
-    def default(self, obj):
+    def default(self, obj): # pylint: disable=method-hidden
         if isinstance(obj, Move):
             result = dict()
             result['type'] = obj.type
@@ -324,7 +330,7 @@ class MoveEncoder(json.JSONEncoder):
 class FramedataEncoder(MoveEncoder):
     """ Encode to JSON Framedata instance object """
 
-    def default(self, obj):
+    def default(self, obj): # pylint: disable=method-hidden
         if isinstance(obj, Framedata):
             result = dict()
             result['character_name'] = obj.character_name
